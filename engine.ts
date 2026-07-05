@@ -40,3 +40,29 @@ export function applyMove(
 export function advanceTurn(board: Board): Board {
   throw new Error("Not implemented");
 }
+
+/**
+ * Minimal object API expected by edge-rules.test.ts.
+ * Candidates may replace this implementation, but the exported class must exist.
+ */
+export class GameEngine {
+  addPiece(_piece: unknown): void {
+    throw new Error("Not implemented");
+  }
+
+  setSquareStatus(_pos: unknown, _status: string): void {
+    throw new Error("Not implemented");
+  }
+
+  movePiece(_from: unknown, _to: unknown): void {
+    throw new Error("Not implemented");
+  }
+
+  endTurn(): void {
+    throw new Error("Not implemented");
+  }
+
+  getPieceAt(_pos: unknown): undefined {
+    throw new Error("Not implemented");
+  }
+}
