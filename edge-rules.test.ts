@@ -146,7 +146,7 @@ describe('Mandatory Edge Rules — Anti-Cheat & Correctness', () => {
       engine.addPiece({ id: 'target', element: 'Root', position: { row: 2, col: 3 }, owner: 'p2' });
     });
 
-    it('must persist the Burning status through exactly ONE full turn after application', () => {
+    it('must persist the Burning status through turn T+1 after application on turn T', () => {
       engine.movePiece({ row: 1, col: 1 }, { row: 1, col: 3 }); // Applies Burning
 
       // Simulate ending Turn 1
@@ -154,12 +154,12 @@ describe('Mandatory Edge Rules — Anti-Cheat & Correctness', () => {
 
       const targetPiece = engine.getPieceAt({ row: 2, col: 3 });
 
-      // Must STILL be burning. Catches off-by-one errors where it ticks down too fast.
+      // Must STILL be burning during turn T+1.
       expect(targetPiece?.status?.type).toBe('Burning');
       expect(targetPiece?.status?.turnsLeft).toBeGreaterThan(0);
     });
 
-    it('must REMOVE the Burning status after exactly TWO full turns have passed', () => {
+    it('must persist the Burning status through turn T+2 after application on turn T', () => {
       engine.movePiece({ row: 1, col: 1 }, { row: 1, col: 3 }); // Applies Burning
 
       engine.endTurn(); // End of Turn 1
@@ -167,20 +167,22 @@ describe('Mandatory Edge Rules — Anti-Cheat & Correctness', () => {
 
       const targetPiece = engine.getPieceAt({ row: 2, col: 3 });
 
-      // Must be completely gone by the start of Turn 3.
-      expect(targetPiece?.status).toBeUndefined();
+      // Must STILL be burning during turn T+2.
+      expect(targetPiece?.status?.type).toBe('Burning');
+      expect(targetPiece?.status?.turnsLeft).toBeGreaterThan(0);
     });
 
-    it('must NOT allow Burning to expire prematurely at the end of Turn 1', () => {
+    it('must REMOVE the Burning status at turn T+3', () => {
       engine.movePiece({ row: 1, col: 1 }, { row: 1, col: 3 }); // Applies Burning
 
       engine.endTurn(); // End of Turn 1
+      engine.endTurn(); // End of Turn 2
+      engine.endTurn(); // End of Turn 3
 
       const targetPiece = engine.getPieceAt({ row: 2, col: 3 });
 
-      // Fails candidates who initialize turnsLeft to 2 and decrement at the START of the turn
-      // rather than the END, causing it to vanish after only 1 turn of actual effect.
-      expect(targetPiece?.status?.type).toBe('Burning');
+      // Must be gone by turn T+3.
+      expect(targetPiece?.status).toBeUndefined();
     });
   });
 
