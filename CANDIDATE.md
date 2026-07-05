@@ -38,6 +38,8 @@ The `edge-rules.test.ts` harness additionally expects a `GameEngine` class with:
 - `endTurn()`
 - `getPieceAt(pos)`
 
+Both the functional API and the `GameEngine` class are intentionally required by the mandatory test harness and should be treated as part of the submission contract.
+
 ## Behavior expectations (high level)
 - Correct movement rules for Ember, Tide, Root, Gale
 - Burning status with correct turn-based expiry semantics
