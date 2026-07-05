@@ -36,7 +36,7 @@ export interface Board {
   size: number; // 6
   pieces: Piece[];
   squareStatus: Map<string, SquareStatus>; // key: squareKey(position)
-  turn: number; // current turn number, starts at 1, incremented by applyMove
+  turn: number; // current turn number, starts at 1, incremented by advanceTurn
 }
 
 export function squareKey(pos: Position): string {
