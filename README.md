@@ -64,6 +64,7 @@ This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** bel
 
 ### Phase 0: Foundations (all tracks, ~1 week)
 
+- Read **[`THE_THRESHOLD.md`](./THE_THRESHOLD.md)** first — the world, its philosophy, and why "restraint over conquest" and "myth is undecoded science" are the two ideas everything else here has to serve
 - Study the core game rules (see the engine repo's `RULEBOOK_v0.1`) well enough to explain them without notes
 - Understand the turn/phase loop architecture at a conceptual level
 - If working in a team: playtest the tabletop version with 3–4 people before writing code
@@ -102,6 +103,7 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 
 ## Related Repos & Docs
 
+- **World & culture primer:** [`THE_THRESHOLD.md`](./THE_THRESHOLD.md) in this repo — read before Track A if you haven't already
 - **Engine repo:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — the real game
 - **Full game design doc:** `docs/design/GDD.md` in the engine repo
 - **Accessibility engineering specs:** `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` and `docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md` in the engine repo
