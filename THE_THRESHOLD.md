@@ -7,7 +7,7 @@ engine. This document is Phase 0's other half — the context that makes the
 touch a single test file.
 
 If you're here because you're helping build the 4-player variant: read this
-first. Then go cross the threshold.
+first. Then go [cross the threshold](https://duet.loptrlab.com/).
 
 ---
 
