@@ -121,6 +121,18 @@ Shader programming for the engine's signature visual effects (Death's void mater
 
 Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCORECARD.md` for exactly what's being evaluated and how. From here, contributors typically move into Track B or C, or directly into scoped engine-repo tasks.
 
+### Recommended External Courses
+
+These map directly onto the tracks above:
+
+| Course | Tracks | Why |
+| :--- | :--- | :--- |
+| [Epic Web](https://epicweb.dev) | A, B | Full-stack patterns — auth, routing, server/client separation |
+| [Epic AI](https://epicai.pro) | A | Building AI-powered apps; relevant to the engine's agent layer |
+| [Testing JavaScript](https://testingjavascript.com) | A | Kent's "test behavior, not implementation" philosophy is exactly the mindset this exercise rewards |
+| [Epic React](https://epicreact.dev) | A, C | UI layer — relevant when moving beyond vanilla JS |
+| [Epic Product Engineer](https://epicproduct.engineer) | B | Judgment and constraints; aligns with the studio's "People over Profits" design philosophy |
+
 ## Related Repos & Docs
 
 - **World & culture primer:** [`THE_THRESHOLD.md`](./THE_THRESHOLD.md) in this repo — read before Track A if you haven't already
