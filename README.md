@@ -4,6 +4,26 @@
 
 **This is not the engine repo.** This repository (`Loptr-Lab/training`) contains a standalone, self-contained TypeScript coding exercise used for candidate evaluation and MN Vocational Rehabilitation (VRS)-supported training.
 
+## 📍 State Workforce & Vocational Rehabilitation Intake
+
+State workforce agencies (VR offices, local Workforce Development Boards) operate under different application workflows and funding eligibility rules.
+
+### Find Your State Agency & Tech Training Coverage
+Use our [Interactive State Agency & Voc-Rehab Lookup Tool](https://your-org.github.io/training-track/state-resources.html) to view state-specific intake links and funding availability.
+
+#### Quick Jump by State
+
+| State | Primary Agency Intake | VR Tech Training Covered? | Local WIOA Training Finder |
+| :--- | :--- | :---: | :--- |
+| **Texas (TX)** | [Texas Workforce Commission (TWC)](https://www.twc.texas.gov/) | Yes | [TWC Approved Training Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=TX) |
+| **Minnesota (MN)** | [DEED CareerForce Minnesota](https://www.careerforcemn.com/) | Yes | [MN WIOA Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=MN) |
+| **California (CA)** | [CA EDD Workforce Services](https://edd.ca.gov/) | Yes | [CalJOBS Training Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=CA) |
+| **New York (NY)** | [NY Dept. of Labor Workforce](https://dol.ny.gov/) | Yes | [NY Training Finder](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=NY) |
+
+---
+
+> **Note on VR Tech Training Eligibility:** Under Title I of the Rehabilitation Act, all state VR agencies cover tech/IT training if it supports the candidate's competitive integrated employment goals. Exact intake portals vary by state (e.g., TWC Vocational Rehabilitation Services in Texas vs. DEED VRS in Minnesota).
+
 This exercise is a proxy for real engineering work on Veiled Dominion — completing it well maps directly onto Track A of the training curriculum below, not a disconnected test.
 
 ---
