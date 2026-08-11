@@ -9,7 +9,7 @@
 State workforce agencies (VR offices, local Workforce Development Boards) operate under different application workflows and funding eligibility rules.
 
 ### Find Your State Agency & Tech Training Coverage
-Use our [Interactive State Agency & Voc-Rehab Lookup Tool](https://loptr-lab.github.io/training-track/state-resources.html) to view state-specific intake links and funding availability.
+Use our [Interactive State Agency & Voc-Rehab Lookup Tool](https://loptr-lab.github.io/training/state-resources.html) to view state-specific intake links and funding availability.
 
 #### Quick Jump by State
 
