@@ -28,6 +28,15 @@ This exercise is a proxy for real engineering work on Veiled Dominion — comple
 
 ---
 
+## 🛠️ New to Git or GitHub?
+
+If you are new to GitHub or need a refresher on git workflows (branches, commits, pull requests) before tackling this exercise, complete this official 10-minute sandbox first:
+
+* **[GitHub Skills: Introduction to GitHub](https://learn.github.com/skills)** — Hands-on, interactive course directly inside a test repository.
+* **[GitHub Skills Catalog](https://skills.github.com)** — Additional free, self-paced modules for Markdown and Git basics.
+
+---
+
 ## Quick Start
 
 ```bash
@@ -85,6 +94,7 @@ This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** bel
 ### Phase 0: Foundations (all tracks, ~1 week)
 
 - Read **[`THE_THRESHOLD.md`](./THE_THRESHOLD.md)** first — the world, its philosophy, and why "restraint over conquest" and "myth is undecoded science" are the two ideas everything else here has to serve
+- **GitHub & Git Prerequisite:** If you are new to GitHub workflows, complete the official **[GitHub Skills Tutorial](https://learn.github.com/skills)** to practice branching, commits, and pull requests in a sandbox environment.
 - Study the core game rules (see the engine repo's `RULEBOOK_v0.1`) well enough to explain them without notes
 - Understand the turn/phase loop architecture at a conceptual level
 - If working in a team: playtest the tabletop version with 3–4 people before writing code
@@ -121,12 +131,9 @@ Shader programming for the engine's signature visual effects (Death's void mater
 
 Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCORECARD.md` for exactly what's being evaluated and how. From here, contributors typically move into Track B or C, or directly into scoped engine-repo tasks.
 
-### Recommended External Courses
-
-These map directly onto the tracks above:
-
-| Course | Tracks | Why |
+| Course / Resource | Tracks | Why |
 | :--- | :--- | :--- |
+| [GitHub Skills](https://learn.github.com/skills) | Prerequisites | Interactive sandbox for Git basics, branching, and pull requests |
 | [Epic Web](https://epicweb.dev) | A, B | Full-stack patterns — auth, routing, server/client separation |
 | [Epic AI](https://epicai.pro) | A | Building AI-powered apps; relevant to the engine's agent layer |
 | [Testing JavaScript](https://testingjavascript.com) | A | Kent's "test behavior, not implementation" philosophy is exactly the mindset this exercise rewards |
