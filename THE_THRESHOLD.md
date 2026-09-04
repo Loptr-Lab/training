@@ -17,8 +17,8 @@ is a separate accessibility experiment.
 Two ideas run under everything Loptr Lab makes:
 
 1. **Restraint, not conquest.** Rebirth is the most powerful piece on the
-   board and wins only by suppressing her own power. The game's whole
-   design axiom is inverted from "more power wins."
+   board, and her mastery is expressed through restraint rather than conquest.
+   The game's design axiom is inverted from "more power wins."
 2. **Myth is just science nobody's finished decoding.** Nothing in this
    world is magic. It's unexplained mechanism, told the way people always
    tell unexplained mechanism — as legend.
