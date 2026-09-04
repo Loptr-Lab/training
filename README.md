@@ -153,3 +153,15 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 
 **Program sponsor:** Loptr Lab
 **Questions:** questions@loptrlab.com
+
+
+---
+
+## License and fan forks
+
+Exercise software is MIT-licensed. Original curriculum, instructions, narrative,
+and scoring materials are CC BY-NC-SA 4.0. Forks must use distinct branding and
+must not imply official evaluation, employment consideration, academic credit,
+funding, or Loptr Lab endorsement.
+
+See [LICENSE.md](./LICENSE.md) and [FAN_FORK_GUIDE.md](./FAN_FORK_GUIDE.md).
