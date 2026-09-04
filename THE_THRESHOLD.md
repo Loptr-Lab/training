@@ -1,13 +1,14 @@
 # The Threshold
 ### A Newcomer's Primer — Loptr Lab / Veiled Dominion
 
-`README.md` and `CANDIDATE.md` in this repo test whether you can build the
-engine. This document is Phase 0's other half — the context that makes the
+`README.md` and `CANDIDATE.md` in this repo describe a standalone
+systems exercise. This document is Phase 0's other half — the context that makes the
 4-player build (and everything else in this world) make sense before you
 touch a single test file.
 
-If you're here because you're helping build the 4-player variant: read this
-first. Then go [cross the threshold](https://duet.loptrlab.com/).
+If you're preparing for the training exercise, read this first. The canonical
+four-player rules remain authoritative in the engine repository; [Duet](https://duet.loptrlab.com/)
+is a separate accessibility experiment.
 
 ---
 
@@ -16,8 +17,8 @@ first. Then go [cross the threshold](https://duet.loptrlab.com/).
 Two ideas run under everything Loptr Lab makes:
 
 1. **Restraint, not conquest.** Rebirth is the most powerful piece on the
-   board and wins only by suppressing her own power. The game's whole
-   design axiom is inverted from "more power wins."
+   board, and her mastery is expressed through restraint rather than conquest.
+   The game's design axiom is inverted from "more power wins."
 2. **Myth is just science nobody's finished decoding.** Nothing in this
    world is magic. It's unexplained mechanism, told the way people always
    tell unexplained mechanism — as legend.
@@ -89,7 +90,7 @@ studio while this gets built:
 
 ## Design & Color Language
 
-Full spec lives in the engine repo's `DESIGN_BIBLE.md` — this is the
+Full spec lives in the engine repo's `docs/design/DESIGN_BIBLE.md` — this is the
 short version.
 
 **Digital (web, Duet, sigils):**

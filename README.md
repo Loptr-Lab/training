@@ -2,27 +2,29 @@
 
 ## Repo Identity
 
-**This is not the engine repo.** This repository (`Loptr-Lab/training`) contains a standalone, self-contained TypeScript coding exercise used for candidate evaluation and MN Vocational Rehabilitation (VRS)-supported training.
+**This is not the canonical game engine.** This repository (`Loptr-Lab/training`) contains a standalone TypeScript systems exercise used for candidate evaluation and workforce-training pathways. Ember, Tide, Root, Gale, Burning, and Steam are training abstractions, not Veiled Dominion canon.
+
+Veiled Dominion's four-player rules authority remains [`Loptr-Lab/veiled-dominion-engine`](https://github.com/Loptr-Lab/veiled-dominion-engine). Duet remains a separate accessibility artifact and experimental mechanics lab. See [`RESEARCH_AND_CANON_BOUNDARY.md`](./RESEARCH_AND_CANON_BOUNDARY.md).
 
 ## 📍 State Workforce & Vocational Rehabilitation Intake
 
 State workforce agencies (VR offices, local Workforce Development Boards) operate under different application workflows and funding eligibility rules.
 
-### Find Your State Agency & Tech Training Coverage
-Use our [Interactive State Agency & Voc-Rehab Lookup Tool](https://loptr-lab.github.io/training/state-resources.html) to view state-specific intake links and funding availability.
+### Pilot State Agency and Training-Resource Finder
+Use our [pilot State Agency & Voc-Rehab Lookup Tool](https://loptr-lab.github.io/training/state-resources.html) to view state-specific intake links and funding availability.
 
 #### Quick Jump by State
 
 | State | Primary Agency Intake | VR Tech Training Covered? | Local WIOA Training Finder |
 | :--- | :--- | :---: | :--- |
-| **Texas (TX)** | [Texas Workforce Commission (TWC)](https://www.twc.texas.gov/) | Yes | [TWC Approved Training Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=TX) |
-| **Minnesota (MN)** | [DEED CareerForce Minnesota](https://www.careerforcemn.com/) | Yes | [MN WIOA Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=MN) |
-| **California (CA)** | [CA EDD Workforce Services](https://edd.ca.gov/) | Yes | [CalJOBS Training Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=CA) |
-| **New York (NY)** | [NY Dept. of Labor Workforce](https://dol.ny.gov/) | Yes | [NY Training Finder](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=NY) |
+| **Texas (TX)** | [Texas Workforce Commission (TWC)](https://www.twc.texas.gov/) | Determined individually | [TWC Approved Training Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=TX) |
+| **Minnesota (MN)** | [DEED CareerForce Minnesota](https://www.careerforcemn.com/) | Determined individually | [MN WIOA Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=MN) |
+| **California (CA)** | [CA EDD Workforce Services](https://edd.ca.gov/) | Determined individually | [CalJOBS Training Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=CA) |
+| **New York (NY)** | [NY Dept. of Labor Workforce](https://dol.ny.gov/) | Determined individually | [NY Training Finder](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=NY) |
 
 ---
 
-> **Note on VR Tech Training Eligibility:** Under Title I of the Rehabilitation Act, all state VR agencies cover tech/IT training if it supports the candidate's competitive integrated employment goals. Exact intake portals vary by state (e.g., TWC Vocational Rehabilitation Services in Texas vs. DEED VRS in Minnesota).
+> **Eligibility note:** The linked agencies determine services and funding individually. Listing a resource does not guarantee eligibility, approval, or payment. Confirm current requirements directly with the relevant VR or workforce office.
 
 This exercise is a proxy for real engineering work on Veiled Dominion — completing it well maps directly onto Track A of the training curriculum below, not a disconnected test.
 
@@ -55,7 +57,7 @@ All tests in `engine.test.ts` and `edge-rules.test.ts` will fail with "Not imple
 
 ## Errata (read this before you start)
 
-The original Gale rule ("cannot end on the same row/column it started on") was written for a single straight diagonal slide, which can **never** land back on its starting row or column — the rule is mathematically redundant in that form.
+The original Gale rule ("cannot end on the same row/column it started on") was written for a single straight diagonal slide, which can **never** land back on its starting row or column. The scoring contract therefore uses a one-pivot diagonal variant; a legal endpoint must differ from both the starting row and starting column.
 
 ## Exact Contracts the Tests Assume
 
@@ -63,7 +65,7 @@ The original Gale rule ("cannot end on the same row/column it started on") was w
 
 **Ember midpoint / Steam:** an Ember jump is illegal if (a) the midpoint square is occupied by any piece, (b) the midpoint square is currently Steam, or (c) the landing square is currently Steam.
 
-**Burning expiry:** if a piece becomes Burning as a result of a move made during turn T, it remains Burning during turns T, T+1, and T+2, and is no longer Burning from turn T+3 onward. Both `engine.test.ts` and `edge-rules.test.ts` assert this window.
+**Burning expiry:** if a piece becomes Burning as a result of a move made during turn T, it remains Burning during turns T, T+1, and T+2, and is no longer Burning from turn T+3 onward. Both `engine.test.ts` and `edge-rules.test.ts` assert this same window.
 
 These contracts are spelled out in full so that "my interpretation of the rule was reasonable" isn't a valid defense for a failing test — the test files already encode the one interpretation used for grading.
 
