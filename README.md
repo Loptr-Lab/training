@@ -6,6 +6,10 @@
 
 Veiled Dominion's four-player rules authority remains [`Loptr-Lab/veiled-dominion-engine`](https://github.com/Loptr-Lab/veiled-dominion-engine). Duet remains a separate accessibility artifact and experimental mechanics lab. See [`RESEARCH_AND_CANON_BOUNDARY.md`](./RESEARCH_AND_CANON_BOUNDARY.md).
 
+This repository is also the contributor on-ramp within the wider Loptr Lab
+ecosystem. Read [`ROLE_IN_ECOSYSTEM.md`](./ROLE_IN_ECOSYSTEM.md) before describing
+how training work relates to narrative, research, or production evidence.
+
 ## 📍 State Workforce & Vocational Rehabilitation Intake
 
 State workforce agencies (VR offices, local Workforce Development Boards) operate under different application workflows and funding eligibility rules.
@@ -153,6 +157,8 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 
 **Program sponsor:** Loptr Lab
 **Questions:** questions@loptrlab.com
+
+Wider pathways: [ibloud.github.io/collaborate](https://ibloud.github.io/collaborate/)
 
 
 ---
