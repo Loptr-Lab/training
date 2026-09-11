@@ -38,6 +38,12 @@ Use the analytic loop:
 - Do not silently convert training abstractions into canonical mechanics.
 - Do not copy narrative adaptations or experimental Duet behavior into this exercise as though they were canonical rules.
 - Link authoritative game documentation instead of duplicating or paraphrasing rules when precision matters.
+- Keep collaborator-safety training general and reusable; do not copy private allegations, explicit material, residential details, or identifiable case evidence into this repository.
+- Treat the engine repository as authority for variant status, rights gates, accessibility review, and canon promotion.
+
+## Contributor governance boundary
+
+This repository may teach consent, collaborator vetting, least-privilege access, revocation planning, and safe exit terms through [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md). It does not adjudicate personal disputes, store private evidence, grant production access, or authorize third-party intellectual property.
 
 ## Canonical principle
 
