@@ -52,7 +52,7 @@ Before proposing a Veiled Dominion variant:
 5. Keep third-party-inspired material separate from reusable original expression.
 6. Do not treat documentation, a prototype, a playtest, or repository inclusion as acceptance into canon.
 
-These links become authoritative after the engine governance pull request is merged. Until then, review [engine PR #38](https://github.com/Loptr-Lab/veiled-dominion-engine/pull/38).
+The engine repository is authoritative for variant workflow, classification, and promotion decisions. [Engine PR #38](https://github.com/Loptr-Lab/veiled-dominion-engine/pull/38) preserves the governance change history.
 
 ## Candidate checkpoint
 
