@@ -96,12 +96,13 @@ This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** bel
 ### Phase 0: Foundations (all tracks, ~1 week)
 
 - Read **[`THE_THRESHOLD.md`](./THE_THRESHOLD.md)** first — the world, its philosophy, and why "restraint over conquest" and "myth is undecoded science" are the two ideas everything else here has to serve
+- Complete **[`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md)** before receiving live-project, community, or production access
 - **GitHub & Git Prerequisite:** If you are new to GitHub workflows, complete the official **[GitHub Skills Tutorial](https://learn.github.com/skills)** to practice branching, commits, and pull requests in a sandbox environment.
 - Study the core game rules (see the engine repo's `RULEBOOK_v0.1`) well enough to explain them without notes
 - Understand the turn/phase loop architecture at a conceptual level
 - If working in a team: playtest the tabletop version with 3–4 people before writing code
 
-**Checkpoint:** you can explain the core rules and diagram the turn loop from memory.
+**Checkpoint:** you can explain the core rules and diagram the turn loop from memory; distinguish informal promotion from contracted collaboration; identify rights and accessibility gates; and describe a least-privilege access and revocation plan.
 
 ### Track A: Prototype Engineer (this repo, ~4 weeks)
 
@@ -148,6 +149,8 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 - **Engine repo:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — the real game
 - **Full game design doc:** `docs/design/GDD.md` in the engine repo
 - **Accessibility engineering specs:** `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` and `docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md` in the engine repo
+- **Contributor safety:** [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md) — consent, vetting, staged access, exit terms, and variant review gates
+- **Variant governance:** [workflow](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/VARIANT_CREATION_WORKFLOW.md), [template](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/VARIANT_TEMPLATE.md), and [worked example](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/examples/DREAD_PRESSURE.md) in the engine repository
 
 ## Contact
 

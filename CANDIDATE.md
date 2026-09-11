@@ -1,5 +1,9 @@
 # Candidate Instructions
 
+## Required orientation
+
+Before beginning the exercise, read [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md). Completing this technical exercise does not itself grant employment, Playtester status, repository ownership, canon authority, or access to live systems or private evidence.
+
 ## Objective
 
 Implement the standalone TypeScript systems exercise in this repository. The exercise is a training proxy for architectural skills used by Loptr Lab; it is not the canonical Veiled Dominion game engine.
@@ -82,3 +86,4 @@ npm test
 - [ ] Functional and class APIs share one rules model
 - [ ] Additional reaction uses the extension framework
 - [ ] `NOTES.md` contains honest design analysis and test output
+- [ ] Contributor-safety orientation completed before any live-project access
