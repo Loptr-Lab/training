@@ -93,6 +93,18 @@ These contracts are spelled out in full so that "my interpretation of the rule w
 
 ---
 
+## Creative Accessibility Path
+
+The training program is broader than the TypeScript exercise: it is a pathway for **accessible creative experimentation and asset production**. The goal is for graduates to leave with things they made—tools, adaptations, creative assets, experiments, or documented techniques—that can be useful to independent artists and communities or serve as portfolio evidence when approaching game developers.
+
+Start with [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md).
+
+**LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**
+
+Accessibility is a design constraint throughout the path, not a final module. External projects and organizations may be learning references, outreach contacts, or potential collaborators; they are not represented as Loptr Lab partners unless an explicit relationship exists.
+
+---
+
 ## Training Curriculum
 
 This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** below. If you're working through this as part of a VRS training plan or self-directed learning path, the full curriculum progression is:
