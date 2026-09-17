@@ -6,6 +6,18 @@
 
 Veiled Dominion's four-player rules authority remains [`Loptr-Lab/veiled-dominion-engine`](https://github.com/Loptr-Lab/veiled-dominion-engine). Duet remains a separate accessibility artifact and experimental mechanics lab. See [`RESEARCH_AND_CANON_BOUNDARY.md`](./RESEARCH_AND_CANON_BOUNDARY.md).
 
+## Creative Accessibility Path
+
+The training pathway is broader than the TypeScript exercise. Its graduate outcome is **asset production and creative access**: participants leave with things they made—tools, adaptations, experiments, creative assets, or documented techniques that can be used by an independent artist, shared with a community, or presented to a game developer.
+
+The working loop is **LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**. Accessibility is a design constraint throughout the path, not a final module.
+
+See [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md) and [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
+
+The path continues from sharing into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. External organizations are referenced only at their actual relationship status; no partnership or endorsement is implied without explicit agreement.
+
+**You don't graduate with a certificate. You graduate with things you made—and with the ability to help the next creator get past a barrier.**
+
 ## 📍 State Workforce & Vocational Rehabilitation Intake
 
 State workforce agencies (VR offices, local Workforce Development Boards) operate under different application workflows and funding eligibility rules.
@@ -132,7 +144,7 @@ Shader programming for the engine's signature visual effects (Death's void mater
 
 ## Where This Leads
 
-Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCORECARD.md` for exactly what's being evaluated and how. From here, contributors typically move into Track B or C, or directly into scoped engine-repo tasks.
+Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCORECARD.md` for exactly what's being evaluated. From here, contributors typically move into Track B or C, or directly into scoped engine-repo tasks.
 
 | Course / Resource | Tracks | Why |
 | :--- | :--- | :--- |
@@ -149,6 +161,8 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 - **Engine repo:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — the real game
 - **Full game design doc:** `docs/design/GDD.md` in the engine repo
 - **Accessibility engineering specs:** `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` and `docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md` in the engine repo
+- **Creative Accessibility Path:** [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md)
+- **Advocacy & Connection:** [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md)
 - **Contributor safety:** [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md) — consent, vetting, staged access, exit terms, and variant review gates
 - **Variant governance:** [workflow](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/VARIANT_CREATION_WORKFLOW.md), [template](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/VARIANT_TEMPLATE.md), and [worked example](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/examples/DREAD_PRESSURE.md) in the engine repository
 
