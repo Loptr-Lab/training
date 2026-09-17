@@ -18,17 +18,9 @@ The path continues from sharing into **Advocacy & Connection**: creators may lea
 
 Veiled Dominion's four-player rules authority remains [`Loptr-Lab/veiled-dominion-engine`](https://github.com/Loptr-Lab/veiled-dominion-engine). Duet remains a separate accessibility artifact and experimental mechanics lab. See [`RESEARCH_AND_CANON_BOUNDARY.md`](./RESEARCH_AND_CANON_BOUNDARY.md).
 
-## Creative Accessibility Path
-
-The training pathway is broader than the TypeScript exercise. Its graduate outcome is **asset production and creative access**: participants leave with things they made—tools, adaptations, experiments, creative assets, or documented techniques that can be used by an independent artist, shared with a community, or presented to a game developer.
-
-The working loop is **LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**. Accessibility is a design constraint throughout the path, not a final module.
-
-See [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md) and [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
-
-The path continues from sharing into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. External organizations are referenced only at their actual relationship status; no partnership or endorsement is implied without explicit agreement.
-
-**You don't graduate with a certificate. You graduate with things you made—and with the ability to help the next creator get past a barrier.**
+This repository is also the contributor on-ramp within the wider Loptr Lab
+ecosystem. Read [`ROLE_IN_ECOSYSTEM.md`](./ROLE_IN_ECOSYSTEM.md) before describing
+how training work relates to narrative, research, or production evidence.
 
 ## 📍 State Workforce & Vocational Rehabilitation Intake
 
@@ -113,6 +105,20 @@ These contracts are spelled out in full so that "my interpretation of the rule w
 
 ---
 
+## Creative Accessibility Path
+
+The training program is broader than the TypeScript exercise: it is a pathway for **accessible creative experimentation and asset production**. The goal is for graduates to leave with things they made—tools, adaptations, creative assets, experiments, or documented techniques—that can be useful to independent artists and communities or serve as portfolio evidence when approaching game developers.
+
+Start with [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md).
+
+**LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**
+
+Accessibility is a design constraint throughout the path, not a final module. External projects and organizations may be learning references, outreach contacts, or potential collaborators; they are not represented as Loptr Lab partners unless an explicit relationship exists.
+
+The path can continue into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. See [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
+
+---
+
 ## Training Curriculum
 
 This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** below. If you're working through this as part of a VRS training plan or self-directed learning path, the full curriculum progression is:
@@ -182,6 +188,8 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 
 **Program sponsor:** Loptr Lab
 **Questions:** questions@loptrlab.com
+
+Wider pathways: [ibloud.github.io/collaborate](https://ibloud.github.io/collaborate/)
 
 
 ---

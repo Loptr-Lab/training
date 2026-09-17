@@ -93,7 +93,7 @@ Do not collapse these statuses into a generic “partner” label.
 
 ### AbleGamers as a Reference Example
 
-The AbleGamers Charity is a useful external reference for the model because its public team structure includes peer counseling, community and inclusion, user research, professional development, and game-accessibility work.
+The AbleGamers Charity is a useful external reference for the model because its public work includes player research, professional development, community inclusion, and accessible gaming support.
 
 That makes it a reasonable organization to introduce the initiative to **for perspective**, while keeping the relationship status at the actual state of contact.
 
