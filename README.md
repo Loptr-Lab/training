@@ -1,5 +1,17 @@
 # Veiled Dominion — Candidate Exercise & Training Curriculum
 
+## Creative Accessibility Path
+
+The training pathway is broader than the TypeScript exercise. Its graduate outcome is **asset production and creative access**: participants leave with things they made—tools, adaptations, experiments, creative assets, or documented techniques that can be used by an independent artist, shared with a community, or presented to a game developer.
+
+The working loop is **LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**. Accessibility is a design constraint throughout the path, not a final module.
+
+See [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md) and [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
+
+The path continues from sharing into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. External organizations are referenced only at their actual relationship status; no partnership or endorsement is implied without explicit agreement.
+
+**You don't graduate with a certificate. You graduate with things you made—and with the ability to help the next creator get past a barrier.**
+
 ## Repo Identity
 
 **This is not the canonical game engine.** This repository (`Loptr-Lab/training`) contains a standalone TypeScript systems exercise used for candidate evaluation and workforce-training pathways. Ember, Tide, Root, Gale, Burning, and Steam are training abstractions, not Veiled Dominion canon.
