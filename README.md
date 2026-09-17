@@ -103,6 +103,8 @@ Start with [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY
 
 Accessibility is a design constraint throughout the path, not a final module. External projects and organizations may be learning references, outreach contacts, or potential collaborators; they are not represented as Loptr Lab partners unless an explicit relationship exists.
 
+The path can continue into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. See [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
+
 ---
 
 ## Training Curriculum
