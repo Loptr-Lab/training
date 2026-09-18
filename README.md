@@ -1,30 +1,57 @@
 # Veiled Dominion — Candidate Exercise & Training Curriculum
 
+## Creative Accessibility Path
+
+The training pathway is broader than the TypeScript exercise. Its graduate outcome is **asset production and creative access**: participants leave with things they made—tools, adaptations, experiments, creative assets, or documented techniques that can be used by an independent artist, shared with a community, or presented to a game developer.
+
+The working loop is **LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**. Accessibility is a design constraint throughout the path, not a final module.
+
+See [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md) and [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
+
+The path continues from sharing into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. External organizations are referenced only at their actual relationship status; no partnership or endorsement is implied without explicit agreement.
+
+**You don't graduate with a certificate. You graduate with things you made—and with the ability to help the next creator get past a barrier.**
+
 ## Repo Identity
 
-**This is not the engine repo.** This repository (`Loptr-Lab/training`) contains a standalone, self-contained TypeScript coding exercise used for candidate evaluation and MN Vocational Rehabilitation (VRS)-supported training.
+**This is not the canonical game engine.** This repository (`Loptr-Lab/training`) contains a standalone TypeScript systems exercise used for candidate evaluation and workforce-training pathways. Ember, Tide, Root, Gale, Burning, and Steam are training abstractions, not Veiled Dominion canon.
+
+Veiled Dominion's four-player rules authority remains [`Loptr-Lab/veiled-dominion-engine`](https://github.com/Loptr-Lab/veiled-dominion-engine). Duet remains a separate accessibility artifact and experimental mechanics lab. See [`RESEARCH_AND_CANON_BOUNDARY.md`](./RESEARCH_AND_CANON_BOUNDARY.md).
+
+This repository is also the contributor on-ramp within the wider Loptr Lab
+ecosystem. Read [`ROLE_IN_ECOSYSTEM.md`](./ROLE_IN_ECOSYSTEM.md) before describing
+how training work relates to narrative, research, or production evidence.
 
 ## 📍 State Workforce & Vocational Rehabilitation Intake
 
 State workforce agencies (VR offices, local Workforce Development Boards) operate under different application workflows and funding eligibility rules.
 
-### Find Your State Agency & Tech Training Coverage
-Use our [Interactive State Agency & Voc-Rehab Lookup Tool](https://loptr-lab.github.io/training/state-resources.html) to view state-specific intake links and funding availability.
+### Pilot State Agency and Training-Resource Finder
+Use our [pilot State Agency & Voc-Rehab Lookup Tool](https://loptr-lab.github.io/training/state-resources.html) to view state-specific intake links and funding availability.
 
 #### Quick Jump by State
 
 | State | Primary Agency Intake | VR Tech Training Covered? | Local WIOA Training Finder |
 | :--- | :--- | :---: | :--- |
-| **Texas (TX)** | [Texas Workforce Commission (TWC)](https://www.twc.texas.gov/) | Yes | [TWC Approved Training Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=TX) |
-| **Minnesota (MN)** | [DEED CareerForce Minnesota](https://www.careerforcemn.com/) | Yes | [MN WIOA Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=MN) |
-| **California (CA)** | [CA EDD Workforce Services](https://edd.ca.gov/) | Yes | [CalJOBS Training Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=CA) |
-| **New York (NY)** | [NY Dept. of Labor Workforce](https://dol.ny.gov/) | Yes | [NY Training Finder](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=NY) |
+| **Texas (TX)** | [Texas Workforce Commission (TWC)](https://www.twc.texas.gov/) | Determined individually | [TWC Approved Training Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=TX) |
+| **Minnesota (MN)** | [DEED CareerForce Minnesota](https://www.careerforcemn.com/) | Determined individually | [MN WIOA Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=MN) |
+| **California (CA)** | [CA EDD Workforce Services](https://edd.ca.gov/) | Determined individually | [CalJOBS Training Provider Search](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=CA) |
+| **New York (NY)** | [NY Dept. of Labor Workforce](https://dol.ny.gov/) | Determined individually | [NY Training Finder](https://www.careeronestop.org/LocalHelp/EmploymentAndTraining/find-WIOA-training-programs.aspx?location=NY) |
 
 ---
 
-> **Note on VR Tech Training Eligibility:** Under Title I of the Rehabilitation Act, all state VR agencies cover tech/IT training if it supports the candidate's competitive integrated employment goals. Exact intake portals vary by state (e.g., TWC Vocational Rehabilitation Services in Texas vs. DEED VRS in Minnesota).
+> **Eligibility note:** The linked agencies determine services and funding individually. Listing a resource does not guarantee eligibility, approval, or payment. Confirm current requirements directly with the relevant VR or workforce office.
 
 This exercise is a proxy for real engineering work on Veiled Dominion — completing it well maps directly onto Track A of the training curriculum below, not a disconnected test.
+
+---
+
+## 🛠️ New to Git or GitHub?
+
+If you are new to GitHub or need a refresher on git workflows (branches, commits, pull requests) before tackling this exercise, complete this official 10-minute sandbox first:
+
+* **[GitHub Skills: Introduction to GitHub](https://learn.github.com/skills)** — Hands-on, interactive course directly inside a test repository.
+* **[GitHub Skills Catalog](https://skills.github.com)** — Additional free, self-paced modules for Markdown and Git basics.
 
 ---
 
@@ -46,7 +73,7 @@ All tests in `engine.test.ts` and `edge-rules.test.ts` will fail with "Not imple
 
 ## Errata (read this before you start)
 
-The original Gale rule ("cannot end on the same row/column it started on") was written for a single straight diagonal slide, which can **never** land back on its starting row or column — the rule is mathematically redundant in that form.
+The original Gale rule ("cannot end on the same row/column it started on") was written for a single straight diagonal slide, which can **never** land back on its starting row or column. The scoring contract therefore uses a one-pivot diagonal variant; a legal endpoint must differ from both the starting row and starting column.
 
 ## Exact Contracts the Tests Assume
 
@@ -54,7 +81,7 @@ The original Gale rule ("cannot end on the same row/column it started on") was w
 
 **Ember midpoint / Steam:** an Ember jump is illegal if (a) the midpoint square is occupied by any piece, (b) the midpoint square is currently Steam, or (c) the landing square is currently Steam.
 
-**Burning expiry:** if a piece becomes Burning as a result of a move made during turn T, it remains Burning during turns T, T+1, and T+2, and is no longer Burning from turn T+3 onward. Both `engine.test.ts` and `edge-rules.test.ts` assert this window.
+**Burning expiry:** if a piece becomes Burning as a result of a move made during turn T, it remains Burning during turns T, T+1, and T+2, and is no longer Burning from turn T+3 onward. Both `engine.test.ts` and `edge-rules.test.ts` assert this same window.
 
 These contracts are spelled out in full so that "my interpretation of the rule was reasonable" isn't a valid defense for a failing test — the test files already encode the one interpretation used for grading.
 
@@ -78,6 +105,20 @@ These contracts are spelled out in full so that "my interpretation of the rule w
 
 ---
 
+## Creative Accessibility Path
+
+The training program is broader than the TypeScript exercise: it is a pathway for **accessible creative experimentation and asset production**. The goal is for graduates to leave with things they made—tools, adaptations, creative assets, experiments, or documented techniques—that can be useful to independent artists and communities or serve as portfolio evidence when approaching game developers.
+
+Start with [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md).
+
+**LIMITATION → ADAPTATION → EXPERIMENT → CREATION → SHARE**
+
+Accessibility is a design constraint throughout the path, not a final module. External projects and organizations may be learning references, outreach contacts, or potential collaborators; they are not represented as Loptr Lab partners unless an explicit relationship exists.
+
+The path can continue into **Advocacy & Connection**: creators may learn to help another creator find relevant feedback, testing, collaboration, integration, distribution, or professional contacts. See [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md).
+
+---
+
 ## Training Curriculum
 
 This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** below. If you're working through this as part of a VRS training plan or self-directed learning path, the full curriculum progression is:
@@ -85,11 +126,13 @@ This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** bel
 ### Phase 0: Foundations (all tracks, ~1 week)
 
 - Read **[`THE_THRESHOLD.md`](./THE_THRESHOLD.md)** first — the world, its philosophy, and why "restraint over conquest" and "myth is undecoded science" are the two ideas everything else here has to serve
+- Complete **[`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md)** before receiving live-project, community, or production access
+- **GitHub & Git Prerequisite:** If you are new to GitHub workflows, complete the official **[GitHub Skills Tutorial](https://learn.github.com/skills)** to practice branching, commits, and pull requests in a sandbox environment.
 - Study the core game rules (see the engine repo's `RULEBOOK_v0.1`) well enough to explain them without notes
 - Understand the turn/phase loop architecture at a conceptual level
 - If working in a team: playtest the tabletop version with 3–4 people before writing code
 
-**Checkpoint:** you can explain the core rules and diagram the turn loop from memory.
+**Checkpoint:** you can explain the core rules and diagram the turn loop from memory; distinguish informal promotion from contracted collaboration; identify rights and accessibility gates; and describe a least-privilege access and revocation plan.
 
 ### Track A: Prototype Engineer (this repo, ~4 weeks)
 
@@ -119,7 +162,16 @@ Shader programming for the engine's signature visual effects (Death's void mater
 
 ## Where This Leads
 
-Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCORECARD.md` for exactly what's being evaluated and how. From here, contributors typically move into Track B or C, or directly into scoped engine-repo tasks.
+Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCORECARD.md` for exactly what's being evaluated. From here, contributors typically move into Track B or C, or directly into scoped engine-repo tasks.
+
+| Course / Resource | Tracks | Why |
+| :--- | :--- | :--- |
+| [GitHub Skills](https://learn.github.com/skills) | Prerequisites | Interactive sandbox for Git basics, branching, and pull requests |
+| [Epic Web](https://epicweb.dev) | A, B | Full-stack patterns — auth, routing, server/client separation |
+| [Epic AI](https://epicai.pro) | A | Building AI-powered apps; relevant to the engine's agent layer |
+| [Testing JavaScript](https://testingjavascript.com) | A | Kent's "test behavior, not implementation" philosophy is exactly the mindset this exercise rewards |
+| [Epic React](https://epicreact.dev) | A, C | UI layer — relevant when moving beyond vanilla JS |
+| [Epic Product Engineer](https://epicproduct.engineer) | B | Judgment and constraints; aligns with the studio's "People over Profits" design philosophy |
 
 ## Related Repos & Docs
 
@@ -127,8 +179,26 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 - **Engine repo:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — the real game
 - **Full game design doc:** `docs/design/GDD.md` in the engine repo
 - **Accessibility engineering specs:** `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` and `docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md` in the engine repo
+- **Creative Accessibility Path:** [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md)
+- **Advocacy & Connection:** [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md)
+- **Contributor safety:** [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md) — consent, vetting, staged access, exit terms, and variant review gates
+- **Variant governance:** [workflow](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/VARIANT_CREATION_WORKFLOW.md), [template](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/VARIANT_TEMPLATE.md), and [worked example](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/examples/DREAD_PRESSURE.md) in the engine repository
 
 ## Contact
 
 **Program sponsor:** Loptr Lab
 **Questions:** questions@loptrlab.com
+
+Wider pathways: [ibloud.github.io/collaborate](https://ibloud.github.io/collaborate/)
+
+
+---
+
+## License and fan forks
+
+Exercise software is MIT-licensed. Original curriculum, instructions, narrative,
+and scoring materials are CC BY-NC-SA 4.0. Forks must use distinct branding and
+must not imply official evaluation, employment consideration, academic credit,
+funding, or Loptr Lab endorsement.
+
+See [LICENSE.md](./LICENSE.md) and [FAN_FORK_GUIDE.md](./FAN_FORK_GUIDE.md).

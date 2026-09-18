@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  exercise-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run typecheck
+      - name: Verify tests or expected starter state
+        shell: bash
+        run: |
+          set +e
+          npm test -- --runInBand
+          result=$?
+          set -e
+          if [ "$result" -eq 0 ]; then
+            exit 0
+          fi
+          if grep -q "Not implemented" engine.ts; then
+            echo "Starter exercise intentionally retains unimplemented methods."
+            exit 0
+          fi
+          echo "Tests failed after the starter placeholders were removed."
+          exit "$result"
