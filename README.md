@@ -158,6 +158,54 @@ Game economy modeling, quantitative balance analysis, structured playtesting met
 
 Shader programming for the engine's signature visual effects (Death's void material, Rebirth's glow), built against real accessibility constraints — see the engine repo's `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` and `docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md`.
 
+#### Track C → Paragon Reborn application
+
+Track C work is not an isolated art exercise. When a visual exercise is intended to become useful to **Paragon-Reborn**, the lesson is to translate a documented game-state signal into presentation without allowing the presentation layer to become a second rules engine.
+
+**Core boundary:**
+
+```text
+AUTHORITATIVE GAME STATE
+        ↓
+PRESENTATION CONTRACT
+        ↓
+TRACK C / TECHNICAL ART
+        ↓
+PARAGON VISUAL EXPRESSION
+```
+
+**Artists own expression of state, not determination of state.**
+
+A technical artist may decide how `Veiled`, `Sanctuary`, `Frozen`, `Burning`, or another contracted state should look, sound, pulse, bleed, desaturate, or otherwise present. The artist must not decide that a state exists by reading an animation frame, shader value, particle threshold, or other presentation artifact back into gameplay logic.
+
+For Paragon-Reborn, this means:
+
+- **Game event → state:** gameplay systems establish the authoritative condition.
+- **State → presentation:** the presentation contract exposes the minimum information needed by the renderer.
+- **Presentation → Paragon asset:** the character asset expresses that state.
+- **No state feedback:** visual/animation/material logic never writes gameplay truth back into the rules system.
+- **Frame-rate independence:** a 30/60/120 FPS render path may update presentation continuously, but render timing must not determine turn outcomes, status expiry, movement legality, or aura membership.
+- **Audio Aura:** audio-derived visual feedback is a presentation response to authoritative audio/game state. In a 2D or painted treatment, this can be an animation/sprite/canvas state change rather than a requirement for real-time parameter-driven 3D shaders.
+
+This connects directly to the training lessons. The TypeScript exercise's explicit temporal state (`turn`, `burningUntilTurn`, `steamUntilTurn`) and its movement/reaction boundary are the same kind of discipline needed when a Paragon character is used as a presentation asset: **store and test the state; render the state; never infer the state from the rendering.**
+
+##### Paragon character selection for Track C
+
+Use the Paragon characters in `ibloud/Paragon-Reborn`'s tarot research as the source of truth for character/card assignment. The production brief distinguishes characters with released Epic asset packages from characters that require reference imagery or original/licensed artwork.
+
+For **technical-art exercises and engine-side prototypes**, prefer characters whose released assets are documented in the Paragon tarot research:
+
+- **Rebirth / glow / light-state studies:** **Aurora, Gideon, Greystone, Narbash, Steel, The Fey, Terra, Yin**. Choose the character that matches the exercise's contracted visual state rather than inventing a new gameplay meaning.
+- **Void / darkness / corruption / restrained-power studies:** **Revenant, Morigesh, Wraith, Sparrow** are useful visual-reference choices when the exercise calls for a darker or supernatural presentation. The visual treatment must still remain an expression layer, not a rules source.
+- **Dual-state / transformation / complex presentation studies:** **Iggy & Scorch** and **Revenant** are useful when the lesson is about representing multiple simultaneous visual elements while keeping the underlying state explicit.
+- **Do not treat asset availability as a license grant.** The research notes that released Paragon assets have specific Unreal Engine 4 licensing history and that physical/commercial tarot artwork requires separate consideration. For Paragon-Reborn production, use only assets and references whose current rights and intended use have been cleared.
+
+For **tarot-specific work**, follow the exact primary-character assignments in `docs/paragon-tarot-research.md` rather than selecting a character because its visual effect seems convenient. The Major Arcana assignments include Dekker/Fool, Howitzer/Magician, Gadget/High Priestess, Lt. Belica/Empress, Murdock/Emperor, Feng Mao/Hierophant, Muriel & Kallari/Lovers, Grux/Chariot, Riktor/Justice, Rampage/Hermit, TwinBlast/Wheel of Fortune, Greystone/Strength, Gideon/Hanged Man, Countess/Death, Khaimera/Temperance, Sevarog/Devil, Serath/Tower, Narbash/Star, Shinbi/Moon, Steel/Sun, Yin/Judgement, and The Fey/World. Minor Arcana primary assignments should likewise follow the research checklist.
+
+**Selection rule:** pick the character because the documented Paragon-Reborn brief assigns that character to the intended card/state; pick the visual technique because it expresses the state; never reverse that chain and invent a gameplay state to justify a favorite character or effect.
+
+**Deliverable expectation:** a Track C submission intended for Paragon-Reborn should document (1) the authoritative input state, (2) the presentation parameters/states it consumes, (3) the chosen Paragon character and why it fits the existing brief, (4) the visual/audio expression, and (5) the accessibility behavior, including reduced-motion and non-color-only cues where applicable.
+
 ---
 
 ## Where This Leads
