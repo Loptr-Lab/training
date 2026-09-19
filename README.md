@@ -235,6 +235,10 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 | [Epic React](https://epicreact.dev) | A, C | UI layer — relevant when moving beyond vanilla JS |
 | [Epic Product Engineer](https://epicproduct.engineer) | B | Judgment and constraints; aligns with the studio's "People over Profits" design philosophy |
 
+### Ink narrative continuity
+
+Track E now includes [`docs/NARRATIVE_CONTINUITY_INK.md`](./docs/NARRATIVE_CONTINUITY_INK.md), an exercise in changing an Ink scene graph or state structure without breaking the player's narrative continuity. **Battle the Beast** is used only as a historical case study for the documented prose → Ink → interactive-narrative transition; current training implementations should use original or appropriately cleared material.
+
 ## Legacy project validation
 
 The training program now includes a cross-track module for bringing older projects forward without confusing inherited material, technical reuse, provenance, rights, telemetry, or production acceptance. Paragon ReBorn / Return to the Void is the reference game-development sandbox for this workflow. See [`docs/LEGACY_PROJECT_VALIDATION.md`](./docs/LEGACY_PROJECT_VALIDATION.md).
