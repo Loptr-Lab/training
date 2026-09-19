@@ -154,7 +154,21 @@ Putting it together into a coherent, testable engine implementing both required 
 
 Game economy modeling, quantitative balance analysis, structured playtesting methodology. Not exercised directly in this repo — see the engine repo's `docs/design/GDD.md` for the real economic systems.
 
-### Track D: Narrative Interface / Announcer Systems (~3–4 weeks)\n\nDevelop a recurring narrative interface such as PIXIE as an announcer: downstream of authoritative state, accessible across channels, and portable between experimental and production-facing contexts. The track covers event contracts, voice design, accessibility, narrative presentation, and cross-repository handoff.\n\nSee [`docs/PIXIE_ANNOUNCER_TRACK.md`](./docs/PIXIE_ANNOUNCER_TRACK.md). The proposed corrupted Keeper treatment is explicitly a noncanonical presentation study until the relevant project governance promotes it.\n\n### Track C: Technical Artist (~2–3 weeks)
+### Track D: Narrative Interface / Announcer Systems (~3–4 weeks)\n\nDevelop a recurring narrative interface such as PIXIE as an announcer: downstream of authoritative state, accessible across channels, and portable between experimental and production-facing contexts. The track covers event contracts, voice design, accessibility, narrative presentation, and cross-repository handoff.\n\nSee [`docs/PIXIE_ANNOUNCER_TRACK.md`](./docs/PIXIE_ANNOUNCER_TRACK.md). The proposed corrupted Keeper treatment is explicitly a noncanonical presentation study until the relevant project governance promotes it.\n\n### Track E: Technical Writer / Character Development (~3–4 weeks)
+
+Follow characters through the development path from concept to playable game-grid implementation. This track combines technical documentation, play-test observation, milestone records, character lore, playability-card evidence, and production handoff.
+
+The matching model pairs writers with game-development trainees according to their current milestone rather than treating writing as a separate downstream task.
+
+**Core path:** Concept → Prototype → Functional Character → Game-Grid Play → Playability Card → Graduation → Production Handoff.
+
+A key graduation principle is explicit:
+
+> **If the designer doesn't play the character, the character doesn't go into production.**
+
+See [`docs/TECHNICAL_WRITER_TRACK.md`](./docs/TECHNICAL_WRITER_TRACK.md).
+
+### Track C: Technical Artist (~2–3 weeks)
 
 Shader programming for the engine's signature visual effects (Death's void material, Rebirth's glow), built against real accessibility constraints — see the engine repo's `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` and `docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md`.
 
