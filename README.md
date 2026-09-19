@@ -127,6 +127,7 @@ This exercise is the hands-on centerpiece of **Track A: Prototype Engineer** bel
 
 - Read **[`THE_THRESHOLD.md`](./THE_THRESHOLD.md)** first — the world, its philosophy, and why "restraint over conquest" and "myth is undecoded science" are the two ideas everything else here has to serve
 - Complete **[`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md)** before receiving live-project, community, or production access
+- Complete **[`docs/BENEFITS_SAFE_FOUNDER_PATH.md`](./docs/BENEFITS_SAFE_FOUNDER_PATH.md)** before monetizing work if disability benefits, subsidized housing, Medicaid, student aid, or another means-tested program may classify your activity. The module teaches the Three-Answer Rule, privacy-separated records, authority checks, and current-rule verification—including why a housing provider’s HOTMA implementation status must be confirmed rather than assumed.
 - **GitHub & Git Prerequisite:** If you are new to GitHub workflows, complete the official **[GitHub Skills Tutorial](https://learn.github.com/skills)** to practice branching, commits, and pull requests in a sandbox environment.
 - Study the core game rules (see the engine repo's `RULEBOOK_v0.1`) well enough to explain them without notes
 - Understand the turn/phase loop architecture at a conceptual level
@@ -244,6 +245,7 @@ Finishing this exercise well is a real, gradable signal — see `REVIEWER_SCOREC
 - **Creative Accessibility Path:** [`docs/CREATIVE_ACCESSIBILITY_PATH.md`](./docs/CREATIVE_ACCESSIBILITY_PATH.md)
 - **Advocacy & Connection:** [`docs/ADVOCACY_AND_CONNECTION.md`](./docs/ADVOCACY_AND_CONNECTION.md)
 - **Contributor safety:** [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md) — consent, vetting, staged access, exit terms, and variant review gates
+- **Benefits-safe founder path:** [`docs/BENEFITS_SAFE_FOUNDER_PATH.md`](./docs/BENEFITS_SAFE_FOUNDER_PATH.md) — evidence-first training for reconciling tax, benefits, housing, and privacy requirements before monetization
 - **Variant governance:** [workflow](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/VARIANT_CREATION_WORKFLOW.md), [template](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/VARIANT_TEMPLATE.md), and [worked example](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/variants/examples/DREAD_PRESSURE.md) in the engine repository
 
 ## Contact
