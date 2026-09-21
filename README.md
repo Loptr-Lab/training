@@ -1,5 +1,23 @@
 # Veiled Dominion — Candidate Exercise & Training Curriculum
 
+
+> [!IMPORTANT]
+> ## Workforce-program status — verified September 21, 2026
+>
+> Loptr Lab is developing this curriculum but is **not currently represented as an approved Minnesota Vocational Rehabilitation Services (VRS) Community Partner, contracted provider, or guaranteed funding source**. Repository access, participation, or completion does not create VRS eligibility, an authorization, employment, wages, benefits protection, certification, or a vendor relationship.
+>
+> A participant may ask their own counselor or workforce agency to review this curriculum in relation to an individualized employment goal. Only the responsible agency can decide whether participation is eligible, necessary, approved, funded, or referred. **Do not begin work described as agency-funded until the participant has written authorization.**
+>
+> Start here:
+>
+> - Minnesota participants: [Minnesota VRS Participant Path](./docs/MINNESOTA_VRS_PARTICIPANT_PATH.md)
+> - Participants in other states: [State Participant and Vendor Path](./docs/STATE_PARTICIPANT_AND_VENDOR_PATH.md)
+> - Loptr Lab readiness work: [Provider Readiness Roadmap](./docs/PROVIDER_READINESS_ROADMAP.md)
+> - Benefits and housing safeguards: [Benefits-Safe Founder Path](./docs/BENEFITS_SAFE_FOUNDER_PATH.md)
+>
+> **Privacy:** Never place disability records, benefit letters, housing records, government identifiers, financial records, releases, or agency case material in a public repository, issue, discussion, or pull request.
+
+
 ## Creative Accessibility Path
 
 The training pathway is broader than the TypeScript exercise. Its graduate outcome is **asset production and creative access**: participants leave with things they made—tools, adaptations, experiments, creative assets, or documented techniques that can be used by an independent artist, shared with a community, or presented to a game developer.
