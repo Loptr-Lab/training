@@ -11,6 +11,8 @@ Choose the work you want to do before comparing equipment. For every track, docu
 | [Design](./design.md) | Research, compose, prototype, review, and export. |
 | [Hybrid creative technology](./hybrid-creative-technology.md) | Combine code, media, interactive tools, and production workflows. |
 
+Optional project exercise: [maker game systems](./maker-game-systems.md) compares a proposed digital pinball pilot with an unbuilt Duet LED chessboard design study. Their project repositories retain their own rules and approval boundaries.
+
 After choosing a track, use the [accessibility guidance](../accessibility/index.md), then build a [technology plan](../technology-planning/index.md).
 
 Do not begin with a brand or device model. A product is justified only after the work and required capabilities are documented.
