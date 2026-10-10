@@ -7,6 +7,7 @@ Choose the work you want to do before comparing equipment. For every track, docu
 | [Software development](./software-development.md) | Edit code, run tests, manage versions, collaborate. |
 | [Game development](./game-development.md) | Build and test interactive systems, assets, and levels. |
 | [Video](./video.md) | Capture, edit, review, caption, render, and deliver. |
+| [AI-assisted cinematic production](./ai-assisted-cinematic-production.md) | Storyboard original scenes, evaluate AI-assisted video/VFX workflows, document rights and provenance, and compare costs. |
 | [Audio](./audio.md) | Record, edit, mix, monitor, export, and archive. |
 | [Design](./design.md) | Research, compose, prototype, review, and export. |
 | [Hybrid creative technology](./hybrid-creative-technology.md) | Combine code, media, interactive tools, and production workflows. |
