@@ -19,9 +19,9 @@ By the end of the exercise, you should be able to:
 Start with the lessons that match your task, not with a requirement to learn every platform.
 
 - [Runway Academy courses and tutorials](https://academy.runwayml.com/courses) — vendor-specific tutorials and courses.
-- [AI for Games](https://academy.runway.com/course/ai-games) — concept art, asset and texture generation, and cinematic cutscenes.
-- [AI for Visual Effects](https://academy.runway.com/course/ai-visual-effects) — previs, set extensions, object replacement, relighting, rotoscoping, and keying.
-- [Building Custom Workflows](https://academy.runway.com/course/custom-workflows) — node-based workflows for multi-step creative tasks.
+- [AI for Games](https://academy.runwayml.com/courses/ai-games) — concept art, asset and texture generation, and cinematic cutscenes.
+- [AI for Visual Effects](https://academy.runwayml.com/course/ai-visual-effects) — previs, set extensions, object replacement, relighting, rotoscoping, and keying.
+- [Building Custom Workflows](https://academy.runwayml.com/course/custom-workflows) — node-based workflows for multi-step creative tasks.
 - [Runway Workflows overview](https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows) — how nodes connect and how reusable workflows can be structured.
 - [Higgsfield Zephyr project](https://higgsfield.ai/@higgsfield.studio/projects/zephyr) and its [OWL-NC-1.0 license](https://higgsfield.ai/licences/owl-nc-1.0) — a case study in why a remix invitation is not unrestricted reuse permission.
 
