@@ -10,7 +10,6 @@ Financial support is optional and sustains infrastructure, maintenance, accessib
 
 [Full mission and participation terms](https://github.com/ibloud/ibloud.github.io/blob/main/MISSION.md).
 
-
 An accessibility-first guide for turning work and creative goals into a technology, training, funding-research, and documentation plan.
 
 ## Start here
@@ -20,6 +19,7 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 | Go to | Use it to |
 | --- | --- |
 | [Career tracks](./docs/tracks/index.md) | Start with the work you want to do. |
+| [AI-assisted cinematic production](./docs/tracks/ai-assisted-cinematic-production.md) | Learn production techniques while comparing workflows, rights, provenance, and costs. |
 | [Accessibility](./docs/accessibility/index.md) | Describe functional barriers without disclosing unnecessary medical information. |
 | [Technology planning](./docs/technology-planning/index.md) | Translate tasks and barriers into minimum, preferred, and alternative configurations. |
 | [Funding research](./docs/funding/README.md) | Research programs by jurisdiction and verify current rules. |
