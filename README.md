@@ -28,6 +28,14 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 | [Worked example](./docs/case-study/README.md) | Follow an anonymized retraining plan from goal through lessons learned. |
 | [Legacy curriculum reference](./LEGACY_TRAINING_MANUAL.md) | Consult preserved predecessor material from the earlier README. |
 
+## Contribute — junior developers and senior architects welcome
+
+**Bring a fix, a reproducible issue, or a scoped proposal.** [Start with the contributor guide](./CONTRIBUTING.md). No invitation, personal email address, or production access is needed to fork, discuss, or submit a pull request through GitHub.
+
+New developers can begin with a broken link, a mobile layout improvement, or an accessibility check. Experienced engineers should provide evidence, expected outcomes, and an implementable correction rather than unproductive criticism. Respectful disagreement, safety concerns, and good-faith bug reports remain welcome even when the reporter cannot supply code.
+
+Open work is voluntary and unpaid; contribution does not imply employment, ownership, publication, or approval. Maintainers review and approve merges. [Report a problem or propose an improvement](https://github.com/Loptr-Lab/training/issues/new/choose).
+
 ## Scope and privacy
 
 This repository provides educational information and preparation tools. It does not determine eligibility, guarantee funding, or replace advice from a qualified professional. Program rules, prices, and eligibility can change; verify current information with the responsible decision-maker.
