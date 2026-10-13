@@ -1,0 +1,38 @@
+name: Scoped improvement
+description: Suggest a small, testable documentation, code, or architecture improvement.
+title: "[Improve] "
+labels: []
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Area to improve
+      placeholder: Career tracks, accessibility, technology planning, or another path
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: User need or technical problem
+      description: What task is affected? Include evidence or a source where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change and acceptance criteria
+      description: What should change, and how would we know it works?
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Risks, accessibility, dependencies, and assumptions
+      description: Distinguish confirmed facts from proposals and unverified items.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public sharing
+      options:
+        - label: No personal identifiers, private evidence, secrets, or unauthorized assets are included.
+          required: true
