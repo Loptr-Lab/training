@@ -42,6 +42,14 @@ Skip the introductory steps if you know the workflow. Please contribute **verifi
 - **Maintainer review is final for this repository.** A PR is not a guarantee of acceptance, deployment, affiliation, or publication. Keep disagreements about the implementation rather than the person.
 - **Respect licenses and rights.** Submit only work you have permission to contribute. Do not add third-party assets, recordings, branding, or private case evidence without documented authorization.
 
+## PIXIE — optional contributor guidance and maintenance
+
+[Visit PIXIE at Break This Build](https://break.loptrlab.com/) for an optional guided introduction to projects and contribution ideas. PIXIE is **not required** for participation: contributors may use this repository's issues and pull requests directly, without providing an email address or creating another account.
+
+If PIXIE's guidance is confusing, inaccessible, outdated, broken, or links to the wrong project, please [open a public issue](https://github.com/Loptr-Lab/training/issues/new/choose) describing the affected page, steps to reproduce, expected behavior, and a proposed improvement. Mark it as a **PIXIE integration or documentation report** in the issue description so maintainers can triage it to the responsible project. This repository can track training-to-PIXIE link defects, but PIXIE's own maintainers and source repository remain responsible for changes to her application; a training issue does not authorize changing PIXIE's production deployment.
+
+PIXIE may recommend public GitHub tasks, but does not grant repository access, assign maintainers, approve pull requests, or represent automatic synchronization with GitHub. Preserve human review, least-privilege access, accessibility, and privacy by default.
+
 ## What makes a useful issue?
 
 Use the issue templates. Summarize the problem, link to the page or file, describe observed versus expected results, give reproduction steps where possible, and propose a measurable fix. Choose a concise issue title. For accessibility issues, identify the affected task rather than assuming a diagnosis.
