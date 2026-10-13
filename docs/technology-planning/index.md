@@ -12,3 +12,7 @@ Use this chain for every recommendation:
 8. **Current costs and quotes** — dated evidence kept outside the architecture.
 
 Classify each requested capability as **essential**, **preferred**, or **optional**. Never make price or brand the reason for a requirement. Use the [technology-plan template](../templates/technology-plan.md) and verify current products and prices with the [technology-research prompt](../prompts/research-technology.md).
+
+## Development environment and equipment
+
+See the [development environment and equipment guide](./development-environment.html) for hardware, software, accessible input, backups, remote workspaces, and specialized game/console development requirements.
