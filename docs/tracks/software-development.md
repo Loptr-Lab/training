@@ -14,3 +14,7 @@ Read and edit code, navigate repositories, run builds and tests, debug, review c
 ## Plan
 
 Document minimum and preferred capability levels; do not name a product until the actual language, framework, test workload, collaboration method, and [accessibility needs](../accessibility/index.md) are known. Individually assess whether local builds, cloud development, or a hybrid workflow is appropriate.
+
+## Development equipment
+
+Use the [development environment and equipment guide](../technology-planning/development-environment.html) to compare local, cloud, and hybrid workflows, accessible peripherals, backup, and minimum versus preferred requirements. Do not assume that one device suits every language, toolchain, or test workload.
