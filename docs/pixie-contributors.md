@@ -13,6 +13,10 @@ Updated 18 October 2026. One workflow across the existing ecosystem; GitHub hold
 5. **Keep coordinated.** Add progress comments with evidence, blockers and the next action. Keep the issue URL. GitHub holds the shared history.
 6. **Resume.** In a later session, choose the same project, select “Resume my checkpoint” and paste the issue URL. PIXIE reads the current public issue and latest comment page. Open the full GitHub discussion for older comments.
 
+## Remember your place on this device
+
+Optionally choose “Remember this checkpoint on this device” in PIXIE. It stores only the public issue URL and project in this browser. “Forget saved link” removes that pointer; the GitHub issue remains. This does not synchronize across devices or sites.
+
 ## What persists
 
 Submitted GitHub issues and comments persist across sessions. Drafts are not saved until submitted. PIXIE does not read private chat history, automatically remember your issue URL, create formal membership, grant repository access or collect email addresses. Keep private material out of public issues. Current open contribution is voluntary and unpaid.
