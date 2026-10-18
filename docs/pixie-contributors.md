@@ -4,6 +4,12 @@ Updated 18 October 2026. One workflow across the existing ecosystem; GitHub hold
 
 [Open PIXIE](https://pixie-project-companion.ibloud-ivxx.chatgpt.site) · [Ecosystem](https://ecosystem.loptrlab.com) · [Training](https://loptr-lab.github.io/training/)
 
+## Why we are testing PIXIE
+
+Loptr Lab’s ecosystem is the testing ground for an open-source multimedia training studio. PIXIE is its contributor companion, helping people join, learn, coordinate work and return with context intact. Contributor testing is the immediate goal; a finished commercial app is not required before testing begins. Pilot evidence should inform a concrete project pitch and a sustainable revenue model consistent with the existing mission, open participation and project licenses.
+
+Read the [owner-confirmed studio direction](https://github.com/ibloud/ibloud.github.io/blob/main/docs/ECOSYSTEM_ARCHITECTURE.md#studio-viability-pilot--owner-confirmed-direction-18-october-2026). This workflow is a pilot of contributor coordination, not evidence that public plugin distribution, studio viability or commercial readiness is complete. Record concrete contributions, learning outcomes, handoffs, repeated explanations and defects. Build the pitch from those findings, with business-model assumptions labeled as hypotheses.
+
 ## Contributor steps
 
 1. **Start.** Open the existing PIXIE companion, choose a project and read its repository’s contribution instructions. Training is the default starting point.

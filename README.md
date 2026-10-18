@@ -13,6 +13,14 @@ Financial support is optional and sustains infrastructure, maintenance, accessib
 
 An accessibility-first guide for turning work and creative goals into a technology, training, funding-research, and documentation plan.
 
+## Why this training exists — confirmed 18 October 2026
+
+Loptr Lab’s ecosystem is the testing ground for an open-source multimedia training studio. PIXIE is its contributor companion, helping people join, learn, coordinate work and return with context intact. Contributor testing is the immediate goal; a finished commercial app is not required before testing begins. Pilot evidence should inform a concrete project pitch and a sustainable revenue model consistent with the existing mission, open participation and project licenses.
+
+The [canonical studio direction](https://github.com/ibloud/ibloud.github.io/blob/main/docs/ECOSYSTEM_ARCHITECTURE.md#studio-viability-pilot--owner-confirmed-direction-18-october-2026) records the pilot questions and continuity rules. Test whether contributors can start useful work, learn through real artifacts, resume with less repeated explanation and help identify viable studio offers. Record observed results and failures; do not treat proposals as validated demand or completed features. Maintainers and AI assistants should read that direction before changing scope.
+
+[Use PIXIE to contribute and resume](./docs/pixie-contributors.html).
+
 ## Start here
 
 The [guide homepage](./docs/index.html) is the canonical orientation page. It asks what you need to do next and routes you through one user journey.
