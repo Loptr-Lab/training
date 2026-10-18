@@ -44,6 +44,8 @@ Skip the introductory steps if you know the workflow. Please contribute **verifi
 
 ## PIXIE — optional contributor guidance and maintenance
 
+[Join, contribute and resume with PIXIE](https://loptr-lab.github.io/training/pixie-contributors.html). The existing companion prepares reviewed GitHub checkpoint drafts and reads submitted issues to resume shared work. GitHub remains the coordination record; PIXIE does not post automatically, enroll members, or grant access.
+
 [Visit PIXIE at Break This Build](https://break.loptrlab.com/) for an optional guided introduction to projects and contribution ideas. PIXIE is **not required** for participation: contributors may use this repository's issues and pull requests directly, without providing an email address or creating another account.
 
 If PIXIE's guidance is confusing, inaccessible, outdated, broken, or links to the wrong project, please [open a public issue](https://github.com/Loptr-Lab/training/issues/new/choose) describing the affected page, steps to reproduce, expected behavior, and a proposed improvement. Mark it as a **PIXIE integration or documentation report** in the issue description so maintainers can triage it to the responsible project. This repository can track training-to-PIXIE link defects, but PIXIE's own maintainers and source repository remain responsible for changes to her application; a training issue does not authorize changing PIXIE's production deployment.
