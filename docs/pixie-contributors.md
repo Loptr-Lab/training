@@ -4,6 +4,10 @@ Updated 18 October 2026. One workflow across the existing ecosystem; GitHub hold
 
 [Open PIXIE](https://pixie-project-companion.ibloud-ivxx.chatgpt.site) · [Ecosystem](https://ecosystem.loptrlab.com) · [Training](https://loptr-lab.github.io/training/)
 
+## Optional atmosphere identity
+
+[Sign in with Bluesky or another atmosphere app](https://pixie-project-companion.ibloud-ivxx.chatgpt.site/#account) through the existing Companion. Its public account picker accepts custom handles and sends authorization to the account’s provider. Learning, browsing and GitHub contributions remain available without this sign-in. Identity sign-in does not enroll you, publish a record or synchronize progress.
+
 ## Why we are testing PIXIE
 
 Loptr Lab’s ecosystem is the testing ground for an open-source multimedia training studio. PIXIE is its contributor companion, helping people join, learn, coordinate work and return with context intact. Contributor testing is the immediate goal; a finished commercial app is not required before testing begins. Pilot evidence should inform a concrete project pitch and a sustainable revenue model consistent with the existing mission, open participation and project licenses.
@@ -39,7 +43,7 @@ Submitted GitHub issues and comments persist across sessions. Drafts are not sav
 
 ## Current boundary
 
-The companion website is public. ChatGPT plugin distribution remains private until the public release process completes. GitHub/AT Protocol membership signup and private participant storage are not implemented by this checkpoint workflow. This is shared project coordination using GitHub, not a claim of an integrated AetherOS system. Reported issue text is not accepted story canon or verified completion.
+The companion website is public. ChatGPT plugin distribution remains private until the public release process completes. Optional identity sign-in is offered through the existing Companion. Membership signup and private participant storage are not implemented by this checkpoint workflow. This is shared project coordination using GitHub, not a claim of an integrated AetherOS system. Reported issue text is not accepted story canon or verified completion.
 
 ## Hosting and domain
 
