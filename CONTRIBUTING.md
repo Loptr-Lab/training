@@ -44,6 +44,14 @@ Skip the introductory steps if you know the workflow. Please contribute **verifi
 
 ## PIXIE — optional contributor guidance and maintenance
 
+**Current focus: finish the existing Companion and support assigned work; scope
+expansion is frozen.** Application source is
+[`Loptr-Lab/pixie-ecosystem-guide`, `apps/companion`, PR #5](https://github.com/Loptr-Lab/pixie-ecosystem-guide/pull/5).
+Use the [current contributor focus](docs/pixie-contributors.md#current-focus-and-assigned-work)
+and [canonical release status](https://github.com/Loptr-Lab/pixie-ecosystem-guide/blob/main/COMPANION-HOSTING-STATUS.md)
+for responsibility and blocker details. Check existing assignments before starting;
+reuse the assigned issue and repository rather than opening a competing workflow.
+
 [Join, contribute and resume with PIXIE](https://loptr-lab.github.io/training/pixie-contributors.html). The existing companion prepares reviewed GitHub checkpoint drafts and reads submitted issues to resume shared work. GitHub remains the coordination record; PIXIE does not post automatically, enroll members, or grant access.
 
 [Visit PIXIE at Break This Build](https://break.loptrlab.com/) for an optional guided introduction to projects and contribution ideas. PIXIE is **not required** for participation: contributors may use this repository's issues and pull requests directly, without providing an email address or creating another account.
