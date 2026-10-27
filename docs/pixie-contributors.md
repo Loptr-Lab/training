@@ -1,6 +1,6 @@
 # PIXIE: join, contribute and resume
 
-Updated 18 October 2026. One workflow across the existing ecosystem; GitHub holds shared contribution records.
+Updated 27 October 2026. One workflow across the existing ecosystem; GitHub holds shared contribution records.
 
 [Open PIXIE](https://pixie-project-companion.ibloud-ivxx.chatgpt.site) · [Ecosystem](https://ecosystem.loptrlab.com) · [Training](https://loptr-lab.github.io/training/)
 
@@ -27,15 +27,36 @@ Optionally choose “Remember this checkpoint on this device” in PIXIE. It sto
 
 Submitted GitHub issues and comments persist across sessions. Drafts are not saved until submitted. PIXIE does not read private chat history, automatically remember your issue URL, create formal membership, grant repository access or collect email addresses. Keep private material out of public issues. Current open contribution is voluntary and unpaid.
 
-## Build and release protocol
+## Current source and release boundary
 
-1. Edit the existing companion source; preserve its Site and App identities. Keep runtime code and browser instructions aligned.
-2. Run the companion tests, TypeScript checks and production build. Verify a checkpoint draft does not post, another session can read a submitted issue, and wrong-project URLs are rejected.
-3. Commit/push exact source, save and deploy that source through the existing Site, then verify public HTTP/API behavior. Record source commit, saved version and deployment result. GitHub source review and Sites deployment are distinct operations.
-4. Keep ecosystem and training links pointing to this same companion. A domain change is not required. Do not create another map or replacement service.
-5. To distribute the ChatGPT plugin publicly, verify the supported submission path for the existing Sites App. Prepare the verified publisher identity, website/support/privacy/terms URLs, actual icons, five positive and three negative review cases, a real demo recording, country targeting, commerce declaration and release notes.
-6. Prepare the public submission separately from the private original. Author uploads omit private App bindings and use verified MCP configuration; preserve canonical App ownership and Portal-generated bindings. Do not create a duplicate private plugin.
-7. Configure and test the exact saved submission. The verified publisher completes legal attestations and required scans. Submit for review, publish the approved version, and verify installation and tools with a separate permitted account. A private update, public website or uploaded draft is not a public plugin release.
+**One Companion. Specialized projects. No duplicate workflows.** The authoritative
+application source is `Loptr-Lab/pixie-ecosystem-guide`, `apps/companion/`, under
+review in [PR #5](https://github.com/Loptr-Lab/pixie-ecosystem-guide/pull/5).
+Training owns onboarding; it does not host or duplicate the Companion.
+
+Follow the [current development priorities and project responsibilities](https://github.com/Loptr-Lab/pixie-ecosystem-guide#current-development-priorities--27-october-2026)
+and [runtime acceptance evidence](https://github.com/Loptr-Lab/pixie-ecosystem-guide/blob/main/HOSTING-AND-DNS.md#companion-runtime-status--27-october-2026).
+Finish existing deployment and accessibility acceptance before expanding features.
+The existing Site/plugin remains in place; a static preview does not host MCP.
+Source PRs do not authorize merging, deploying, Tangled synchronization, domain
+changes or plugin replacement. Keep implementation/build commands in the owning
+Companion repository rather than repeating them here.
+
+## Respect the existing assignment
+
+[Holdings issue #18](https://github.com/ibloud/pixie-holdings/issues/18) is assigned
+to `sweetytweety2406-wq`. The first deliverable is a small draft PR to Holdings:
+a proposed historical Drive archive-mapper schema, one synthetic example and
+brief workflow instructions. The issue and maintainer comment define the fields
+and scope. No private Drive access, live integration, migration or duplicate mapper
+work is authorized. Assignment expansion requires maintainer agreement.
+
+Keep progress and questions in that existing issue and the eventual PR. Reviewers
+should check required-field coverage, explainable canonical/duplicate/retention
+decisions, synthetic-only examples and usable instructions. Identify the affected
+field or step, its impact and a concrete correction; do not replace the
+contributor's draft with a parallel implementation. No draft PR was open for this
+assignment when checked on 27 October 2026.
 
 ## Current boundary
 
