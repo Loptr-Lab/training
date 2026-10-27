@@ -10,6 +10,22 @@ Loptr Lab’s ecosystem is the testing ground for an open-source multimedia trai
 
 Read the [owner-confirmed studio direction](https://github.com/ibloud/ibloud.github.io/blob/main/docs/ECOSYSTEM_ARCHITECTURE.md#studio-viability-pilot--owner-confirmed-direction-18-october-2026). This workflow is a pilot of contributor coordination, not evidence that public plugin distribution, studio viability or commercial readiness is complete. Record concrete contributions, learning outcomes, handoffs, repeated explanations and defects. Build the pitch from those findings, with business-model assumptions labeled as hypotheses.
 
+## PIXIE private-workspace acceptance — proposed contributor test
+
+**Status:** This procedure applies only when maintainers announce a reviewed Railway release candidate. It does not establish that multi-user production is live. Maintainers must first verify an encrypted and recoverable volume backup, configure server sessions, and deploy the pinned reviewed commit. Do not confuse the original Site or static preview with Railway.
+
+**Volunteer tester steps — no production credentials required:**
+
+1. Open the maintainer-announced PIXIE Railway acceptance URL. Sign in with your own supported Atmosphere account. No email, invitation, shared password, or separate server connection key.
+2. Open My projects. Create a project using fictional nonsensitive information. Save, refresh, and reopen it. Verify the interface never falsely reports success.
+3. Edit a task and save. Export your own synthetic project and, if appropriate, import that same synthetic backup. Never upload real correspondence, case files or other sensitive records.
+4. Sign out and confirm the private project disappears. Sign in again and verify the project persists. With permission, repeat using a second account in a separate browser profile; never share account credentials.
+5. Check keyboard focus, VoiceOver when available, font size, zoom/reflow, and light/dark theme contrast. State what was not tested.
+6. Record expected versus actual, time, device/browser, route and safe reproduction steps in the existing Training issues, labeled PIXIE integration or documentation report. Do not include cookies, secrets, private content, screenshots showing credentials or downloaded backups.
+
+**Maintainer-only storage and release prerequisite:** Railway's existing volume does not currently have a verified dashboard backup. Before deployment, use a documented authenticated Railway file-transfer method from an existing authorized environment; securely encrypt an archive of the required private files, verify checksums and an isolated restore, and place the ciphertext in an owner-controlled private destination (Google Drive is an option) with the decryption key elsewhere. Never ask contributors to retrieve the production volume. No backup means no rollout. Preserve the old Site and volume throughout acceptance.
+
+**Isolation and disclosure:** Release reviewers must use two synthetic accounts to verify that account B cannot list, read, update, delete, export, import into, or send account A's records to a model, even when given A's project ID. Never test with real participants' records. Security findings must not disclose a private exploit or user data in a public issue.
 ## Contributor steps
 
 1. **Start.** Open the existing PIXIE companion, choose a project and read its repository’s contribution instructions. Training is the default starting point.
