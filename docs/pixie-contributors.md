@@ -35,6 +35,21 @@ Read the [owner-confirmed studio direction](https://github.com/ibloud/ibloud.git
 5. **Keep coordinated.** Add progress comments with evidence, blockers and the next action. Keep the issue URL. GitHub holds the shared history.
 6. **Resume.** In a later session, choose the same project, select “Resume my checkpoint” and paste the issue URL. PIXIE reads the current public issue and latest comment page. Open the full GitHub discussion for older comments.
 
+
+## From work to portfolio evidence
+
+[Chris Tran’s career advice and optional coaching](https://made-sick.org/directory.html#resource-chris-tran-career) can help gaming professionals explain their work and prepare relevant professional conversations. The Made-Sick card holds the source, attribution and free/commercial distinctions.
+
+- **Starting without project experience?** Browse the [current Training issues](https://github.com/Loptr-Lab/training/issues), read [how to contribute](https://github.com/Loptr-Lab/training/blob/main/CONTRIBUTING.md), and choose one bounded task suited to your skills and interests. Labels and available work can change. Check existing assignments and agree scope with the maintainer; a listing is not acceptance.
+- **Returning to current work?** Keep the same project and issue. Use “Resume my checkpoint” as described above, or open that issue directly. Add evidence and your next action there; do not create a second tracker.
+- **Already have work to present?** Use an existing artifact you may share. Skip beginner tasks and go straight to explaining it and choosing a relevant next step.
+
+1. Follow the chosen project’s contribution and review process. Capture the **problem, your own contribution, artifact link, verification and outcome** in its existing checkpoint or progress comment. Mark pending review, failed checks and unknown outcomes honestly.
+2. Write a short portfolio explanation: “The problem was __. I contributed __. The artifact is __. I checked __. The observed outcome was __; __ remains unverified.” Credit collaborators, retain licensing and confirm permitted portfolio use. Distinguish an exercise, voluntary contribution, paid work and employment; never invent metrics or imply maintainer acceptance.
+3. Choose one next action: another contribution, sharing permitted work, an application, a professional conversation or [exploring Chris’s independent coaching](https://made-sick.org/directory.html#resource-chris-tran-career). Coaching is optional; free training and contribution remain available independently. Networking and referrals are options alongside applications, with no interview, job, payment or portfolio-acceptance promise.
+
+**With PIXIE, if useful:** use your current task and public-safe evidence to draft a two-sentence contribution explanation and one relevant question or introduction. Review it yourself before sharing. Keep correspondence, employment details and sensitive material private; use only evidence you have permission to disclose. This is a manual prompt within the existing guidance, not automatic contact, sharing or synchronization.
+
 ## Remember your place on this device
 
 Optionally choose “Remember this checkpoint on this device” in PIXIE. It stores only the public issue URL and project in this browser. “Forget saved link” removes that pointer; the GitHub issue remains. This does not synchronize across devices or sites.
