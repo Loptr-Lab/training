@@ -33,6 +33,40 @@ Skip the introductory steps if you know the workflow. Please contribute **verifi
 
 **Not useful:** “This site is terrible. Rewrite everything.”
 
+## Find the code before changing it
+
+Choose the actual project repository; the Training exercise is optional, including for experienced professionals. You do not need to complete beginner lessons to review a project.
+
+| Project | First source to inspect | Run and verify | Boundary |
+| --- | --- | --- | --- |
+| [Violet’s Revenge](https://github.com/ibloud/violets-revenge) | [`docs/TRAINEE-ONBOARDING.md`](https://github.com/ibloud/violets-revenge/blob/main/docs/TRAINEE-ONBOARDING.md), then the `/demo/` entry and `demo/engine/rules.js` | Static server; `node --test demo/test/*.test.js` | The precinct is a proposal prototype, not approved canon or full online multiplayer. |
+| [Veiled Dominion](https://github.com/Loptr-Lab/veiled-dominion-engine) | [`docs/CANON_AND_CONTINUITY.md`](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/CANON_AND_CONTINUITY.md) and [`docs/DEVELOPMENT_ENVIRONMENT.md`](https://github.com/Loptr-Lab/veiled-dominion-engine/blob/main/docs/DEVELOPMENT_ENVIRONMENT.md) | Node exercise checks; inspect the documented baseline before attributing failures to your work | Four-player design, partial C# scaffolds and the 6×6 exercise are different artifacts. No disputed rule is resolved by this orientation. |
+| [Battle the Beast](https://github.com/ibloud/battle-the-beast) | README project map, `story/battle-the-beast.ink`, `scripts/compile-story.js`, `src/main.js` | `npm install`, `npm run dev`, `npm run build` | Historical fan-work references stay in the archive; only documented design principles transfer. |
+
+For one observable behavior, record the input, entry point, function, state change, output and verification in the relevant issue. Ask, “I followed this input to this function; is this the intended implementation?” A partial trace is a useful question, not a prerequisite for being heard. Confirm the issue is current, unassigned and not already covered by a PR; agree scope and reviewer before implementation. If you stop, leave the source/build, reproduction, findings and next action in that same issue.
+
+### Training’s own exercise baseline
+
+For an optional local exercise, use Node.js 20+ and run from this repository root:
+
+```bash
+npm ci
+npm run typecheck
+npm test -- --runInBand
+```
+
+Read [CANDIDATE.md](CANDIDATE.md), [types.ts](types.ts), and the existing [legacy exercise specification](LEGACY_TRAINING_MANUAL.md) first. `engine.ts` intentionally throws `Not implemented`; in the 7 November 2026 baseline, typecheck passed and all 24 exercise tests failed. The CI workflow explicitly permits this starter state. Green CI therefore does not mean the exercise is implemented. Do not edit mandatory tests to make them pass.
+
+For example, `engine.test.ts` constructs a board and calls `getLegalMoves` in `engine.ts`; the current visible result is a failing assertion caused by the placeholder. Implementing movement is an optional exercise under its scoring contract, not a required first contribution or a completed game. The tracked `.devcontainer/devcontainer.json` supports Codespaces; this audit ran local Node, not Codespaces. On an iPad, use GitHub source/issue review and published browser examples; a local terminal is not assumed.
+
+### Experienced review and independent evaluation
+
+Go directly to the project architecture, tests and unresolved decisions above. Code, production, QA, narrative and accessibility reviews can have bounded scopes; military veteran status does not determine technical skill or availability.
+
+Independent industry evaluation is still needed in addition to maintainer review and this AI-assisted audit. The evaluator must have a verifiable professional role and credits on shipped projects with substantiated profitable outcomes. Credits alone do not establish profitability. Use the [evaluator qualification and evidence requirements](https://ibloud.github.io/collaborate/#independent-evaluation); no qualified evaluator or completed evaluation is asserted here. This requirement applies to the independent evaluation role, not ordinary contributors. Agree paid or voluntary terms in writing before work.
+
+See the [dated orientation audit](docs/CONTRIBUTOR_ORIENTATION_AUDIT.md) for executed journeys, exact failures and issue-readiness decisions.
+
 ## The contribution contract
 
 - **Privacy by default.** Use public GitHub issues and pull requests; don't collect personal email, health details, case files, benefits identifiers, passwords, private correspondence, or credentials. Never paste secrets into issues or logs.
