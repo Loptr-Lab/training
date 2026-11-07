@@ -10,4 +10,38 @@
 <li>Versioning and provenance that distinguish source, generated, edited, approved, and published material</li>
 </ul>
 <h3>Plan</h3>
-<p>Map the workflow stage by stage. Do not simply combine the preferred specifications from every other track. Identify the real concurrency, bottlenecks, handoffs, and accessible fallback paths, then test a representative end-to-end project.</p></article><nav class="actions" aria-label="Guide navigation"><a class="button" href="./index.html">Section overview</a><a class="button" href="../technology-planning/development-environment.html">Development equipment</a><a class="button" href="https://github.com/Loptr-Lab/training/blob/main/docs/tracks/hybrid-creative-technology.md">Edit source on GitHub</a></nav></main><footer><p>Educational information. Check current rules and requirements. Do not publish private records.</p></footer></body></html>
+<p>Map the workflow stage by stage. Do not simply combine the preferred specifications from every other track. Identify the real concurrency, bottlenecks, handoffs, and accessible fallback paths, then test a representative end-to-end project.</p></article>
+<section class="panel guide" id="at-toolbox" aria-labelledby="at-toolbox-title">
+  <p class="eyebrow">Optional resource · AT Protocol / Apple Shortcuts / No-Code Automation</p>
+  <h2 id="at-toolbox-title">AT Toolbox — Learn AT Protocol with Apple Shortcuts</h2>
+  <p>Explore AT Protocol identity, public records, and automation through Apple's Shortcuts app. AT Toolbox offers tools for experimenting with the technology behind Bluesky without needing to write code.</p>
+  <p><strong>Level:</strong> Beginner to intermediate. <strong>Recommended for:</strong> learners interested in open networks, digital identity, account portability, and no-code automation.</p>
+  <p>The <a href="https://atmosphereaccount.com/apps/at-toolbox">ATStore listing</a> names <code>@attoolbox.baileytownsend.dev</code>. It advertises handle-to-DID lookup, record and profile changes, Bluesky posting, exports of account records and media, and custom Shortcuts workflows. These are provider claims, not independently tested capabilities or security guarantees.</p>
+  <p><a href="https://attoolbox.baileytownsend.dev/">Developer overview and privacy information</a> · <a href="https://apps.apple.com/us/app/at-toolbox/id6747999688">Apple App Store listing (U.S.)</a></p>
+  <p><strong>Apple devices and cost:</strong> The U.S. App Store page reviewed <time datetime="2026-11-07">7 November 2026</time> lists US$2.99 with in-app purchases, iOS/iPadOS 18.5+, macOS 15.5+ on M1 or later, and visionOS 2.5+. It also marks macOS compatibility as not verified. Availability, price and requirements may vary by region or change; confirm on your device before purchasing. The app's accessibility features are not declared in that listing.</p>
+  <p><strong>Privacy:</strong> The developer says no personal data is collected, describes on-device Keychain credential storage, and notes that AT Protocol actions make network requests and can publish public records. Apple's privacy label is developer-reported and not verified by Apple. These disclosures are not an independent security audit. Do not enter credentials or personal records for this exercise.</p>
+  <p class="notice"><strong>Installation and Shortcut instructions: pending verification.</strong> An account-free, read-only lookup in the current app has not been confirmed. Use the static exercise below; installing or buying AT Toolbox is optional and unnecessary.</p>
+  <p><strong>Third-party resource.</strong> Not developed, operated, or endorsed by Loptr Lab or PIXIE. Review permissions and privacy information before use.</p>
+  <h3 id="at-identity-exercise">Understanding Your AT Protocol Identity</h3>
+  <p><strong>Goal:</strong> explain the difference between a handle and a decentralized identifier (DID). No programming, account, installation or live network lookup is needed.</p>
+  <ol>
+    <li><strong>Handle:</strong> a readable, domain-shaped account name. Interfaces often display it with an <code>@</code>; the underlying handle has no <code>@</code>. A handle can change.</li>
+    <li><strong>DID:</strong> a persistent account identifier beginning with <code>did:</code>. It identifies an account, not a verified real-world person.</li>
+    <li><strong>Read the fictional lookup:</strong> input handle <code>example.test</code> → output DID <code>did:plc:example123</code>. Think of this as reading a prepared lookup result, not executing a Shortcut. Both values are instructional placeholders, not resolvable accounts; the DID is not a valid production identifier.</li>
+    <li><strong>Name the two values:</strong> which is the handle, and which is the fictional DID? Explain what you learned from the mapping.</li>
+    <li><strong>Check the limit:</strong> successful resolution does not independently verify someone's real-world identity. In real protocol validation, the current DID document must also link back to the handle; this static example does not perform that check.</li>
+  </ol>
+  <p>For the underlying rules, see the official <a href="https://atproto.com/specs/handle">handle specification</a> and <a href="https://atproto.com/specs/did">DID specification</a>. A stable DID can help separate account identity from a changeable handle or hosting location; portability depends on the DID method and supported migration procedure. No account is moved or backed up by this lesson.</p>
+  <h3>Check your understanding</h3>
+  <p>In the fictional result above, identify the handle and DID. Does the lookup alone establish the account holder's real-world identity?</p>
+  <details class="answer-key">
+    <summary>Reveal the answer and explanation</summary>
+    <p><strong>Handle:</strong> <code>example.test</code>. <strong>Fictional DID:</strong> <code>did:plc:example123</code>. <strong>No:</strong> the mapping links account identifiers; it does not prove a person's real-world identity.</p>
+    <p><strong>Self-check:</strong> you can name each identifier and explain this limitation. If you reversed them, remember that the DID begins with <code>did:</code>. Re-read and try again at your own pace.</p>
+  </details>
+  <h3>Keep optional learning evidence with PIXIE</h3>
+  <p>AT Toolbox helps people explore AT Protocol operations and build shortcuts. PIXIE helps contributors learn, document project work, and retain context across sessions. AT Toolbox is a complementary educational resource; no PIXIE integration is implemented here.</p>
+  <p>Write a short fictional practice artifact: the placeholder handle and DID, how they differ, your synthetic lookup result, one account-portability observation, and one limitation or uncertainty. Public records may be copied by others, so keep real personal records and credentials out of the artifact.</p>
+  <p>Use your existing <a href="../pixie-contributors.html#work-to-evidence">PIXIE contributor checkpoint and portfolio-evidence workflow</a> if you choose to share it. Review public visibility and attribution before adding it to your existing GitHub issue. There is no new learner profile, progress store or automatic posting.</p>
+</section>
+<nav class="actions" aria-label="Guide navigation"><a class="button" href="./index.html">Section overview</a><a class="button" href="../technology-planning/development-environment.html">Development equipment</a><a class="button" href="https://github.com/Loptr-Lab/training/blob/main/docs/tracks/hybrid-creative-technology.md">Edit source on GitHub</a></nav></main><footer><p>Educational information. Check current rules and requirements. Do not publish private records.</p></footer></body></html>
