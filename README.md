@@ -31,6 +31,7 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 | [Accessibility](./docs/accessibility/index.md) | Describe functional barriers without disclosing unnecessary medical information. |
 | [Technology planning](./docs/technology-planning/index.md) | Translate tasks and barriers into minimum, preferred, and alternative configurations. |
 | [Funding research](./docs/funding/README.md) | Research programs by jurisdiction and verify current rules. |
+| [AI literacy and rubric writing](./docs/ai-literacy/index.html) | Learn to question and evaluate fictional AI responses; no coding or account required. |
 | [MCP prompt library](./docs/prompts/README.md) | Use AI research while preserving human judgment and source verification. |
 | [Preparation templates](./docs/templates/README.md) | Prepare a needs statement, quotes, questions, and an approval packet. |
 | [Worked example](./docs/case-study/README.md) | Follow an anonymized retraining plan from goal through lessons learned. |

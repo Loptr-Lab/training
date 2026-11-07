@@ -18,6 +18,8 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npm run typecheck
+      - name: Validate AI literacy lesson and reviewed data
+        run: node scripts/validate-ai-literacy.cjs
       - name: Verify tests or expected starter state
         shell: bash
         run: |
