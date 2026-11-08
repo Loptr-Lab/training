@@ -49,3 +49,7 @@ Playwright/axe were available or installed only in the review workspace, not add
 - 1,024 generated scenario variants (512 seeds × two attempts): PASS. Independently recomputed synthetic prices, meal costs, shuttle allocation, per-person/party totals, printed-response comparisons and signed scoring. Verified study facts remain unchanged on the second attempt while all three response outcomes change; positive, negative and zero scores occur.
 - Browser assessment paths: first-attempt success; first failure with scenario guide and Cornell link; second-attempt success; two failures with observed number-checking, rule-checking or arithmetic routes; two failures with no demonstrated strength and an interest-based route. No third assessment attempt offered. Both attempts appear in the downloaded record. Existing eight-step quiz/retry/reset checks still pass.
 - No correct-answer feedback is revealed during a final assessment attempt; the completed attempt provides evidence and study. Local record is learner-produced, not independently verified. Reload starts a new session rather than enforcing a permanent learner failure count.
+
+## Creative Filing review candidate (2026-11-08 UTC)
+
+The local Library and rubric/capstone persistence candidate has its own [implementation evidence and RT/NEG matrix](CREATIVE-FILING-VALIDATION.md). Existing lesson/grading behavior and Markdown exports remain covered by the original checks above. Physical iPad/VoiceOver/Files acceptance is still NOT RUN; this addition is not production approval.

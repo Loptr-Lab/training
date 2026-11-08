@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:filing": "node scripts/test-creative-filing.mjs",
+    "test:filing:browser": "node scripts/test-creative-filing-browser.cjs"
   },
   "engines": {
     "node": ">=20"

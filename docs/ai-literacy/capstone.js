@@ -1,4 +1,4 @@
-/* Fresh, reproducible fictional practice; no AI service, persistence or network. */
+/* Fresh, reproducible fictional practice; no AI service or network. Creative Filing observes local changes. */
 (function () {
   'use strict';
   function scenario(seed, variant = 0) {
@@ -175,5 +175,17 @@
     const link=document.createElement('a');link.href=url;link.download='synthetic-classroom-'+exercise.id+'.md';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   });
   document.getElementById('capstone-new').addEventListener('click',()=>{fresh();document.getElementById('capstone-id').focus();});
+  window.trainingCapstone={
+    snapshot:()=>{const attempts=rounds.map(r=>({round:r.round,exercise:r.exercise,answers:r.answers.map(({step,answer,correct})=>({step,answer,correct})),...(r.studyGuide?{studyGuide:r.studyGuide}:{}),...(r.nextPath?{nextPath:r.nextPath}:{})}));if(!attempts.some(a=>a.round===round))attempts.push({round,exercise,answers:history.filter(a=>a.round===round).map(({step,answer,correct})=>({step,answer,correct}))});return {seed,scenarioId:exercise.id,attempts,completed};},
+    restore:content=>{
+      seed=content.seed;const last=content.attempts.at(-1);round=last.round;exercise=last.exercise;
+      history=content.attempts.flatMap(a=>a.answers.map(h=>({...h,round:a.round})));
+      rounds=content.attempts.filter(a=>a.answers.length===4).map(a=>({...a,correct:a.answers.filter(h=>h.correct).length,passed:a.answers.every(h=>h.correct)}));
+      stage=last.answers.length;completed=content.status==='complete';retry.hidden=true;
+      document.getElementById('capstone-results').replaceChildren();renderScenario();
+      if(stage===4){rounds=rounds.filter(a=>a.round!==round);finish();}else renderQuestion();
+      document.getElementById('capstone-new').disabled=history.length>0;
+    }
+  };
   fresh();root.hidden=false;
 })();

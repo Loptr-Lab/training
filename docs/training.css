@@ -51,3 +51,10 @@ button:disabled{cursor:default;border-style:dashed}
 .feedback{margin-block:1rem}.answer-key{margin-top:1rem}.answer-key summary{cursor:pointer;color:var(--the-light);padding-block:.75rem;min-height:3rem}
 [hidden]{display:none!important}
 select{max-width:100%}
+/* Creative Filing reuses shared reading controls and palette. */
+input[type=search],input[type=text],input:not([type]){display:block;width:100%;min-height:3rem;padding:.65rem;margin-block:.5rem 1rem;background:var(--void);color:var(--text-primary);border:1px solid var(--line);border-radius:.5rem}
+.filing-record{border-block-start:1px solid var(--line);padding-block:1.5rem}.filing-record h3 button{text-align:start;overflow-wrap:anywhere;max-width:100%}.filing-record details>button,.filing-record details>.button{margin:.5rem .5rem .5rem 0}
+#label-management details>summary,.filing-record summary{min-height:3rem;padding-block:.6rem;cursor:pointer}dialog{background:var(--surface);color:var(--text-primary);border:2px solid var(--line);border-radius:.75rem;padding:1.5rem;width:min(46rem,calc(100% - 2rem));max-height:90vh;overflow:auto}dialog::backdrop{background:#000a}dialog label{display:block;margin-block:1rem}dialog select{display:block;max-width:100%;width:100%}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}.filing-record .choice{min-height:3rem}
+.display-controls>label{min-width:0;width:min(100%,24rem)}.display-controls select{min-width:0;max-width:100%;width:100%}
+.filing-library input,.filing-library button,.filing-library select{max-width:100%;min-width:0;overflow-wrap:anywhere}.filing-library input[type=file]{width:100%;white-space:normal}.filing-library fieldset{min-inline-size:0}#label-views button{text-align:start}
+.filing-library input[type=file]{min-height:3rem}.filing-library input[type=file]::file-selector-button{font:inherit;min-height:3rem;max-width:100%;background:var(--surface);color:var(--text-primary);border:1px solid var(--line);border-radius:.5rem;padding:.5rem}

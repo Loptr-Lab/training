@@ -1,4 +1,4 @@
-/* Deterministic local practice. No model calls, network, or saved learner records. */
+/* Deterministic local practice. No model calls or network. Creative Filing observes local changes. */
 (() => {
 'use strict';
 const questions = [
@@ -140,6 +140,21 @@ document.getElementById('reset-writer').addEventListener('click', resetDrafts);
 const resetAllDrafts = document.createElement('button'); resetAllDrafts.type = 'button';
 resetAllDrafts.textContent = 'Reset my drafts'; resetAllDrafts.addEventListener('click', resetDrafts);
 document.getElementById('written-criteria').after(resetAllDrafts);
+window.trainingRubric = {
+ snapshot: () => ({drafts, form:[text.value,weight.value,origin.value,reason.value], feedback:feedback.textContent, reviews, answers:Array.from(document.querySelectorAll('.rubric-question input:checked')).map(i=>({name:i.name,value:i.value})), score:document.getElementById('score-answer').value}),
+ restore: (state, savedContent) => {
+  drafts=state.drafts.slice(0,3);reviews=0;writer.reset();
+  [text.value,weight.value,origin.value,reason.value]=state.form;
+  feedback.textContent=state.feedback||'';
+  const list=document.getElementById('written-criteria');list.replaceChildren();
+  drafts.forEach((d,i)=>{const p=document.createElement('p');p.textContent='Draft '+(i+1)+': '+d.criterion+' ('+d.weight+', '+d.origin+'). Reason: '+d.reason;list.append(p);});
+  if(savedContent)for(const result of savedContent.gradingResults){const p=document.createElement('p');p.textContent='Learner-produced grading: '+result.outcome+'; '+(result.points===null?'ungraded':result.points+' signed points')+'. Evidence: '+result.evidence;list.append(p);}
+  writer.hidden=drafts.length===3;keep.hidden=true;review.disabled=false;
+  document.getElementById('writer-progress').textContent='Criterion '+Math.min(3,drafts.length+1)+' of 3';
+  for(const a of state.answers||[])for(const input of document.querySelectorAll('.rubric-question input'))if(input.name===a.name&&input.value===a.value)input.checked=true;
+  document.getElementById('score-answer').value=state.score||'';
+ }
+};
 document.getElementById('download-drafts').addEventListener('click', () => {
   const sourceExercise = "Synthetic task prompt\nCreate an itinerary for two travelers, Ari and Bo, for Monday 8 June through Wednesday 10 June in fictional year F1. Include one attraction and one lunch each day, use each attraction once, and use only the supplied vendors. Both travelers require nut-free meals. Show each traveler\u2019s total and the party total, including the shared shuttle. Budget: at most 100 credits for the party.\nSynthetic input facts\nGlass Garden: 10 credits per person; closed Monday.\nLantern Hall: 15 credits per person; closed Wednesday.\nCloud Walk: free; unavailable Tuesday (a blackout date).\nMoss Kitchen: nut-free lunch, 5 credits per person; open all three days.\nEmber Caf\u00e9: lunch, 4 credits per person; contains nuts. It cannot meet this task\u2019s meal requirement.\nOne shuttle pass for all three days costs 20 credits for the party. Allocate 10 credits to each traveler.\nNo other costs, taxes, tips, discounts, travel-time constraints or reservations apply. Each attraction and lunch takes place within that day.\nComplete fictional deliverable A\nMonday 8 June: Lantern Hall; lunch at Moss Kitchen.\nTuesday 9 June: Glass Garden; lunch at Moss Kitchen.\nWednesday 10 June: Cloud Walk; lunch at Moss Kitchen.\nAri: 10 + 15 + 0 + (3 \u00d7 5) + 10 = 50 credits.\nBo: 10 + 15 + 0 + (3 \u00d7 5) + 10 = 50 credits.\nParty: 50 + 50 = 100 credits, including the shared 20-credit shuttle.\nAttractions: 25 per person, 50 party. Lunches: 15 per person, 30 party. Shuttle: 10 per person, 20 party. Total: 50 per person, 100 party.";
   const content = '# Synthetic AI rubric practice artifact\n\nExercise only; not certification or accepted project work.\n\n## Synthetic prompt and input facts\n' + sourceExercise + '\n\n## My three criteria\n' + drafts.map((d,i) => (i+1)+'. '+d.criterion+'\nWeight: '+d.weight+'; '+d.origin+'\nReason: '+d.reason+'\nPASS/FAIL on C: [fill in]\nExact evidence: [fill in]\n').join('\n') + '\n## Fictional deliverable\nDeliverable C: Monday Glass Garden; Tuesday Lantern Hall; Wednesday Cloud Walk. Moss Kitchen lunch daily. Printed totals: Ari 50 credits; Bo 50 credits; party 100 credits including the shared 20-credit shuttle. Glass Garden is closed Monday.\n\n## Scoring\nFor each PASS add its signed weight; FAIL adds zero. Total: [calculate]\n\n## One improvement after feedback\nBefore: [fill in]\nAfter: [fill in]\nWhy: [fill in]\n\nReview all placeholders and public visibility before sharing.\n';
