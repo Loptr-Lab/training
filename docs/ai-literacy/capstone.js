@@ -80,7 +80,7 @@
   function fresh() {
     seed=window.crypto.getRandomValues(new Uint32Array(1))[0];
     exercise=scenario(seed);round=1;stage=0;history=[];rounds=[];completed=false;retry.hidden=true;
-    document.getElementById('capstone-progress').textContent='No assessment attempts completed in this page session.';
+    document.getElementById('capstone-progress').textContent='No assessment attempts completed in this practice record.';
     document.getElementById('capstone-results').replaceChildren();renderScenario();
   }
   form.addEventListener('submit',event=>{
@@ -130,7 +130,7 @@
     }
     rounds[rounds.length-1].nextPath={label,href};
     const link=appendText(p,'a',label);link.href=href;p.append(document.createTextNode('. These are learning suggestions, not assessments of abilities the exercise did not test.'));
-    appendText(box,'p','You can return to the lessons or ask for human feedback. The two-attempt record applies to this page session only; download it before leaving if you want to discuss it with PIXIE.');
+    appendText(box,'p','You can return to the lessons or ask for human feedback. The two-attempt record stays in this browser’s Library after the local save commits. Export a backup before relying on it; deliberately share a record only if you choose.');
   }
   function finish() {
     form.hidden=true;

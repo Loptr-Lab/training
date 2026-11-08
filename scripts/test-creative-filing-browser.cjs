@@ -120,6 +120,35 @@ const base = process.env.BASE_URL || "http://127.0.0.1:8765";
   await page.locator("#import-cancel").click();
   assert.deepEqual(await snapshot(), before);
 
+  // A library mutation after preview must stop the import and require a new confirmation.
+  await page
+    .locator("#import-file")
+    .setInputFiles({
+      name: "stale-preview.md",
+      mimeType: "text/markdown",
+      buffer: Buffer.from("# Synthetic concurrent import"),
+    });
+  await page.locator("#import-preview").waitFor({ state: "visible" });
+  await page.evaluate(async () => {
+    const { openStore } = await import("./filing/store.mjs");
+    const store = openStore(),
+      s = await store.read();
+    s.labels.push({ id: crypto.randomUUID(), word: "Concurrent tab label" });
+    await store.commit(s.revision, s);
+  });
+  await page.locator("#import-confirm").click();
+  await page.waitForFunction(() =>
+    document
+      .querySelector("#import-status")
+      .textContent.includes("Library changed since preview"),
+  );
+  assert.equal((await snapshot()).artifacts.length, before.artifacts.length);
+  await page.locator("#import-confirm").click();
+  await page.waitForFunction(() =>
+    document
+      .querySelector("#library-status")
+      .textContent.includes("Import committed"),
+  );
   // Quota failure retains the old durable revision; explicit export and retry recover.
   const editPage = await context.newPage();
   await editPage.goto(base + "/ai-literacy/rubrics.html?artifact=" + id);

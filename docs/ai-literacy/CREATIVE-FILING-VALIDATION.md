@@ -80,7 +80,7 @@ Historical baseline reproduced: `npm test -- --runInBand` has **24/24 starter en
 | NEG-06 | Missing label repair / conflicting word mapping required; validation before commit | VoiceOver repair flow NOT RUN |
 | NEG-07 | Real IDB write abort unchanged; staging/cancel no mutation; retry deduplicates | Actual process interruption NOT RUN |
 | NEG-08 | Empty-store restoration from ZIP; destructive UI requires explicit confirmation | Actual device reset/eviction NOT RUN |
-| NEG-09 | Real stale revision commit rejected; failed working draft preserved | Physical two-tab timeline NOT RUN |
+| NEG-09 | Real stale revision commit rejected; UI import stops and re-previews after concurrent mutation; failed working draft preserved | Physical two-tab timeline NOT RUN |
 | NEG-10 | Traversal, invalid/nonfinite weights, mismatched result, oversized/bomb metadata, invalid UTF-8/binary rejected; inert markup | NOT RUN |
 | NEG-11 | Feature detection, explicit persistence request, no retention guarantee | Private/Home Screen mode acceptance NOT RUN |
 

@@ -10,7 +10,10 @@ let current,
   plan,
   choices = {},
   previewState;
-const announce = (message) => ($("library-status").textContent = message);
+const announce = (message) => {
+  if ($("library-status").textContent !== message)
+    $("library-status").textContent = message;
+};
 $("storage-origin").textContent = location.origin;
 async function load() {
   try {
@@ -115,13 +118,15 @@ function renderResults() {
       .map((a) => a.dataset.id),
   );
   const results = find(current, $("find").value, selected);
-  $("result-count").textContent =
+  const resultCount =
     results.length +
     " result" +
     (results.length === 1 ? "" : "s") +
     (selected
       ? " · " + current.labels.find((l) => l.id === selected)?.word
       : "");
+  if ($("result-count").textContent !== resultCount)
+    $("result-count").textContent = resultCount;
   $("recent").replaceChildren();
   if (!results.length) {
     element(
@@ -155,8 +160,8 @@ function renderResults() {
           if (
             !find(current, $("find").value, selected).some((x) => x.id === a.id)
           ) {
-            announce("Name saved. This work moved out of the current results.");
             $("find").focus();
+            return "Name saved. This work moved out of the current results.";
           } else
             [...$("recent").querySelectorAll("h3 button")]
               .find((b) => b.textContent === name)

@@ -13,7 +13,7 @@ let rubricSnapshot;
 const byKind = new Map(),
   sessions = new Set();
 function state(message, error) {
-  status.textContent = message;
+  if (status.textContent !== message) status.textContent = message;
   failure.hidden =
     message === "Saved on this device" ||
     (message !== "Could not save" && !draft?.error);

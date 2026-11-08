@@ -13,7 +13,12 @@ export function download(data, name, type = "application/zip") {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 60000);
 }
+const editing = new WeakMap();
 export function rename(record, button, save, announce) {
+  if (editing.has(button)) {
+    editing.get(button).focus();
+    return;
+  }
   const form = element("form", "", button.parentElement);
   const label = element("label", "Name", form);
   const input = element("input", "", label, {
@@ -21,6 +26,7 @@ export function rename(record, button, save, announce) {
     required: "",
     maxlength: "160",
   });
+  editing.set(button, input);
   input.value = record.name;
   const done = element("button", "Done", form, { type: "submit" }),
     cancel = element("button", "Cancel", form, { type: "button" });
@@ -28,6 +34,7 @@ export function rename(record, button, save, announce) {
   input.focus();
   input.select();
   const close = () => {
+    editing.delete(button);
     form.remove();
     button.hidden = false;
     button.focus();
@@ -50,9 +57,9 @@ export function rename(record, button, save, announce) {
     input.setCustomValidity("");
     done.disabled = true;
     try {
-      await save(name);
+      const message = await save(name);
       close();
-      announce("Name updated.");
+      announce(message || "Name updated.");
     } catch (e) {
       done.disabled = false;
       announce(e.message);
