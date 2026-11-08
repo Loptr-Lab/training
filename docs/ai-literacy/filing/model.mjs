@@ -65,7 +65,8 @@ export function label(v) {
   shape(v, ["id", "word"], ["color"]);
   id(v.id);
   string(v.word, 40, 1);
-  if (v.word !== v.word.trim()) fail("Label must be trimmed.");
+  if (v.word !== v.word.trim() || /\p{Cc}/u.test(v.word))
+    fail("Label must be trimmed.");
   if (v.color !== undefined && !/^#[0-9a-f]{6}$/i.test(v.color))
     fail("Invalid label color.");
   return v;
@@ -433,7 +434,7 @@ export const safeName = (name) =>
   [
     ...name
       .normalize("NFC")
-      .replace(/[\x00-\x1f\x7f/\\:*?"<>|]/g, "-")
+      .replace(/[\p{Cc}/\\:*?"<>|]/gu, "-")
       .replace(/^[. ]+|[. ]+$/g, ""),
   ]
     .slice(0, 60)

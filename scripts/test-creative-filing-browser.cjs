@@ -110,13 +110,11 @@ const base = process.env.BASE_URL || "http://127.0.0.1:8765";
   const file = await dl.path();
   const backup = fs.readFileSync(file);
   assert(backup.length > 0);
-  await page
-    .locator("#import-file")
-    .setInputFiles({
-      name: "roundtrip.zip",
-      mimeType: "application/zip",
-      buffer: backup,
-    });
+  await page.locator("#import-file").setInputFiles({
+    name: "roundtrip.zip",
+    mimeType: "application/zip",
+    buffer: backup,
+  });
   await page.locator("#import-preview").waitFor({ state: "visible" });
   assert.match(await page.locator("#import-content").innerText(), /1 skipped/);
   await page.locator("#import-cancel").click();
@@ -212,13 +210,11 @@ const base = process.env.BASE_URL || "http://127.0.0.1:8765";
       .querySelector("#library-status")
       .textContent.includes("Library loaded"),
   );
-  await p
-    .locator("#import-file")
-    .setInputFiles({
-      name: "restore.zip",
-      mimeType: "application/zip",
-      buffer: backup,
-    });
+  await p.locator("#import-file").setInputFiles({
+    name: "restore.zip",
+    mimeType: "application/zip",
+    buffer: backup,
+  });
   await p.locator("#import-preview").waitFor({ state: "visible" });
   await p.locator("#import-confirm").click();
   await p.waitForFunction(() =>
@@ -260,18 +256,67 @@ const base = process.env.BASE_URL || "http://127.0.0.1:8765";
       .textContent.includes("check 2 of 3"),
   );
   assert.equal(new URL(p.url()).searchParams.get("artifact"), capId);
+  // Preserve a completed failed first attempt and incomplete second attempt in native ZIP.
+  for (let step = 2; step <= 4; step++) {
+    const snap = await p.evaluate(() => window.trainingCapstone.snapshot());
+    const exercise = snap.attempts.at(-1).exercise;
+    if (step < 4)
+      await p
+        .locator(
+          "#capstone-controls input[value=" +
+            (exercise.criteria[step - 1].pass ? "FAIL" : "PASS") +
+            "]",
+        )
+        .check();
+    else await p.locator("#capstone-total").fill(String(exercise.score + 1));
+    await p.locator("#capstone-submit").click();
+    await p.locator("#capstone-next").click();
+  }
+  await p.locator("#capstone-retry").click();
+  for (let step = 1; step <= 2; step++) {
+    await p.locator("#capstone-controls input[value=PASS]").check();
+    await p.locator("#capstone-submit").click();
+    await p.locator("#capstone-next").click();
+  }
+  await p.waitForFunction(
+    () =>
+      document.querySelector("#filing-status").textContent ===
+      "Saved on this device",
+  );
+  const twoRounds = await p.evaluate(async (id) => {
+    const { openStore } = await import("./filing/store.mjs"),
+      { exportArchive, readArchive } = await import("./filing/archive.mjs");
+    const s = await openStore().read(),
+      record = s.artifacts.find((a) => a.id === id),
+      archive = await exportArchive(s, id),
+      source = await readArchive(archive.data, "two-attempts.zip");
+    return {
+      same:
+        JSON.stringify(source.artifacts[0].content) ===
+        JSON.stringify(record.content),
+      status: record.content.status,
+      answers: record.content.attempts.map((a) => a.answers.length),
+      ungraded: record.content.gradingResults.every(
+        (r) => r.outcome === "ungraded" && r.points === null,
+      ),
+    };
+  }, capId);
+  assert.deepEqual(twoRounds, {
+    same: true,
+    status: "draft",
+    answers: [4, 2],
+    ungraded: true,
+  });
   // Legacy exact bytes and untrusted text rendering.
   await library();
   const legacy = Buffer.from(
     "# Synthetic\r\n<script>window.pwned=1</script>\r\n",
   );
-  await page
-    .locator("#import-file")
-    .setInputFiles({
-      name: "legacy.md",
-      mimeType: "text/markdown",
-      buffer: legacy,
-    });
+  await page.locator("#import-file").setInputFiles({
+    name: "legacy.md",
+    mimeType: "text/markdown",
+    buffer: legacy,
+  });
   await page.locator("#import-preview").waitFor({ state: "visible" });
   await page.locator("#import-confirm").click();
   await page.waitForFunction(() =>

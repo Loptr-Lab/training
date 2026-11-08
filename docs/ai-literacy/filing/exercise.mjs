@@ -298,11 +298,13 @@ title.onclick = () => {
 document.getElementById("filing-retry").onclick = () => draft?.flush();
 document.getElementById("filing-copy").onclick = () => {
   if (!draft) return;
+  const previous = draft;
   const copy = clone(draft.record);
   copy.id = uuid();
   copy.revision = 1;
   copy.name = [...(copy.name + " (working copy)")].slice(0, 160).join("");
   attach(copy, 0);
+  sessions.delete(previous);
   history.replaceState(null, "", "?artifact=" + copy.id);
   draft.edit(copy);
   draft.flush();

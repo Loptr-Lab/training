@@ -301,6 +301,23 @@ await test(
         .issues.length,
       0,
     );
+    const copied = planImport(full, initial(), {
+      ["label:" + a.labels[0]]: "copy",
+    });
+    const retried = planImport(full, copied.next, {
+      ["label:" + a.labels[0]]: "copy",
+    });
+    assert.equal(retried.next.artifacts.length, copied.next.artifacts.length);
+    assert.equal(retried.next.labels.length, copied.next.labels.length);
+    const unused = { ...full, artifacts: [] };
+    const labelsOnly = planImport(unused, initial(), {
+      ["label:" + a.labels[0]]: "copy",
+    });
+    assert.equal(
+      planImport(unused, labelsOnly.next, { ["label:" + a.labels[0]]: "copy" })
+        .next.labels.length,
+      labelsOnly.next.labels.length,
+    );
   },
 );
 await test(

@@ -231,6 +231,7 @@ export function unzip(input) {
           fail("Decompression output exceeds declared bound.");
         chunks.push(chunk.slice());
       });
+      if (!source.length) inflate.push(source, true);
       for (let p = 0; p < source.length; p += 1024)
         inflate.push(source.subarray(p, p + 1024), p + 1024 >= source.length);
       output = join(chunks);
@@ -421,9 +422,30 @@ export function planImport(source, state, choices = {}) {
     ) {
       if (choice === "existing") mapping.set(lid, lid);
       else if (choice === "copy") {
-        const n = { ...incoming, id: uuid() };
-        next.labels.push(n);
-        mapping.set(lid, n.id);
+        // Source-byte identity plus source label ID gives this explicit copy a
+        // stable pseudorandom UUID, so retry cannot create unused duplicate labels.
+        // This never merges equal words carried by unrelated UUIDs/archives.
+        const sourceId = lid.replaceAll("-", "");
+        let hex = Array.from({ length: 32 }, (_, i) =>
+          (
+            parseInt(source.sourceHash[i], 16) ^ parseInt(sourceId[i], 16)
+          ).toString(16),
+        );
+        hex[12] = "4";
+        hex[16] = ((parseInt(hex[16], 16) & 3) | 8).toString(16);
+        hex = hex.join("");
+        const copyId = `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+        const previous = state.labels.find((l) => l.id === copyId);
+        if (
+          previous &&
+          JSON.stringify([previous.word, previous.color]) !==
+            JSON.stringify([incoming.word, incoming.color])
+        )
+          fail(
+            "A previous separate label copy was edited. Choose the existing label mapping or cancel; it will not be overwritten.",
+          );
+        if (!previous) next.labels.push({ ...incoming, id: copyId });
+        mapping.set(lid, copyId);
       } else
         issues.push({
           type: "label",
@@ -449,7 +471,12 @@ export function planImport(source, state, choices = {}) {
       summary.skipped++;
       continue;
     }
-    if (existing && logical(existing) === logical(original)) {
+    const a = clone(original);
+    a.labels = [
+      ...new Set(a.labels.map((l) => mapping.get(l)).filter((l) => l !== null)),
+    ];
+    if (a.labels.includes(undefined)) continue;
+    if (existing && logical(existing) === logical(a)) {
       summary.skipped++;
       continue;
     }
@@ -460,16 +487,10 @@ export function planImport(source, state, choices = {}) {
         issues.push({ type: "artifact", id: original.id, name: original.name });
       continue;
     }
-    const a = clone(original);
-    a.labels = [
-      ...new Set(a.labels.map((l) => mapping.get(l)).filter((l) => l !== null)),
-    ];
-    if (a.labels.includes(undefined)) continue;
     if (existing) {
       a.id = uuid();
       a.name = [...(a.name + " (restored copy)")].slice(0, 160).join("");
       a.revision = 1;
-      summary.copied++;
     }
     a.provenance = {
       sourceFormat: source.legacy ? "legacy/markdown-v0" : FORMAT,
@@ -481,6 +502,7 @@ export function planImport(source, state, choices = {}) {
     if (
       state.artifacts.some(
         (v) =>
+          v.name === a.name &&
           v.provenance?.sourceHash === source.sourceHash &&
           v.provenance?.sourceArtifactId === original.id &&
           logical({ ...v, id: a.id, name: original.name }) ===
@@ -491,6 +513,7 @@ export function planImport(source, state, choices = {}) {
       continue;
     }
     next.artifacts.push(a);
+    if (existing) summary.copied++;
     summary.added++;
     if (a.content.status === "draft") summary.drafts++;
   }
