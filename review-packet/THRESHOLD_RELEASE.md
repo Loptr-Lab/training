@@ -94,3 +94,17 @@ graphic to pckt and publishes only if desired. After publication, record the
 actual permalink and check its stable reader CTA. No standing meeting or host
 has been announced. All new story/art/rule work stays proposed until accepted
 by its owning review process.
+
+## Delivery correction — November 10, 2026
+
+Owner clarified: the handbook must be a readable Vercel preview, and the PIXIE
+article must be Markdown, without a substitute blog theme. The reader now links
+to `threshold-book-club.html`, generated from the maintained handbook source.
+Vercel preview `training-ny2363o0p-loptr-lab.vercel.app/threshold-book-club.html`
+returned 200. Reader/handbook/back navigation, keyboard operation, full tables
+and 390/768/1440px layouts passed. No blog HTML is uploaded to this preview.
+
+The former blog HTML and its renderer have been removed from maintained source.
+The draft remains `review-packet/threshold-blog/post.md`, alongside its PNG/SVG.
+This correction does not publish anything to pckt or set its theme. Historical
+preview entries above describe prior work, not the current delivery format.

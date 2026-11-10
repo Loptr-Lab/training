@@ -19,7 +19,9 @@ jobs:
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npm run typecheck
       - name: Validate Threshold reader against canonical reading list
-        run: node scripts/build-threshold.cjs --check
+        run: |
+          node scripts/build-threshold.cjs --check
+          node scripts/build-threshold-handbook.cjs --check
       - name: Verify reading-circle source and entry contracts
         run: node --test test/threshold.test.cjs
       - name: Validate AI literacy lesson and reviewed data
