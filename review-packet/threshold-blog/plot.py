@@ -18,3 +18,6 @@ ax.text(.1,4.8,'f(1 + 1) = 4\nf(1) + f(1) = 2\nf′(x) = 2x',va='top',linespacin
 fig.supxlabel('Ordinary addition still gives 1 + 1 = 2. Squaring is a nonlinear operation.',fontsize=11)
 fig.savefig(root/'threshold-nonlinearity.png',dpi=180)
 fig.savefig(root/'threshold-nonlinearity.svg')
+
+svg=root/'threshold-nonlinearity.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
