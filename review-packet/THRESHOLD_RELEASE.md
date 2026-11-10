@@ -71,7 +71,12 @@ Completed in the documented order:
   Protected fetches of `https://pixie-holdings.vercel.app/` and `/radar.html`
   returned 200, contain the direct stable reader link and no wrong reading
   fallback. `/pixie-guide.js` also returned 200.
-- The custom `holdings.loptrlab.com` address could not be independently checked:
+- Holdings' actual custom domain is served by GitHub Pages, not attached to
+  the Vercel project. The Pages API confirms `holdings.loptrlab.com` and the
+  existing workflow uploads `./public`. Its release run `42782603382` completed
+  successfully from `d547782e880a7752ad1f5d0ebcae104b79824769`:
+  https://github.com/ibloud/pixie-holdings/actions/runs/42782603382
+- The custom `holdings.loptrlab.com` origin response could not be directly checked:
   shell/web access is blocked here, and Vercel's access lookup returned 404 at
   the share-resolution stage rather than fetching the origin. That does not
   establish an origin 404 or a broken site. DNS/domain configuration was not

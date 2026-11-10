@@ -116,7 +116,8 @@ existing channels. There is no automatic submission or facilitator access.
 1. **Maintainer:** verify reader and Holdings previews, source checks, library
    links, comprehension prompts, mobile layouts, keyboard controls and notes.
 2. **Release maintainer:** release Training first; verify the public reader and
-   assets. Then release Holdings and test its discovery and desktop links.
+   assets. Then release Holdings through its existing Pages/Vercel workflows and test
+   its discovery and desktop links.
    Preserve PR #60 security protections and the single persistent PIXIE control.
 3. **Maintainer:** keep the stable reader URL in the blog copy. Never substitute
    a temporary protected preview link in a published article. Record release
