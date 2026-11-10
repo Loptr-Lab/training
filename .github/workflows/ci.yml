@@ -20,6 +20,8 @@ jobs:
       - run: npm run typecheck
       - name: Validate AI literacy lesson and reviewed data
         run: node scripts/validate-ai-literacy.cjs
+      - name: Validate local Creative Filing contract
+        run: node scripts/test-creative-filing.mjs
       - name: Verify tests or expected starter state
         shell: bash
         run: |

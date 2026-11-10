@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Library — Loptr Lab Training</title>
+    <link rel="stylesheet" href="../training.css" />
+    <script src="../training-display.js"></script>
+    <script type="module" src="filing/library.mjs"></script>
+  </head>
+  <body class="filing-library">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="masthead">
+      <div class="serial">LOPTR LAB / CREATIVE FILING</div>
+      <h1>Library</h1>
+      <p class="subtitle">Your practice work, on this device.</p>
+      <nav class="actions" aria-label="Learning navigation">
+        <a class="button" href="rubrics.html">Start rubric practice</a
+        ><a class="button" href="../index.html">Training home</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="panel" aria-labelledby="find-heading">
+        <h2 id="find-heading">Find</h2>
+        <label for="find">Name, exercise or label</label
+        ><input id="find" type="search" autocomplete="off" />
+        <div class="actions">
+          <button id="clear" type="button">Clear search and label</button
+          ><button id="export-all" type="button">Export all</button
+          ><label class="button" for="import-file"
+            >Import archive or Markdown</label
+          ><input id="import-file" type="file" accept=".zip,.md" /><button
+            id="storage-retry"
+            type="button"
+            hidden
+          >
+            Retry loading Library
+          </button>
+        </div>
+        <p id="library-status" role="status" aria-live="polite">
+          Loading local Library…
+        </p>
+      </section>
+      <section class="panel" aria-labelledby="recent-heading">
+        <h2 id="recent-heading">Recent</h2>
+        <p id="result-count" role="status" aria-live="polite"></p>
+        <div id="recent"></div>
+      </section>
+      <section class="panel" aria-labelledby="labels-heading">
+        <h2 id="labels-heading">Labels</h2>
+        <p>
+          Words organize your work. “Verified” is your label, not professional
+          approval.
+        </p>
+        <div class="actions" id="label-views"></div>
+        <div id="label-management"></div>
+        <form id="new-label">
+          <label for="label-word">New label</label
+          ><input id="label-word" maxlength="40" required /><button
+            type="submit"
+          >
+            Create label
+          </button>
+        </form>
+      </section>
+      <section class="panel">
+        <h2>Keep a backup you can check</h2>
+        <p>
+          Browser storage can be cleared or evicted. Private Browsing and Home
+          Screen storage may behave differently. This Library belongs only to
+          <span id="storage-origin"></span>; another preview or device has a
+          separate Library.
+        </p>
+        <p>
+          After export, check Safari Downloads or Files for the complete ZIP.
+          Choosing iCloud Drive is your provider action; PIXIE does not sync it.
+          Without a downloaded backup, cleared or uncommitted work may be
+          unrecoverable.
+        </p>
+        <p>
+          Imports stay local. Device dates are not proof of authorship. Imported
+          practice is learner-produced, not independent certification. Use
+          PIXIE’s existing checkpoint workflow only when you deliberately choose
+          to share.
+        </p>
+        <p id="storage-info"></p>
+        <button id="request-persistence" type="button" hidden>
+          Request persistent browser storage
+        </button>
+      </section>
+      <noscript
+        ><p>
+          JavaScript is required for this local Library. Existing lessons and
+          Markdown templates remain available.
+        </p></noscript
+      >
+    </main>
+    <dialog id="import-preview" aria-labelledby="import-heading">
+      <h2 id="import-heading">Review import</h2>
+      <div id="import-content"></div>
+      <p id="import-status" role="status"></p>
+      <div class="actions">
+        <button id="import-confirm" type="button">Import reviewed plan</button
+        ><button id="import-cancel" type="button">Cancel</button>
+      </div>
+    </dialog>
+    <footer>
+      <p>
+        No account, automatic uploads or folder scanning. Export is user
+        controlled.
+      </p>
+    </footer>
+  </body>
+</html>
