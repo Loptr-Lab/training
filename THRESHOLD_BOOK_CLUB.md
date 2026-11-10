@@ -116,7 +116,8 @@ existing channels. There is no automatic submission or facilitator access.
 1. **Maintainer:** verify reader and Holdings previews, source checks, library
    links, comprehension prompts, mobile layouts, keyboard controls and notes.
 2. **Release maintainer:** release Training first; verify the public reader and
-   assets. Then release Holdings and test its discovery and desktop links.
+   assets. Then release Holdings through its existing Pages/Vercel workflows and test
+   its discovery and desktop links.
    Preserve PR #60 security protections and the single persistent PIXIE control.
 3. **Maintainer:** keep the stable reader URL in the blog copy. Never substitute
    a temporary protected preview link in a published article. Record release
@@ -140,6 +141,24 @@ Run `node scripts/build-threshold.cjs` after source changes, then
 `node scripts/validate-ai-literacy.cjs`. The existing engine starter deliberately
 contains `Not implemented` methods; preserve its documented CI starter policy.
 Run Holdings' `npm test` separately.
+
+To reproduce the browser evidence without publishing anything:
+
+1. From Training, run `python3 scripts/stage-threshold-preview.py` to create a
+   separate local fixture at `/tmp/threshold-preview`. This includes the blog
+   draft for review; production Pages still publishes only `docs/`.
+2. In one terminal run `python3 -m http.server 4203 --bind 127.0.0.1 --directory
+   /tmp/threshold-preview` (on one command line).
+3. In a second terminal, from the Holdings repository, run
+   `node --input-type=module -e 'import {createAppServer} from "./src/lib/app.js";
+   createAppServer().listen(4197,"127.0.0.1");'` (on one command line).
+4. Use a separate Playwright tooling installation and Chromium. From Training,
+   run `THRESHOLD_PLAYWRIGHT_MODULE=/absolute/path/to/playwright node
+   scripts/test-threshold-browser.cjs` (on one command line). Set
+   `THRESHOLD_CHROMIUM` if Chromium is not `/usr/bin/chromium`.
+5. Read `review-packet/threshold-evidence/checks.json` and screenshots. Stop the
+   local servers when finished. These fixtures block unrelated external services;
+   check stable public routes separately after release.
 
 In a browser, verify seven books, edition searches, book-specific prompts,
 timer start/pause/reset/completion, per-book notes, default no-storage behavior,

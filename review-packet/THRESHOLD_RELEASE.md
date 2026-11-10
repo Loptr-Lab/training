@@ -55,9 +55,36 @@ was rejected by automatic approval review; narrowing the payload resolved it.
 
 ## Release journal
 
-Prepared for ordered release: Training main/Pages first, verify stable reader,
-then Holdings main/Vercel. Exact PRs, commits and public checks will be appended
-after the release operations, not guessed here.
+Completed in the documented order:
+
+- Training PR #58 merged November 10 at 08:23:56 UTC, implementation merge
+  `2d26e5942bb314c2dfeb85173e6cde4dfadbe6b4`. GitHub Pages build completed at
+  08:24:34 UTC from that commit. Stable reader returned HTTP 200 and contains
+  the seven-book list, library-first guidance and comprehension questions.
+- Actual public-browser check: Training home → Threshold link → seven book
+  cards; the live timer starts and announces its state. The managed proxy's
+  test certificate was accepted only in the test browser context, with no
+  production TLS or application setting changes.
+- Holdings PR #63 merged at 08:26:03 UTC, implementation merge
+  `d547782e880a7752ad1f5d0ebcae104b79824769`. Its production Vercel deployment
+  `dpl_EE3KYQpPEJycZpqR3Q4cRxs18qXs` is READY and identifies that exact main SHA.
+  Protected fetches of `https://pixie-holdings.vercel.app/` and `/radar.html`
+  returned 200, contain the direct stable reader link and no wrong reading
+  fallback. `/pixie-guide.js` also returned 200.
+- Holdings' actual custom domain is served by GitHub Pages, not attached to
+  the Vercel project. The Pages API confirms `holdings.loptrlab.com` and the
+  existing workflow uploads `./public`. Its release run `42782603382` completed
+  successfully from `d547782e880a7752ad1f5d0ebcae104b79824769`:
+  https://github.com/ibloud/pixie-holdings/actions/runs/42782603382
+- The custom `holdings.loptrlab.com` origin response could not be directly checked:
+  shell/web access is blocked here, and Vercel's access lookup returned 404 at
+  the share-resolution stage rather than fetching the origin. That does not
+  establish an origin 404 or a broken site. DNS/domain configuration was not
+  changed. A browser outside this environment should confirm the custom domain.
+- A final handoff refinement reconciles the now-verified existing PIXIE blog
+  identity, supplies an executable local preview-staging command and records
+  these actual release results. It changes no timer, notebook, engine or
+  Holdings behavior. Its review/merge history is attached to this record.
 
 ## Next owners
 
