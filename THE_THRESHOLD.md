@@ -176,9 +176,11 @@ Work through one selected book in daily sessions; switching books is optional.
 There is no requirement to finish a novel in a week. At a convenient discussion
 point, compare reflections and select a small draft to review. Keep a record of
 what was accepted, revised or declined and why. This is the reading-circle
-editorial loop, not an automatic publishing workflow. pckt reflections remain a
-separate proposed publishing destination until its identity, content and release
-path are verified. Training owns the reading programme; Mayhem supplies project
+editorial loop, not an automatic publishing workflow. Public AT Protocol records
+checked November 10 identify the existing [PIXIE / Urban Alien Adventures blog](https://pixie.pckt.blog/).
+Reading-circle articles remain editorial proposals for that existing publication;
+no article or automatic integration is published by this reader. Training owns
+the reading programme; Mayhem supplies project
 and participation context; Holdings links people to the reader.
 
 ## The reading circle
