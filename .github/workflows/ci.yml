@@ -18,6 +18,10 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npm run typecheck
+      - name: Validate Threshold reader against canonical reading list
+        run: node scripts/build-threshold.cjs --check
+      - name: Verify reading-circle source and entry contracts
+        run: node --test test/threshold.test.cjs
       - name: Validate AI literacy lesson and reviewed data
         run: node scripts/validate-ai-literacy.cjs
       - name: Verify tests or expected starter state
