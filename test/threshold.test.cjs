@@ -17,7 +17,7 @@ test('static reader offers borrowing, comprehension and contribution routes with
  const html=build();
  assert.equal((html.match(/class="panel threshold-book"/g)||[]).length,7);
  assert.equal((html.match(/https:\/\/openlibrary.org\/search\?/g)||[]).length,7);
- for(const term of ['local public library','resale bookstore','Evidence:','Clarify:','Consider another reading:','made-sick.org/join.html','THRESHOLD_BOOK_CLUB.md','Reversing the Feed'])assert.ok(html.includes(term),term);
+ for(const term of ['local public library','resale bookstore','Evidence:','Clarify:','Consider another reading:','made-sick.org/join.html','./threshold-book-club.html','Reversing the Feed'])assert.ok(html.includes(term),term);
  assert.equal((html.match(/rel="stylesheet"/g)||[]).length,1);
  assert.doesNotMatch(html,/<style\b|\sstyle=|amazon\.com|<iframe\b/);
  assert.match(html,/id="threshold-save-local" type="checkbox">/);

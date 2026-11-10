@@ -13,12 +13,11 @@ Prepared November 10, 2026. Intended publication: PIXIE / Urban Alien Adventures
   OpenStax link so the concept does not depend on seeing the graph.
 - `plot.py` reproduces the figure using matplotlib/numpy. No comic panels,
   book covers, approved sigils or other third-party artwork were recreated.
-- `build-preview.py` renders the authored Markdown for a Vercel review copy.
-  It is a narrow editorial renderer, not a general Markdown library or runtime.
+- Delivery is Markdown plus the original graphic. No themed HTML blog preview
+  is maintained; pckt supplies its own theme when Dominique imports the copy.
 
 Before publication, open the stable reader URL in the article and confirm it
-loads the released page. The preview substitutes its same-deployment reader;
-never paste a temporary `_vercel_share` URL into the published article.
+loads the released page. Never paste a temporary `_vercel_share` URL into the published article.
 Replace the relative image Markdown with the image attached in pckt. Check
 the published post's image, alt text, sources and reader CTA. Save its actual
 permalink in the release record; no article URL should be guessed in advance.

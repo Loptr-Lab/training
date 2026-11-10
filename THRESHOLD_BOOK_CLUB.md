@@ -136,7 +136,8 @@ not release capabilities. No one is assigned to an unconfirmed event.
 ## Maintainer checks and rollback
 
 Run `node scripts/build-threshold.cjs` after source changes, then
-`node scripts/build-threshold.cjs --check`, `node --test test/threshold.test.cjs`,
+`node scripts/build-threshold.cjs --check`,
+`node scripts/build-threshold-handbook.cjs --check`, `node --test test/threshold.test.cjs`,
 `node --check docs/threshold.js`, `npm run typecheck` and
 `node scripts/validate-ai-literacy.cjs`. The existing engine starter deliberately
 contains `Not implemented` methods; preserve its documented CI starter policy.
@@ -145,8 +146,8 @@ Run Holdings' `npm test` separately.
 To reproduce the browser evidence without publishing anything:
 
 1. From Training, run `python3 scripts/stage-threshold-preview.py` to create a
-   separate local fixture at `/tmp/threshold-preview`. This includes the blog
-   draft for review; production Pages still publishes only `docs/`.
+   separate local fixture at `/tmp/threshold-preview`. This includes the reader
+   and its rendered handbook; the blog draft stays Markdown in the review packet.
 2. In one terminal run `python3 -m http.server 4203 --bind 127.0.0.1 --directory
    /tmp/threshold-preview` (on one command line).
 3. In a second terminal, from the Holdings repository, run
@@ -176,3 +177,15 @@ Finished state: stable Training and Holdings entry links work, this handbook
 is reachable from the reader, source and browser checks are recorded, and a
 new reader can choose a book, ask a question and find a contribution route
 without this chat. Blog publication is separately marked ready or completed.
+
+## Delivery correction — November 10, 2026
+
+The facilitator handbook is a readable web page at `docs/threshold-book-club.html`,
+linked directly from the reader and reviewable on Vercel. This Markdown remains
+its maintained source. Regenerate the page with
+`node scripts/build-threshold-handbook.cjs` after editing this handbook.
+
+The PIXIE blog draft is delivered as `review-packet/threshold-blog/post.md`,
+with its original PNG/SVG figure. Its earlier Training-themed HTML preview
+was the wrong delivery format and is no longer maintained. Publication, layout
+and theme belong to the existing pckt editor and remain Dominique’s choice.
