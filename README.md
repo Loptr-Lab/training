@@ -27,6 +27,7 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 
 | Go to | Use it to |
 | --- | --- |
+| [Independent-work pathway](./docs/independent-work.html) | Choose project contributions, paid client work or self-employment preparation. |
 | [Career tracks](./docs/tracks/index.md) | Start with the work you want to do. |
 | [Accessibility](./docs/accessibility/index.md) | Describe functional barriers without disclosing unnecessary medical information. |
 | [Technology planning](./docs/technology-planning/index.md) | Translate tasks and barriers into minimum, preferred, and alternative configurations. |

@@ -26,6 +26,10 @@ jobs:
         run: node --test test/threshold.test.cjs
       - name: Validate AI literacy lesson and reviewed data
         run: node scripts/validate-ai-literacy.cjs
+      - name: Validate independent-work resources and navigation
+        run: |
+          node scripts/build-independent-work.cjs --check
+          node --test test/independent-work.test.cjs
       - name: Verify tests or expected starter state
         shell: bash
         run: |

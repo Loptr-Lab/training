@@ -63,3 +63,12 @@ select{max-width:100%}
 .threshold-reader #threshold-timer { font:500 2em/1.4 var(--font-main); font-variant-numeric:tabular-nums; }
 .threshold-reader .choice { display:flex; align-items:flex-start; gap:.75rem; }
 .threshold-reader .choice input { flex:none; width:1.5rem; height:1.5rem; margin-top:.25rem; }
+
+/* Copyable handoff commands reflow with enlarged text. */
+.pathway-commands{white-space:pre-wrap;overflow-wrap:anywhere}
+
+/* Independent-work introduction with a vertical route menu. */
+.pathway-hero{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem}
+.pathway-hero .actions{flex-direction:column;flex-wrap:nowrap;align-items:stretch;margin-top:0}
+.pathway-hero .actions .button{flex:0 1 auto;justify-content:flex-start}
+@media(min-width:64rem){.pathway-hero{grid-template-columns:minmax(0,1fr) minmax(0,22rem);align-items:center;gap:3rem}}
