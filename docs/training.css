@@ -63,3 +63,6 @@ select{max-width:100%}
 .threshold-reader #threshold-timer { font:500 2em/1.4 var(--font-main); font-variant-numeric:tabular-nums; }
 .threshold-reader .choice { display:flex; align-items:flex-start; gap:.75rem; }
 .threshold-reader .choice input { flex:none; width:1.5rem; height:1.5rem; margin-top:.25rem; }
+
+/* Copyable handoff commands reflow with enlarged text. */
+.pathway-commands{white-space:pre-wrap;overflow-wrap:anywhere}
