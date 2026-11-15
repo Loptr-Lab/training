@@ -297,3 +297,5 @@ Continue to review, feedback and revision below.
 Keep the source credits in your review record: Natan Zaretsky for collection discovery; the lesson's actual authors for instruction; the named institution/hosted source for assessment guidance; yourself for the original artifact and documented adaptations.
 
 [Source inventory, assessment mapping and verification limits](CREATIVE_PRODUCTION_SOURCES.md).
+
+[Repair literacy: iFixit references and supervised learning](./maker-game-systems.html#repair-literacy) offers a reading-only start before hardware modification.
