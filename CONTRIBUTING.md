@@ -1,5 +1,7 @@
 # Contribute to Loptr Lab Training
 
+Read [AGENTS.md](AGENTS.md) first for the shared reading requirement, local authority, checks and existing-work/release boundaries. This route supplements the contribution requirements below.
+
 **Build in public. Improve the work. Show the fix.**
 
 Loptr Lab welcomes first-time developers, experienced engineers, accessibility reviewers, technical writers, and systems architects. You do **not** need an invitation, a personal email address, or access to production systems to participate in this public repository. A GitHub account is sufficient to propose changes.
