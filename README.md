@@ -27,6 +27,7 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 
 | Go to | Use it to |
 | --- | --- |
+| [The Threshold introductory fit class](./docs/threshold-fit.html) | Required reading and mutual-fit preparation before scoped collaboration. |
 | [Independent-work pathway](./docs/independent-work.html) | Choose project contributions, paid client work or self-employment preparation. |
 | [Career tracks](./docs/tracks/index.md) | Start with the work you want to do. |
 | [Accessibility](./docs/accessibility/index.md) | Describe functional barriers without disclosing unnecessary medical information. |

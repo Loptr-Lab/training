@@ -189,3 +189,23 @@ The PIXIE blog draft is delivered as `review-packet/threshold-blog/post.md`,
 with its original PNG/SVG figure. Its earlier Training-themed HTML preview
 was the wrong delivery format and is no longer maintained. Publication, layout
 and theme belong to the existing pckt editor and remain Dominique’s choice.
+
+## Required collaboration preparation — November 16, 2026
+
+The Threshold now includes a required business-reading lane alongside the
+unchanged seven-title story catalogue. Start the original fit-check class at
+https://loptr-lab.github.io/training/threshold-fit.html. Its publisher source is
+Dr. Kevin Burns’s Instructor’s Guide to The Power of Broke, the book by Daymond
+John with Daniel Paisner. The class carries the direct PDF citation and reading
+locators. No affiliation or endorsement is claimed.
+
+Ask prospective parties to identify needs, actual resources, mutual value, a
+time-capped task, boundaries and evidence for continue/revise/stop. Reading is
+required preparation for scoped collaboration, not a gate on public reading,
+feedback or access help. Offer accessible discussion and accept disagreement.
+Do not grade people or require personal financial/medical disclosures.
+
+Maintainers keep this class in Training and link here from future onboarding
+updates instead of copying a new curriculum into each project. Update the
+primer, reader generator and class together. Do not mirror the publisher PDF
+or introduce forms, analytics, automated approvals or manga-download unlocks.

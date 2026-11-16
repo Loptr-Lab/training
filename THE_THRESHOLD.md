@@ -28,6 +28,27 @@ one of those two ideas, it's probably not load-bearing to the world.
 
 ---
 
+## Required preparation: resourceful collaboration
+
+Owner direction, 16 November 2026: *The Power of Broke* Instructor’s Guide,
+written by Dr. Kevin Burns for the Daymond John with Daniel Paisner book,
+is required Threshold preparation for the introductory collaboration fit check.
+Read the [publisher-hosted guide](https://images.penguinrandomhouse.com/teachers_guides/9781101903599.pdf) at your own pace.
+Start with printed pages 9–14 and 19–21; complete the remaining instructional
+sections before agreeing a scoped collaboration. Buying the book is optional.
+This business reading supplements the seven story/design titles below.
+
+The [introductory class](https://loptr-lab.github.io/training/threshold-fit.html)
+helps prospective contributors, partners and clients decide whether our working
+model meets their needs. Reading and reflection do not enroll, certify or approve
+anyone. Ordinary reading, questions, bug reports and access requests remain open.
+Alternative accessible discussion is welcome; disagreement is not failure.
+
+Link to the publisher; do not mirror the guide or the Bookey summary. Credit
+Burns as guide writer and John with Paisner as book authors. Our exercises are
+original studio applications, not an endorsed course. Interpret motivational
+claims critically: limited money does not remove costs or structural barriers.
+
 ## Recommended Reading
 
 **World & Philosophy**
