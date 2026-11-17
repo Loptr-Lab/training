@@ -42,6 +42,8 @@ Skip the introductory steps if you know the workflow. Please contribute **verifi
 - **Maintainer review is final for this repository.** A PR is not a guarantee of acceptance, deployment, affiliation, or publication. Keep disagreements about the implementation rather than the person.
 - **Respect licenses and rights.** Submit only work you have permission to contribute. Do not add third-party assets, recordings, branding, or private case evidence without documented authorization.
 
+[Build your independent-work pathway](docs/independent-work.html) for external project contributions, paid client work and self-employment preparation. Keep each project’s existing contribution and review process.
+
 ## PIXIE — optional contributor guidance and maintenance
 
 [Join, contribute and resume with PIXIE](https://loptr-lab.github.io/training/pixie-contributors.html). The existing companion prepares reviewed GitHub checkpoint drafts and reads submitted issues to resume shared work. GitHub remains the coordination record; PIXIE does not post automatically, enroll members, or grant access.

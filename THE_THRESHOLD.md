@@ -28,6 +28,27 @@ one of those two ideas, it's probably not load-bearing to the world.
 
 ---
 
+## Required preparation: resourceful collaboration
+
+Owner direction, 16 November 2026: *The Power of Broke* Instructor’s Guide,
+written by Dr. Kevin Burns for the Daymond John with Daniel Paisner book,
+is required Threshold preparation for the introductory collaboration fit check.
+Read the [publisher-hosted guide](https://images.penguinrandomhouse.com/teachers_guides/9781101903599.pdf) at your own pace.
+Start with printed pages 9–14 and 19–21; complete the remaining instructional
+sections before agreeing a scoped collaboration. Buying the book is optional.
+This business reading supplements the seven story/design titles below.
+
+The [introductory class](https://loptr-lab.github.io/training/threshold-fit.html)
+helps prospective contributors, partners and clients decide whether our working
+model meets their needs. Reading and reflection do not enroll, certify or approve
+anyone. Ordinary reading, questions, bug reports and access requests remain open.
+Alternative accessible discussion is welcome; disagreement is not failure.
+
+Link to the publisher; do not mirror the guide or the Bookey summary. Credit
+Burns as guide writer and John with Paisner as book authors. Our exercises are
+original studio applications, not an endorsed course. Interpret motivational
+claims critically: limited money does not remove costs or structural barriers.
+
 ## Recommended Reading
 
 **World & Philosophy**
@@ -88,6 +109,20 @@ studio while this gets built:
 
 ---
 
+## Art reference
+
+- **The Department of Truth #16** — informs the project’s art.
+  Dominique reaffirmed this art reference on November 10, 2026. It already
+  appears in the October 21, 2026 post [PIXIE · Reversing the Feed](https://pixie.pckt.blog/pixie-reversing-the-feed-hbqst4e).
+  Keep it alongside the reading circle as visual research, rather than adding
+  it to the seven-book sequence or treating its story as project canon.
+- **Proposed application:** after viewing the issue in a lawful edition,
+  record specific visual observations with page or panel locators. Discuss
+  which observations could inform an original project art study, then review
+  that study against the owning design bible and established brand assets.
+  This is a proposed exercise, not a claim about particular panels or an
+  instruction to reproduce the issue’s artwork.
+
 ## Design & Color Language
 
 Full spec lives in the engine repo's `docs/design/DESIGN_BIBLE.md` — this is the
@@ -125,3 +160,64 @@ undecoded science) and the reading/watching/listening context here,
 go to `README.md` in this repo for the actual graded exercise, or
 straight to `Loptr-Lab/veiled-dominion-engine` if you're joining the
 4-player build directly.
+
+## Read for 15 minutes a day
+
+Owner-confirmed direction, 10 November 2026: The Threshold is a daily reading
+practice connecting books to our project, not simply a link back to Mayhem.
+Read your chosen book for 15 minutes a day, at your own pace. Use a library,
+a copy you own or an accessible edition; no purchase, subscription or project
+membership is required. Audiobooks and text-to-speech are welcome. Pausing or
+missing a day does not lock you out or erase your place.
+
+After reading, keep your chapter/page/audio position and one observation. Ask
+how it relates to an existing character, theme, story question or rule. Turn
+that connection into a small original scene, storyboard, playtest question or
+design note. Read first; the optional reflection can happen afterward.
+
+The reader-facing page at `docs/threshold.html` projects the seven-book list
+above and the proposed editorial tasks in `docs/threshold-reading-plan.json`.
+The book list and established connections above remain the reading authority.
+The supplemental tasks are proposals for original work, not accepted story
+canon, summaries of specific chapters or permission to adapt protected text.
+
+### From reading to original story work
+
+1. **Read:** continue one book for 15 minutes; there is no assigned page quota.
+2. **Notice:** record a chapter/page/audio position and an idea in your own words.
+3. **Connect:** name the existing project element it illuminates. The reader page
+   maps every book to its current project connection and a concrete proposed task.
+4. **Draft:** prepare one original scene, storyboard or design note. Label new
+   events, motives and relationships as proposals.
+5. **Review:** check the owning story/rules source, source attribution and rights.
+   Dominique decides what enters canon. Test any proposed mechanical change
+   separately; a reading reflection never updates game state automatically.
+
+Work through one selected book in daily sessions; switching books is optional.
+There is no requirement to finish a novel in a week. At a convenient discussion
+point, compare reflections and select a small draft to review. Keep a record of
+what was accepted, revised or declined and why. This is the reading-circle
+editorial loop, not an automatic publishing workflow. Public AT Protocol records
+checked November 10 identify the existing [PIXIE / Urban Alien Adventures blog](https://pixie.pckt.blog/).
+Reading-circle articles remain editorial proposals for that existing publication;
+no article or automatic integration is published by this reader. Training owns
+the reading programme; Mayhem supplies project
+and participation context; Holdings links people to the reader.
+
+## The reading circle
+
+Start with your local public library and ask about interlibrary loans and
+accessible editions. Search [Open Library](https://openlibrary.org/) for editions;
+its catalogue does not guarantee a borrowable copy, and borrowing may require
+an external account. Try resale bookstores, library sales or book exchanges
+before buying new. Amazon is optional, after these routes, never required.
+
+After reading, write a few sentences about what happened or what claim was
+made, the detail supporting your interpretation, and a question you still have.
+Use the reader’s sample comprehension questions to separate recall, evidence,
+inference and application. Writing is optional and need not be shared.
+
+[THRESHOLD_BOOK_CLUB.md](THRESHOLD_BOOK_CLUB.md) contains the asynchronous
+rollout, facilitator format, contribution roles, review boundaries, maintenance
+commands and release checks. It supplements this primer rather than replacing
+the seven-book catalogue or the engine’s story and rule authority.

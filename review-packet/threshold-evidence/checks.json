@@ -1,0 +1,17 @@
+{
+  "fixture": "Reviewed local HTTP sites; canonical Training route fulfilled with reviewed static page; other external services blocked",
+  "checks": [
+    "Training home entry, seven books, task disclosure, keyboard selection, comprehension prompts, per-book notes, opt-in persistence, export, opt-out, clear, timer pause/resume/completion/reset",
+    "Reader layout 320px, light/dark, largest text, reduced motion",
+    "Reader layout 390px, light/dark, largest text, reduced motion",
+    "Reader layout 768px, light/dark, largest text, reduced motion",
+    "Reader layout 1024px, light/dark, largest text, reduced motion",
+    "Reader layout 1440px, light/dark, largest text, reduced motion",
+    "Blog draft, graphic and matching reader CTA",
+    "No-JavaScript books, questions and contribution routes",
+    "Holdings discovery actual click → Training reader (canonical origin, local reviewed response)",
+    "Embedded desktop Projects actual top-level reader navigation; one unobscured PIXIE launcher"
+  ],
+  "physicalSafari": "NOT RUN",
+  "physicalVoiceOver": "NOT RUN"
+}
