@@ -304,3 +304,8 @@ Keep the source credits in your review record: Natan Zaretsky for collection dis
 ## Optional AI tool practice
 
 Use the [existing game-development tool exercise](game-development.html#optional-ai-tools) for Claude coding review, Meshy/alternative prop evaluation and later animation studies. Each candidate includes prerequisites, costs/rights/privacy checks and untested status. No purchase, subscription or promotional credit is required.
+
+
+## Featured character design resource: Magenta Muraca
+
+[Workshop, host resources and dated archive](hybrid-creative-technology.html#magenta-muraca). Free online workshop December 5, 2026, 17:00–18:00 UTC. Registration: https://docs.google.com/forms/d/e/1FAIpQLSe1ORpBOTA-t2BSij2FFd3tgnEzKaOxmgkq2_w2gJKPeqSPrQ/viewform . Joining link sent by email by the host. Recording, captions and individual critique are unconfirmed. Use the existing creative-production review record to document one original design revision.

@@ -60,3 +60,7 @@ This repository provides educational information and preparation tools. It does 
 Share functional needs and vocational tasks—not passwords, credentials, government identifiers, case numbers, medical records, benefit letters, or confidential documents.
 
 See [contributor safety and governance](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md) before contributing.
+
+## Learning value
+
+[Before You Pay for an AI Course, What Could You Build?](docs/before-you-pay-for-ai-training.html) connects existing exercises, portfolio evidence and a dated character-design workshop with questions to ask about paid learning outcomes.
