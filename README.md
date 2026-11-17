@@ -64,3 +64,7 @@ See [contributor safety and governance](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md) 
 ## Learning value
 
 [Before You Pay for an AI Course, What Could You Build?](docs/before-you-pay-for-ai-training.html) connects existing exercises, portfolio evidence and a dated character-design workshop with questions to ask about paid learning outcomes.
+
+## Production publication
+
+Public Training lives at https://loptrlab.com/training/ . Vercel is for review previews. After merging documentation, follow `docs/TRAINING_PUBLICATION.md` in Loptr-Lab/veiled-dominion-engine and run its existing `scripts/sync-training-site.py` against the merged Training checkout. Commit the generated publication, sitemaps and source record there; verify the exact branded page before sharing it. A Training merge alone does not publish the branded site.
