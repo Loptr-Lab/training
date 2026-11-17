@@ -39,6 +39,12 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 | [Worked example](./docs/case-study/README.md) | Follow an anonymized retraining plan from goal through lessons learned. |
 | [Legacy curriculum reference](./LEGACY_TRAINING_MANUAL.md) | Consult preserved predecessor material from the earlier README. |
 
+## Project asset learning resources
+
+The existing [game-development track](./docs/tracks/game-development.html#polyfork-resources) now lists the reviewed Polyfork candidates for Duet and Rhapsody, provenance checks and one bounded learning exercise. These are references, not integrated assets or accepted release work.
+
+The same track includes [optional AI tool practice](./docs/tracks/game-development.html#optional-ai-tools): Claude, Meshy, fal, Hyper3D, Tripo, Rokoko and iClone, with learning objectives, access checks and no-account alternatives. Dated event offers are separate from lasting instruction; hands-on vendor acceptance remains untested.
+
 ## Contribute — junior developers and senior architects welcome
 
 **Bring a fix, a reproducible issue, or a scoped proposal.** [Start with the contributor guide](./CONTRIBUTING.md). No invitation, personal email address, or production access is needed to fork, discuss, or submit a pull request through GitHub.

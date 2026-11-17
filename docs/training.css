@@ -10,9 +10,9 @@ body{margin:0;font-size:var(--reading-size);line-height:1.65;background:var(--vo
 .masthead,main,footer{width:min(calc(100% - 2 * var(--gutter)),72rem);margin-inline:auto;min-width:0}
 .masthead{padding-block:2rem 1.5rem;border-bottom:1px solid var(--line)}
 .serial,.eyebrow,.panel-head{color:var(--the-light);font:600 .9em/1.5 var(--font-main);letter-spacing:.025em}
-h1,h2,h3{font-family:var(--font-main);font-weight:500;letter-spacing:normal;line-height:1.25;margin:0 0 1rem;text-wrap:pretty;overflow-wrap:break-word}
+h1,h2,h3,h4{font-family:var(--font-main);font-weight:500;letter-spacing:normal;line-height:1.25;margin:0 0 1rem;text-wrap:pretty;overflow-wrap:break-word}
 h1{font-size:clamp(2.1em,4.5vw,3.5em);margin-top:1rem;max-width:22ch}
-h2{font-size:clamp(1.6em,3vw,2.25em)}h3{font-size:1.3em}
+h2{font-size:clamp(1.6em,3vw,2.25em)}h3{font-size:1.3em}h4{font-size:1.1em;margin-block:1.5rem .5rem}
 .subtitle,.lead{font-size:1.15em;line-height:1.6;max-width:65ch;color:var(--text-muted);letter-spacing:normal;font-weight:400}
 p,ul,ol,dl{margin:0 0 1.25rem}p{max-width:72ch}ul,ol{padding-left:1.5em}li+li{margin-top:.6em}
 a{color:var(--the-light);text-underline-offset:.2em}a:hover{text-decoration-thickness:.15em}
@@ -28,8 +28,13 @@ main{padding-block:1.5rem 3rem}main>section+section{margin-top:2rem}
 .button:hover{border-color:var(--the-light);text-decoration:underline}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin-top:2rem}.grid>*{min-width:0}
 .journey{display:grid;gap:.5rem}.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:.5rem 1.5rem}
-.table-wrap{overflow-x:auto;max-width:100%}table{width:100%;border-collapse:collapse}th,td{padding:.8rem;border:1px solid var(--line);text-align:left;vertical-align:top}th{font-weight:650}
+.table-wrap{overflow-x:auto;max-width:100%;margin-block:1.25rem}table{width:100%;border-collapse:collapse}th,td{padding:.8rem;border:1px solid var(--line);text-align:left;vertical-align:top}th{font-weight:650}
 .guide{max-width:72rem;line-height:1.65}.guide h2{margin-top:2rem}.guide>h2:first-child{margin-top:0}.guide table{background:var(--surface)}
+/* Consistent reading rhythm, including tables followed by prose and task headings. */
+.guide>section+section{margin-block-start:2rem}
+.guide h3:not(:first-child){margin-block-start:1.5rem}
+.guide :is(h3,h4)+p{margin-block-start:0}
+.guide section>:last-child{margin-block-end:0}
 dl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:.5rem 1rem}dt{font-weight:650;color:var(--the-light)}dd{margin:0}
 footer{padding-block:2rem;border-top:1px solid var(--line);font-size:1em;display:block}footer p{max-width:75ch}
 .display-settings{margin-bottom:1.5rem}.display-settings summary{cursor:pointer;color:var(--the-light);min-height:3rem;padding-block:.5rem;width:fit-content}
@@ -72,3 +77,37 @@ select{max-width:100%}
 .pathway-hero .actions{flex-direction:column;flex-wrap:nowrap;align-items:stretch;margin-top:0}
 .pathway-hero .actions .button{flex:0 1 auto;justify-content:flex-start}
 @media(min-width:64rem){.pathway-hero{grid-template-columns:minmax(0,1fr) minmax(0,22rem);align-items:center;gap:3rem}}
+
+/* Legacy resource finder: scoped presentation, still owned by this stylesheet. */
+.resource-finder main{max-width:48rem;margin-block:2rem}
+.resource-finder h1{font-size:2rem}
+.resource-finder label{display:block;font-weight:650;margin-block:1rem .5rem}
+.resource-finder select{width:100%}
+.resource-finder #results{margin-block-start:1.5rem;padding-block-start:1rem;border-top:1px solid var(--line)}
+
+/* Shared header layout: every masthead inherits the same control placement.
+   Existing plain headers and home/pathway wrappers use this one CSS contract.
+   No page-specific positioning or JavaScript layout styles are required. */
+.masthead{display:grid;grid-template-columns:minmax(0,1fr);gap:0 2rem;align-items:start}
+.masthead :is(.home-hero,.home-intro,.pathway-hero,.pathway-introduction){display:contents}
+.masthead>*{min-width:0}
+.masthead .serial{grid-column:1;grid-row:2}
+.masthead h1{grid-column:1;grid-row:3}
+.masthead .subtitle{grid-column:1;grid-row:4}
+.masthead .display-settings{grid-column:1;grid-row:1;width:min(100%,23rem);margin:0 0 1rem auto}
+.masthead .display-settings summary{width:100%;text-align:left}
+.masthead .display-controls{flex-direction:column;gap:.75rem;margin:0 0 1rem}
+.masthead .display-controls label{min-width:0}
+.masthead :is(nav.actions,.home-routes){grid-column:1;grid-row:5;display:flex;flex-direction:column;align-items:stretch;gap:.75rem;margin:0}
+.masthead>.button,.masthead>p:has(>.button){grid-column:1;grid-row:5;margin:0}
+.masthead .home-routes ul{display:grid;gap:.75rem;list-style:none;margin:0;padding:0}
+.masthead .home-routes li+li{margin-block-start:0}
+.masthead .button{display:flex;width:100%;justify-content:flex-start}
+@media(min-width:60rem){
+ .masthead{grid-template-columns:minmax(0,1fr) minmax(18rem,23rem);column-gap:clamp(2rem,4vw,3rem)}
+ .masthead .serial{grid-row:1}
+ .masthead h1{grid-row:2}
+ .masthead .subtitle{grid-row:3}
+ .masthead .display-settings{grid-column:2;grid-row:1;margin:0 0 .75rem}
+ .masthead :is(nav.actions,.home-routes),.masthead>.button,.masthead>p:has(>.button){grid-column:2;grid-row:2 / span 4}
+}

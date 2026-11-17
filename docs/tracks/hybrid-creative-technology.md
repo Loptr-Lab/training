@@ -299,3 +299,8 @@ Keep the source credits in your review record: Natan Zaretsky for collection dis
 [Source inventory, assessment mapping and verification limits](CREATIVE_PRODUCTION_SOURCES.md).
 
 [Repair literacy: iFixit references and supervised learning](./maker-game-systems.html#repair-literacy) offers a reading-only start before hardware modification.
+
+
+## Optional AI tool practice
+
+Use the [existing game-development tool exercise](game-development.html#optional-ai-tools) for Claude coding review, Meshy/alternative prop evaluation and later animation studies. Each candidate includes prerequisites, costs/rights/privacy checks and untested status. No purchase, subscription or promotional credit is required.
