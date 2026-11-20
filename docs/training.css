@@ -111,3 +111,11 @@ select{max-width:100%}
  .masthead .display-settings{grid-column:2;grid-row:1;margin:0 0 .75rem}
  .masthead :is(nav.actions,.home-routes),.masthead>.button,.masthead>p:has(>.button){grid-column:2;grid-row:2 / span 4}
 }
+
+/* Visible breadcrumbs are rendered from each page's existing BreadcrumbList JSON-LD. */
+.site-breadcrumbs{width:min(calc(100% - 2 * var(--gutter)),72rem);margin:.75rem auto 0;font-size:.88em;color:var(--text-muted)}
+.site-breadcrumbs ol{display:flex;flex-wrap:wrap;gap:.35rem .65rem;list-style:none;padding:0;margin:0}
+.site-breadcrumbs li{display:inline-flex;align-items:center;gap:.65rem;min-width:0}
+.site-breadcrumbs li+li::before{content:"/";color:var(--text-muted)}
+.site-breadcrumbs a{color:var(--the-light)}
+.site-breadcrumbs [aria-current=page]{color:var(--text-primary)}
