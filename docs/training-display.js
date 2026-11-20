@@ -3,6 +3,8 @@
   'use strict';
   const root = document.documentElement;
   const key = 'loptr-training-display';
+  const loptrHome = 'https://loptrlab.com/';
+  const trainingHome = 'https://loptrlab.com/training/';
   let preferences = { theme: 'dark', size: 'standard' };
   try {
     const saved = JSON.parse(localStorage.getItem(key));
@@ -22,16 +24,48 @@
     const breadcrumbData = document.getElementById('site-breadcrumbs');
     if (breadcrumbData && !document.querySelector('.site-breadcrumbs')) {
       try {
-        const items = JSON.parse(breadcrumbData.textContent).itemListElement || [];
-        if (items.length) {
+        const data = JSON.parse(breadcrumbData.textContent);
+        const items = Array.isArray(data.itemListElement) ? data.itemListElement : [];
+        const normalized = items.map((item) => {
+          const entry = { ...item };
+          if (entry.name === 'Loptr Lab Training') entry.name = 'Training';
+          if (typeof entry.item === 'string' && entry.item.includes('/training/')) {
+            entry.item = trainingHome + entry.item.split('/training/').slice(1).join('/training/');
+          }
+          return entry;
+        });
+
+        if (!normalized.some((item) => item.name === 'Loptr Lab')) {
+          normalized.unshift({
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Loptr Lab',
+            item: loptrHome
+          });
+        }
+        if (normalized.length > 1 && normalized[1].name === 'Training') {
+          normalized[1].item = trainingHome;
+        } else if (normalized.length && normalized[0].name !== 'Training' && normalized[0].name !== 'Loptr Lab') {
+          normalized.splice(1, 0, {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Training',
+            item: trainingHome
+          });
+        }
+        normalized.forEach((item, index) => { item.position = index + 1; });
+        data.itemListElement = normalized;
+        breadcrumbData.textContent = JSON.stringify(data);
+
+        if (normalized.length) {
           const nav = document.createElement('nav');
           nav.className = 'site-breadcrumbs';
           nav.setAttribute('aria-label', 'Breadcrumb');
           const list = document.createElement('ol');
-          items.forEach((item, index) => {
+          normalized.forEach((item, index) => {
             const entry = document.createElement('li');
             const name = String(item.name || '');
-            if (index < items.length - 1 && item.item) {
+            if (index < normalized.length - 1 && item.item) {
               const link = document.createElement('a');
               link.href = item.item;
               link.textContent = name;
