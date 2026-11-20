@@ -57,30 +57,8 @@
         data.itemListElement = normalized;
         breadcrumbData.textContent = JSON.stringify(data);
 
-        if (normalized.length) {
-          const nav = document.createElement('nav');
-          nav.className = 'site-breadcrumbs';
-          nav.setAttribute('aria-label', 'Breadcrumb');
-          const list = document.createElement('ol');
-          normalized.forEach((item, index) => {
-            const entry = document.createElement('li');
-            const name = String(item.name || '');
-            if (index < normalized.length - 1 && item.item) {
-              const link = document.createElement('a');
-              link.href = item.item;
-              link.textContent = name;
-              entry.append(link);
-            } else {
-              const current = document.createElement('span');
-              current.textContent = name;
-              current.setAttribute('aria-current', 'page');
-              entry.append(current);
-            }
-            list.append(entry);
-          });
-          nav.append(list);
-          header.insertAdjacentElement('afterend', nav);
-        }
+        // BreadcrumbList remains available to search engines, but no second visible navigation is rendered.
+
       } catch (_) { /* Structured data remains available if display rendering fails. */ }
     }
     const settings = document.createElement('details');
