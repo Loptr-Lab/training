@@ -19,6 +19,36 @@
   document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.masthead');
     if (!header) return;
+    const breadcrumbData = document.getElementById('site-breadcrumbs');
+    if (breadcrumbData && !document.querySelector('.site-breadcrumbs')) {
+      try {
+        const items = JSON.parse(breadcrumbData.textContent).itemListElement || [];
+        if (items.length) {
+          const nav = document.createElement('nav');
+          nav.className = 'site-breadcrumbs';
+          nav.setAttribute('aria-label', 'Breadcrumb');
+          const list = document.createElement('ol');
+          items.forEach((item, index) => {
+            const entry = document.createElement('li');
+            const name = String(item.name || '');
+            if (index < items.length - 1 && item.item) {
+              const link = document.createElement('a');
+              link.href = item.item;
+              link.textContent = name;
+              entry.append(link);
+            } else {
+              const current = document.createElement('span');
+              current.textContent = name;
+              current.setAttribute('aria-current', 'page');
+              entry.append(current);
+            }
+            list.append(entry);
+          });
+          nav.append(list);
+          header.insertAdjacentElement('afterend', nav);
+        }
+      } catch (_) { /* Structured data remains available if display rendering fails. */ }
+    }
     const settings = document.createElement('details');
     settings.className = 'display-settings';
     settings.innerHTML = '<summary>Reading settings</summary><div class="display-controls"><label>Theme<select name="training-theme"><option value="dark">Dark</option><option value="light">Dim light</option><option value="system">Use device setting</option></select></label><label>Text size<select name="training-text-size"><option value="standard">Standard</option><option value="large">Large</option><option value="largest">Largest</option></select></label></div>';
