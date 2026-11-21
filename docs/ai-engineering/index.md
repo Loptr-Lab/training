@@ -20,6 +20,7 @@ Learn to use AI deliberately, evaluate outputs, choose tools, and understand AI-
 ## Exercises
 - [PLAY IT FORWARD tour companion](exercises/play-it-forward-assistant.md)
 - [Prompt evaluation worksheet](exercises/prompt-evaluation.md)
+- [Agent reliability test](exercises/agent-reliability.md)
 
 ## Resources
 - [Providers and model platforms](resources/providers-platforms.md)
