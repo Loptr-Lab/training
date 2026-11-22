@@ -34,5 +34,6 @@ Learn to use AI deliberately, evaluate outputs, choose tools, and understand AI-
 - [Providers and model platforms](resources/providers-platforms.md)
 - [Creative and development tools](resources/creative-development-tools.md)
 - [AI filmmaking learning resources](resources/ai-filmmaking.html)
+- [ScreenWeaver MCP integration](resources/screenweaver-mcp.html) — optional external screenplay/storyboard connector for Creator OS; OAuth and project-scope safeguards, with live connection work clearly separated.
 
 No paid subscription, API key, or coding is required for conceptual lessons. Resource links are starting points; this draft has not live-verified all links. Check official documentation and dates for changing features, prices, models, and terms.
