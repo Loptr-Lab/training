@@ -27,6 +27,9 @@ Learn to use AI deliberately, evaluate outputs, choose tools, and understand AI-
 - [Experiment 01: Turn footage into an adventure](applied-projects/play-it-forward/01-footage-to-adventure.html)
 - [Creative Economics: Goodbye Bandcamp Friday?](applied-projects/play-it-forward/02-creative-economics-goodbye-bandcamp-friday.html)
 
+## Case studies and field research
+- [HyperDot, Tribe Games & GLITCH](case-studies/hyperdot-glitch/README.md) — creator/community/publisher support, accessibility research, discoverability, and sustainable creative infrastructure. Research draft; financial comparability is not established.
+
 ## Resources
 - [Providers and model platforms](resources/providers-platforms.md)
 - [Creative and development tools](resources/creative-development-tools.md)
