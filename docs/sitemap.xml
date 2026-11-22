@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://loptr-lab.github.io/training/</loc></url>
-  <url><loc>https://loptr-lab.github.io/training/accessibility/</loc></url>
   <url><loc>https://loptr-lab.github.io/training/accessibility/cognitive-learning.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/accessibility/</loc></url>
   <url><loc>https://loptr-lab.github.io/training/accessibility/input-motor.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/accessibility/magnification.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/accessibility/screen-reader.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/accessibility/visual.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/applied-projects/play-it-forward/01-footage-to-adventure.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/applied-projects/play-it-forward/02-creative-economics-goodbye-bandcamp-friday.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/applied-projects/play-it-forward/</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/case-studies/hyperdot-glitch.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/exercises/agent-reliability.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/exercises/play-it-forward-assistant.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/exercises/prompt-evaluation.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/lessons/01-model-fundamentals.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/lessons/02-prompting-context.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/lessons/03-evaluation-applications-media.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/resources/ai-filmmaking.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/resources/creative-development-tools.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-engineering/resources/providers-platforms.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-literacy/</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/ai-literacy/rubrics.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/before-you-pay-for-ai-training.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/case-study/01-vocational-goal.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/case-study/02-work-tasks.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/case-study/03-accessibility-requirements.html</loc></url>
@@ -19,6 +35,11 @@
   <url><loc>https://loptr-lab.github.io/training/funding/jurisdictions/united-states/federal/README.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/funding/jurisdictions/united-states/state/minnesota/README.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/funding/program-research-template.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/independent-work-handoff.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/independent-work.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/legal-rights/</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/legal-rights/report.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/pixie-contributors.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/prompts/README.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/prompts/adapt-jurisdiction.html</loc></url>
@@ -29,8 +50,8 @@
   <url><loc>https://loptr-lab.github.io/training/prompts/research-technology.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/prompts/safe-research.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/prompts/verify-eligibility.html</loc></url>
-  <url><loc>https://loptr-lab.github.io/training/technology-planning/</loc></url>
   <url><loc>https://loptr-lab.github.io/training/technology-planning/development-environment.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/technology-planning/</loc></url>
   <url><loc>https://loptr-lab.github.io/training/technology-planning/xbox-workstation-example.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/templates/README.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/templates/approval-packet.html</loc></url>
@@ -41,13 +62,19 @@
   <url><loc>https://loptr-lab.github.io/training/templates/source-verification-record.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/templates/technology-plan.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/templates/training-plan.html</loc></url>
-  <url><loc>https://loptr-lab.github.io/training/tracks/</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/threshold-book-club.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/threshold-fit.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/threshold.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/audio.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/design.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/duet-development-provenance.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/game-development.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/tracks/gaming-career-pathways.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/tracks/gaming-industry-ai-developments.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/hybrid-creative-technology.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/tracks/</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/maker-game-systems.html</loc></url>
+  <url><loc>https://loptr-lab.github.io/training/tracks/networking-http3-quic.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/software-development.html</loc></url>
   <url><loc>https://loptr-lab.github.io/training/tracks/video.html</loc></url>
 </urlset>
