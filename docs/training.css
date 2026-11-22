@@ -119,3 +119,9 @@ select{max-width:100%}
 .site-breadcrumbs li+li::before{content:"/";color:var(--text-muted)}
 .site-breadcrumbs a{color:var(--the-light)}
 .site-breadcrumbs [aria-current=page]{color:var(--text-primary)}
+
+/* Featured field lab on the training homepage: left column, before the route list. */
+.masthead .home-featured{grid-column:1;grid-row:5;margin:0;max-width:48rem}
+.masthead .home-featured h2{font-size:clamp(1.35em,2.5vw,1.9em)}
+.masthead .home-featured .button{display:inline-flex;width:auto}
+@media(max-width:59.999rem){.masthead :is(nav.actions,.home-routes){grid-row:6}.masthead .home-featured{grid-row:5}}
