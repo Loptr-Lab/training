@@ -22,6 +22,11 @@ Learn to use AI deliberately, evaluate outputs, choose tools, and understand AI-
 - [Prompt evaluation worksheet](exercises/prompt-evaluation.md)
 - [Agent reliability test](exercises/agent-reliability.md)
 
+## Applied project
+- [PLAY IT FORWARD: AI Adventure School](applied-projects/play-it-forward/index.html) — turn existing footage into an adventure, plan a tour as a production, build a virtual reel, and evaluate creative economics.
+- [Experiment 01: Turn footage into an adventure](applied-projects/play-it-forward/01-footage-to-adventure.html)
+- [Creative Economics: Goodbye Bandcamp Friday?](applied-projects/play-it-forward/02-creative-economics-goodbye-bandcamp-friday.html)
+
 ## Resources
 - [Providers and model platforms](resources/providers-platforms.md)
 - [Creative and development tools](resources/creative-development-tools.md)
