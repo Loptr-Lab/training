@@ -35,6 +35,7 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 | [Funding research](./docs/funding/README.md) | Research programs by jurisdiction and verify current rules. |
 | [AI literacy and rubric writing](./docs/ai-literacy/index.html) | Learn to question and evaluate fictional AI responses; no coding or account required. |
 | [AI Engineering: Prompting, Context & Reliable Outputs](./docs/ai-engineering/index.md) | Learn prompt design, context, model selection, evaluation, AI applications, agent reliability and generative media; includes practical exercises, optional AI filmmaking resources, and a documented ScreenWeaver MCP integration. |
+| [Case studies & creative infrastructure](./docs/ai-engineering/case-studies/index.md) | Review evidence-led creator case studies, decision briefs, and applied experiments. |
 | [MCP prompt library](./docs/prompts/README.md) | Use AI research while preserving human judgment and source verification. |
 | [Preparation templates](./docs/templates/README.md) | Prepare a needs statement, quotes, questions, and an approval packet. |
 | [Worked example](./docs/case-study/README.md) | Follow an anonymized retraining plan from goal through lessons learned. |

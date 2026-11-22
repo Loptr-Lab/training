@@ -30,6 +30,13 @@ Learn to use AI deliberately, evaluate outputs, choose tools, and understand AI-
 ## Case studies and field research
 - [HyperDot, Tribe Games & GLITCH](case-studies/hyperdot-glitch/README.md) — creator/community/publisher support, accessibility research, discoverability, and sustainable creative infrastructure. Research draft; financial comparability is not established.
 
+## Case studies & creative infrastructure
+- [Case studies & creative infrastructure](case-studies/index.html)
+- [HyperDot, Tribe Games & GLITCH](case-studies/hyperdot-glitch.md) — evidence-led Minnesota independent-game case study.
+- [Decision brief](case-studies/decision-brief.md) — concise review request for publishers, advocates, educators and funders.
+- [Public-interest reviewer map](case-studies/reviewer-map.md) — role-based review targets and safe outreach rules.
+- [PLAY IT FORWARD Experiment 02: Creative Infrastructure Audit](applied-projects/play-it-forward/02-creative-infrastructure-pilot.md) — proposed measurable experiment using existing assets and channels.
+
 ## Resources
 - [Providers and model platforms](resources/providers-platforms.md)
 - [Creative and development tools](resources/creative-development-tools.md)
