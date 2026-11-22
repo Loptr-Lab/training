@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ScreenWeaver MCP integration — Loptr Lab Training</title>
+<meta name="description" content="A practical, rights-aware guide to connecting ScreenWeaver's remote MCP server to a creator workflow for screenplay and storyboard development.">
+<link rel="canonical" href="https://loptrlab.com/training/ai-engineering/resources/screenweaver-mcp.html">
+<link rel="stylesheet" href="../../training.css?v=20261121">
+<script src="../../training-display.js?v=20261121"></script>
+<script type="application/ld+json" id="site-breadcrumbs">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Loptr Lab Training","item":"https://loptrlab.com/training/"},{"@type":"ListItem","position":2,"name":"AI Engineering","item":"https://loptrlab.com/training/ai-engineering/"},{"@type":"ListItem","position":3,"name":"ScreenWeaver MCP integration","item":"https://loptrlab.com/training/ai-engineering/resources/screenweaver-mcp.html"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="masthead">
+<div class="serial">LOPTR LAB / CREATOR OS INTEGRATIONS</div>
+<h1>ScreenWeaver MCP integration</h1>
+<p class="subtitle">Optional screenplay and storyboard workflow · External service · Review before connecting</p>
+<nav class="actions" aria-label="Learning navigation"><a class="button" href="../">AI Engineering</a><a class="button" href="../../">Training home</a></nav>
+</header>
+<main id="main">
+<section class="panel guide">
+<h2>Purpose and placement</h2>
+<p>ScreenWeaver is an optional, externally hosted creative-production integration for Creator OS. Its remote Model Context Protocol (MCP) server lets an authorized assistant work with screenplay and storyboard project data. It belongs in the Creator OS creative-production tool directory under storytelling, screenwriting and storyboarding—not in the core platform runtime.</p>
+<p><strong>Canonical server URL:</strong> <code>https://app.screenweaver.ai/api/mcp</code></p>
+<p><a href="https://www.screenweaver.ai/mcp">Official ScreenWeaver MCP documentation</a> · <a href="https://www.screenweaver.ai/integrations">Official integrations overview</a></p>
+</section>
+<section class="panel guide">
+<h2>What it can do</h2>
+<ul>
+<li>List accessible projects and inspect project outlines.</li>
+<li>Read scenes, search screenplay text, and list characters, places and objects.</li>
+<li>Import supported screenplay formats after reviewing a preview.</li>
+<li>Edit screenplay elements and create or update storyboard shots.</li>
+<li>Set a project's aspect ratio.</li>
+</ul>
+<p>The MCP prepares and edits screenplay/storyboard structure. It does not generate storyboard images or finished video through the MCP endpoint; those production actions remain in the ScreenWeaver application. Capabilities can change, so consult the live tool descriptions before relying on a specific operation.</p>
+</section>
+<section class="panel guide">
+<h2>Connection and access</h2>
+<ol>
+<li>Create the project in ScreenWeaver first.</li>
+<li>In a compatible MCP client, add a remote server named <code>ScreenWeaver</code> with the canonical URL above.</li>
+<li>Complete ScreenWeaver's OAuth 2.1 sign-in and consent flow.</li>
+<li>Choose only the ScreenWeaver projects needed for the task; do not grant all-project access by default.</li>
+<li>Start with read-only tasks such as listing projects, reading an outline, or searching a script.</li>
+<li>Before any write operation, identify the target project and requested changes. Review import previews and confirm destructive script changes when prompted.</li>
+</ol>
+<p>No API key is required. ScreenWeaver states that MCP access is included with its Auteur and Studio plans. Check the current plan and consent screen before planning a workflow. The service states that MCP tool use itself does not spend credits, while some other in-app production features may have separate costs.</p>
+<p>Access can be revoked in ScreenWeaver under Connected apps. Project permissions matter: viewers can use read operations; owners and editors can make changes.</p>
+</section>
+<section class="panel guide">
+<h2>Creator OS integration contract</h2>
+<dl>
+<dt>Category</dt><dd>Creative production → storytelling → screenplay and storyboard.</dd>
+<dt>Provider</dt><dd>ScreenWeaver; externally hosted service.</dd>
+<dt>Transport and authentication</dt><dd>Remote MCP over Streamable HTTP; OAuth 2.1. No API key or locally hosted server.</dd>
+<dt>Data boundary</dt><dd>Project data is accessed by ScreenWeaver after the user authorizes the connection and selects project scope.</dd>
+<dt>Credential handling</dt><dd>Do not commit OAuth tokens, session data, client secrets or user credentials to GitHub. Do not proxy or persist tokens in Creator OS unless a separately reviewed architecture explicitly requires it.</dd>
+<dt>Action policy</dt><dd>Read first; use least privilege; require explicit user intent for edits; preview imports; confirm destructive script changes; report exactly what was changed.</dd>
+<dt>Failure behavior</dt><dd>If OAuth, project access, or a tool call fails, stop and report the failure. Do not claim a script or storyboard was updated.</dd>
+<dt>Fallback</dt><dd>Creators can continue with screenplay files such as Fountain or Final Draft and use ScreenWeaver directly; the Creator OS experience must not require this provider.</dd>
+</dl>
+</section>
+<section class="panel guide">
+<h2>Where it can support Loptr Lab projects</h2>
+<ul>
+<li><strong>NOT A TOY:</strong> develop music-video treatments, visual narratives, tour interludes and shot lists from creator-approved concepts.</li>
+<li><strong>PLAY IT FORWARD:</strong> turn footage, interviews or creator-approved stories into structured scene and storyboard plans.</li>
+<li><strong>Deck Workshop:</strong> explore narrative worlds, character arcs and cinematic presentation as an optional pre-production aid; keep game rules and source-of-truth mechanics separate.</li>
+<li><strong>Creator OS:</strong> let creators bring their own storytelling tools and choose whether to connect them to a project.</li>
+</ul>
+<p>These are proposed workflows, not existing integrations or completed project deliverables. Do not upload third-party footage, scripts, likenesses, music or confidential materials unless the project has the necessary rights and permissions. Public availability alone does not establish permission to adapt or redistribute.</p>
+</section>
+<section class="panel guide">
+<h2>Implementation status</h2>
+<ul>
+<li><strong>Implemented in this documentation change:</strong> integration placement, endpoint reference, capabilities, OAuth/project-scope guidance, permission boundaries, action safeguards, project use cases and limitations.</li>
+<li><strong>Not implemented here:</strong> an in-product Creator OS connector UI, automated OAuth handoff, live MCP tool invocation, token management, project sync, or server-side proxy.</li>
+<li><strong>Needed for a live connection:</strong> the user connects their own ScreenWeaver account and chooses project scope in the supported MCP client. Any future embedded Creator OS connector requires a separate technical design, security review and explicit authorization flow.</li>
+<li><strong>Validation still needed:</strong> test a real authorized account with read-only calls first; then test a disposable project for a reversible edit and confirm the ScreenWeaver History/undo behavior. No account connection or live project edit is claimed by this documentation.</li>
+</ul>
+</section>
+<section class="panel guide">
+<h2>Suggested first test</h2>
+<p>After connecting an account, ask the MCP client to list accessible projects and read the outline of one test project. Do not import, edit, delete or create shots during the first connectivity check. Record the client, date, account plan, granted project scope, available tools, result and any errors without recording secrets.</p>
+</section>
+</main>
+<footer><p>Learn with curiosity; verify with evidence. This guide describes an optional external service and is not an endorsement or a requirement for any Loptr Lab project.</p></footer>
+</body>
+</html>
