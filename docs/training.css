@@ -125,3 +125,14 @@ select{max-width:100%}
 .masthead .home-featured h2{font-size:clamp(1.35em,2.5vw,1.9em)}
 .masthead .home-featured .button{display:inline-flex;width:auto}
 @media(max-width:59.999rem){.masthead :is(nav.actions,.home-routes){grid-row:6}.masthead .home-featured{grid-row:5}}
+
+/* Homepage navigation: reduce top-level choices and organize supporting links. */
+.home-resource-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+.home-resource-links .button{width:auto;max-width:100%}
+.home-section-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}
+.home-section-card{min-width:0;border:1px solid var(--line);border-radius:.65rem;padding:1.25rem;background:var(--void)}
+.home-section-card h3{margin-bottom:.5rem}
+.home-section-card p{color:var(--text-muted);font-size:.95em}
+.home-section-card ul{margin-bottom:0;padding-left:1.25rem}
+.home-section-card li+li{margin-top:.45rem}
+@media(max-width:52rem){.home-section-grid{grid-template-columns:1fr}}
