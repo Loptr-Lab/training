@@ -30,6 +30,7 @@ The [guide homepage](./docs/index.html) is the canonical orientation page. It as
 | [The Threshold introductory fit class](./docs/threshold-fit.html) | Required reading and mutual-fit preparation before scoped collaboration. |
 | [Independent-work pathway](./docs/independent-work.html) | Choose project contributions, paid client work or self-employment preparation. |
 | [Career tracks](./docs/tracks/index.md) | Start with the work you want to do. |
+| [Art & Animation learning path](./docs/tracks/art-animation.html) | Drawing fundamentals, gesture, visual development and portfolio practice; includes a curated Proko resource path. |
 | [Accessibility](./docs/accessibility/index.md) | Describe functional barriers without disclosing unnecessary medical information. |
 | [Technology planning](./docs/technology-planning/index.md) | Translate tasks and barriers into minimum, preferred, and alternative configurations. |
 | [Funding research](./docs/funding/README.md) | Research programs by jurisdiction and verify current rules. |
