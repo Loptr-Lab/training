@@ -111,6 +111,13 @@ select{max-width:100%}
  .masthead .display-settings{grid-column:2;grid-row:1;margin:0 0 .75rem}
  .masthead :is(nav.actions,.home-routes),.masthead>.button,.masthead>p:has(>.button){grid-column:2;grid-row:2 / span 4}
 }
+/* The training homepage presents its featured adventure and route navigation
+   as stacked rows at every viewport, rather than a desktop two-column split. */
+@media(min-width:60rem){
+ .masthead:has(.home-featured){grid-template-columns:minmax(0,1fr)}
+ .masthead .home-featured{grid-column:1;grid-row:5;max-width:none}
+ .masthead .home-routes{grid-column:1;grid-row:6}
+}
 
 /* Visible breadcrumbs are rendered from each page's existing BreadcrumbList JSON-LD. */
 .site-breadcrumbs{width:min(calc(100% - 2 * var(--gutter)),72rem);margin:.75rem auto 0;font-size:.88em;color:var(--text-muted)}
