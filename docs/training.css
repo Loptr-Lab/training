@@ -85,76 +85,40 @@ select{max-width:100%}
 .resource-finder select{width:100%}
 .resource-finder #results{margin-block-start:1.5rem;padding-block-start:1rem;border-top:1px solid var(--line)}
 
-/* Shared header layout: every masthead inherits the same control placement.
-   Existing plain headers and home/pathway wrappers use this one CSS contract.
-   No page-specific positioning or JavaScript layout styles are required. */
-.masthead{display:grid;grid-template-columns:minmax(0,1fr);gap:0 2rem;align-items:start}
-.masthead :is(.home-hero,.home-intro,.pathway-hero,.pathway-introduction){display:contents}
-.masthead>*{min-width:0}
-.masthead .serial{grid-column:1;grid-row:2}
-.masthead h1{grid-column:1;grid-row:3}
-.masthead .subtitle{grid-column:1;grid-row:4}
-.masthead .display-settings{grid-column:1;grid-row:1;width:min(100%,23rem);margin:0 0 1rem auto}
-.masthead .display-settings summary{width:100%;text-align:left}
-.masthead .display-controls{flex-direction:column;gap:.75rem;margin:0 0 1rem}
-.masthead .display-controls label{min-width:0}
-.masthead :is(nav.actions,.home-routes){grid-column:1;grid-row:5;display:flex;flex-direction:column;align-items:stretch;gap:.75rem;margin:0}
-.masthead>.button,.masthead>p:has(>.button){grid-column:1;grid-row:5;margin:0}
-.masthead .home-routes ul{display:grid;gap:.75rem;list-style:none;margin:0;padding:0}
-.masthead .home-routes li+li{margin-block-start:0}
-.masthead .button{display:flex;width:100%;justify-content:flex-start}
-@media(min-width:60rem){
- .masthead{grid-template-columns:minmax(0,1fr) minmax(18rem,23rem);column-gap:clamp(2rem,4vw,3rem)}
- .masthead .serial{grid-row:1}
- .masthead h1{grid-row:2}
- .masthead .subtitle{grid-row:3}
- .masthead .display-settings{grid-column:2;grid-row:1;margin:0 0 .75rem}
- .masthead :is(nav.actions,.home-routes),.masthead>.button,.masthead>p:has(>.button){grid-column:2;grid-row:2 / span 4}
-}
-/* The training homepage presents its featured adventure and route navigation
-   as stacked rows at every viewport, rather than a desktop two-column split. */
-@media(min-width:60rem){
- .masthead:has(.home-featured){grid-template-columns:minmax(0,1fr)}
- .masthead .home-featured{grid-column:1;grid-row:5;max-width:none}
- .masthead .home-routes{grid-column:1;grid-row:6}
-}
-
-/* Visible breadcrumbs are rendered from each page's existing BreadcrumbList JSON-LD. */
-.site-breadcrumbs{width:min(calc(100% - 2 * var(--gutter)),72rem);margin:.75rem auto 0;font-size:.88em;color:var(--text-muted)}
-.site-breadcrumbs ol{display:flex;flex-wrap:wrap;gap:.35rem .65rem;list-style:none;padding:0;margin:0}
-.site-breadcrumbs li{display:inline-flex;align-items:center;gap:.65rem;min-width:0}
-.site-breadcrumbs li+li::before{content:"/";color:var(--text-muted)}
-.site-breadcrumbs a{color:var(--the-light)}
-.site-breadcrumbs [aria-current=page]{color:var(--text-primary)}
-
-/* Featured field lab on the training homepage: left column, before the route list. */
-.masthead .home-featured{grid-column:1;grid-row:5;margin:0;max-width:48rem}
+/* Shared masthead contract: one-column, vertical flow on every page and viewport. */
+.masthead{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.masthead>*{min-width:0;max-width:100%}
+.masthead .display-settings{order:0;width:min(100%,23rem);margin:0 0 1rem auto}
+.masthead .serial{order:1}.masthead h1{order:2}.masthead .subtitle{order:3}
+.masthead :is(nav.actions,.home-routes){order:5;display:flex;flex-direction:column;align-items:stretch;gap:.75rem;margin:0}
+.masthead .home-featured{order:4;margin:0;max-width:none}
 .masthead .home-featured h2{font-size:clamp(1.35em,2.5vw,1.9em)}
 .masthead .home-featured .button{display:inline-flex;width:auto}
-@media(max-width:59.999rem){.masthead :is(nav.actions,.home-routes){grid-row:6}.masthead .home-featured{grid-row:5}}
-
-/* Homepage navigation: reduce top-level choices and organize supporting links. */
-.home-resource-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
-.home-resource-links .button{width:auto;max-width:100%}
-.home-section-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}
-.home-section-card{min-width:0;border:1px solid var(--line);border-radius:.65rem;padding:1.25rem;background:var(--void)}
-.home-section-card h3{margin-bottom:.5rem}
-.home-section-card p{color:var(--text-muted);font-size:.95em}
-.home-section-card ul{margin-bottom:0;padding-left:1.25rem}
-.home-section-card li+li{margin-top:.45rem}
-@media(max-width:52rem){.home-section-grid{grid-template-columns:1fr}}
-
-/* Site-wide architecture correction: featured field lab uses a true two-row layout. */
-@media(min-width:60rem){
- .masthead:has(.home-featured){grid-template-columns:minmax(0,1fr)!important}
- .masthead:has(.home-featured) .home-featured{grid-column:1!important;grid-row:5!important;max-width:none!important}
- .masthead:has(.home-featured) .home-routes{grid-column:1!important;grid-row:6!important}
- .masthead:has(.home-featured) .home-routes ul{grid-template-columns:minmax(0,1fr)}
-}
-/* Structured breadcrumbs are also rendered as accessible, visible navigation. */
+.masthead .home-routes ul{display:grid;grid-template-columns:minmax(0,1fr);gap:.75rem;list-style:none;margin:0;padding:0}
+.masthead .home-routes li+li{margin-block-start:0}
+.masthead .button{display:flex;width:100%;justify-content:flex-start}
+.masthead .home-resource-links{order:6}
 .site-breadcrumbs{width:min(calc(100% - 2 * var(--gutter)),72rem);margin:.75rem auto 0;font-size:.88em;color:var(--text-muted)}
 .site-breadcrumbs ol{display:flex;flex-wrap:wrap;gap:.35rem .65rem;list-style:none;padding:0;margin:0}
 .site-breadcrumbs li{display:inline-flex;align-items:center;gap:.65rem;min-width:0}
 .site-breadcrumbs li+li::before{content:"/";color:var(--text-muted)}
-.site-breadcrumbs a{color:var(--the-light)}
-.site-breadcrumbs [aria-current=page]{color:var(--text-primary)}
+.site-breadcrumbs a{color:var(--the-light)}.site-breadcrumbs [aria-current=page]{color:var(--text-primary)}
+.home-resource-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}.home-resource-links .button{width:auto;max-width:100%}
+.home-section-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}
+.home-section-card{min-width:0;border:1px solid var(--line);border-radius:.65rem;padding:1.25rem;background:var(--void)}
+.home-section-card h3{margin-bottom:.5rem}.home-section-card p{color:var(--text-muted);font-size:.95em}
+.home-section-card ul{margin-bottom:0;padding-left:1.25rem}.home-section-card li+li{margin-top:.45rem}
+@media(max-width:52rem){.home-section-grid{grid-template-columns:1fr}}
+/* Legal evidence report: scoped print-friendly exception within the shared stylesheet. */
+.legal-report{color:#171717;background:#fff;font:1.1rem/1.6 system-ui,sans-serif;overflow-wrap:anywhere}
+.legal-report main{max-width:72ch;margin:auto;padding:2rem 1.25rem}
+.legal-report h1{font-size:2rem;line-height:1.2}.legal-report h2{font-size:1.45rem;line-height:1.3;margin-top:2rem}
+.legal-report h1,.legal-report h2{break-after:avoid}
+.legal-report p,.legal-report li,.legal-report td,.legal-report a{overflow-wrap:anywhere}
+.legal-report a{color:#143c78}.legal-report a:focus-visible{outline:3px solid #143c78;outline-offset:3px}
+.legal-report table{border-collapse:collapse;width:100%;font-size:1rem}
+.legal-report th,.legal-report td{border:1px solid #555;padding:.5rem;text-align:left;vertical-align:top}
+.legal-report th{background:#eee}.legal-report tr{break-inside:avoid}.legal-report caption{text-align:left;font-weight:bold}
+.legal-report .skip{position:absolute;left:-10000px}.legal-report .skip:focus{left:1rem;top:0;background:#fff}
+@page{size:A4;margin:18mm}
+@media print{.legal-report{font-size:11pt;line-height:1.45}.legal-report main{max-width:none;padding:0}.legal-report .skip{display:none}.legal-report h1{font-size:23pt}.legal-report h2{font-size:15pt}.legal-report a{color:#171717}.legal-report table{font-size:10pt}.legal-report p,.legal-report li{orphans:3;widows:3}}
