@@ -57,7 +57,29 @@
         data.itemListElement = normalized;
         breadcrumbData.textContent = JSON.stringify(data);
 
-        // BreadcrumbList remains available to search engines, but no second visible navigation is rendered.
+        // Render the same hierarchy for people, not only search engines.
+        const breadcrumbNav = document.createElement('nav');
+        breadcrumbNav.className = 'site-breadcrumbs';
+        breadcrumbNav.setAttribute('aria-label', 'Breadcrumb');
+        const breadcrumbList = document.createElement('ol');
+        normalized.forEach((item, index) => {
+          const li = document.createElement('li');
+          if (index === normalized.length - 1) {
+            const current = document.createElement('span');
+            current.textContent = item.name;
+            current.setAttribute('aria-current', 'page');
+            li.append(current);
+          } else {
+            const link = document.createElement('a');
+            link.href = item.item;
+            link.textContent = item.name;
+            li.append(link);
+          }
+          breadcrumbList.append(li);
+        });
+        breadcrumbNav.append(breadcrumbList);
+        header.insertAdjacentElement('afterend', breadcrumbNav);
+
 
       } catch (_) { /* Structured data remains available if display rendering fails. */ }
     }
