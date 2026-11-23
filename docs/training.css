@@ -143,3 +143,18 @@ select{max-width:100%}
 .home-section-card ul{margin-bottom:0;padding-left:1.25rem}
 .home-section-card li+li{margin-top:.45rem}
 @media(max-width:52rem){.home-section-grid{grid-template-columns:1fr}}
+
+/* Site-wide architecture correction: featured field lab uses a true two-row layout. */
+@media(min-width:60rem){
+ .masthead:has(.home-featured){grid-template-columns:minmax(0,1fr)!important}
+ .masthead:has(.home-featured) .home-featured{grid-column:1!important;grid-row:5!important;max-width:none!important}
+ .masthead:has(.home-featured) .home-routes{grid-column:1!important;grid-row:6!important}
+ .masthead:has(.home-featured) .home-routes ul{grid-template-columns:minmax(0,1fr)}
+}
+/* Structured breadcrumbs are also rendered as accessible, visible navigation. */
+.site-breadcrumbs{width:min(calc(100% - 2 * var(--gutter)),72rem);margin:.75rem auto 0;font-size:.88em;color:var(--text-muted)}
+.site-breadcrumbs ol{display:flex;flex-wrap:wrap;gap:.35rem .65rem;list-style:none;padding:0;margin:0}
+.site-breadcrumbs li{display:inline-flex;align-items:center;gap:.65rem;min-width:0}
+.site-breadcrumbs li+li::before{content:"/";color:var(--text-muted)}
+.site-breadcrumbs a{color:var(--the-light)}
+.site-breadcrumbs [aria-current=page]{color:var(--text-primary)}
