@@ -28,6 +28,10 @@ This develops the earlier practice-research question about how leadership and pr
 
 The [research framework](./docs/research/index.html) sets out the working questions, practice setting, methods, evidence standards, participant safeguards and literature starting points. It is a proposal for discussion and supervisory review, not an approved doctoral protocol or a report of completed empirical findings.
 
+## Structural equity and historical policy evidence
+
+The [structural equity section](./docs/research/index.html#structural-equity) is the public research authority for MFIP institutional-record inquiry status, doctoral attainment, HBCU pathways and prospective institutional review. Distinguish published findings, unresolved records requests, lived experience and proposed causal hypotheses. Do not publish private family records or identifying correspondence. Evaluate actual leadership representation separately from educational attainment. Networking and product feedback are not research recruitment; existing outreach and ethics gates remain in force.
+
 ## What this repository can evidence
 
 This repository may provide evidence about:
