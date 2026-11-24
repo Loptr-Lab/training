@@ -18,32 +18,53 @@ The training elements Ember, Tide, Root, Gale, Burning, and Steam are pedagogica
 
 ## Doctoral research alignment
 
-The wider practice-research project is titled *Organizational Leadership and Narrative World-Building in Independent Game Studio Production*.
+The current working research direction is **Designing Humanity into Technology: Organizational Leadership, Sociotechnical Systems, and the Social Worlds of Games**.
 
-Its primary question asks:
+Its central question is:
 
-> How do leadership and production structures in small, founder-led independent game studios shape—and get shaped by—the narrative worlds they build?
+> How do organizational leadership practices shape the design and use of technology, and how can creative systems—particularly games—be designed and governed to support human agency, dignity, cooperation and social well-being?
 
-This repository may provide evidence about curriculum design, candidate evaluation, accessibility to training, production constraints, and the evolution of founder-led studio practice. Repository artifacts are evidence, not research findings by themselves.
+This develops the earlier practice-research question about how leadership and production structures in small, founder-led independent game studios shape—and are shaped by—the narrative worlds they build. Narrative world-building remains part of the inquiry, now situated within a wider study of organizational leadership and technology.
 
-Use the analytic loop:
+The [research framework](./docs/research/index.html) sets out the working questions, practice setting, methods, evidence standards, participant safeguards and literature starting points. It is a proposal for discussion and supervisory review, not an approved doctoral protocol or a report of completed empirical findings.
 
-> Practice / Artifact → Question → Method → Evidence → Analysis → Finding → Contribution
+## What this repository can evidence
+
+This repository may provide evidence about:
+
+- curriculum and training design;
+- candidate evaluation and documented review criteria;
+- accessibility to learning and contribution;
+- production constraints and changes in studio practice;
+- contributor governance, recognition and safe participation;
+- the distinction between a proposed pathway and an observed outcome.
+
+Repository artifacts are evidence sources, not research findings by themselves. A document, commit, passing test or proposed program does not prove that a participant used it, benefited from it or endorsed it.
+
+## Analytic sequence
+
+Use this sequence when turning studio practice into research:
+
+> Practice or artifact → research question → method → evidence → analysis → finding → contribution
+
+Keep the date, source, context and limitations attached to each claim. Distinguish contemporaneous records from retrospective interpretation, observed behavior from self-report, and software behavior from human experience.
 
 ## Evidence and continuity rules
 
 - Preserve meaningful version history and document why evaluation contracts change.
-- Keep mandatory tests, candidate instructions, and reviewer criteria synchronized.
+- Keep mandatory tests, candidate instructions and reviewer criteria synchronized.
 - Separate observed training outcomes from later interpretation.
 - Do not silently convert training abstractions into canonical mechanics.
 - Do not copy narrative adaptations or experimental Duet behavior into this exercise as though they were canonical rules.
 - Link authoritative game documentation instead of duplicating or paraphrasing rules when precision matters.
-- Keep collaborator-safety training general and reusable; do not copy private allegations, explicit material, residential details, or identifiable case evidence into this repository.
-- Treat the engine repository as authority for variant status, rights gates, accessibility review, and canon promotion.
+- Keep collaborator-safety training general and reusable; do not copy private allegations, explicit material, residential details or identifiable case evidence into this repository.
+- Treat the engine repository as authority for variant status, rights gates, accessibility review and canon promotion.
 
 ## Contributor governance boundary
 
-This repository may teach consent, collaborator vetting, least-privilege access, revocation planning, and safe exit terms through [`CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md`](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md). It does not adjudicate personal disputes, store private evidence, grant production access, or authorize third-party intellectual property.
+This repository may teach consent, collaborator vetting, least-privilege access, revocation planning and safe exit terms through [Contributor Safety and Governance](./CONTRIBUTOR_SAFETY_AND_GOVERNANCE.md). It does not adjudicate personal disputes, store private evidence, grant production access or authorize third-party intellectual property.
+
+Research participation is separate from contribution, training, employment, payment and access to projects. Do not treat ordinary product feedback as consent to research. Any participant recruitment or data collection requiring institutional review must wait for the appropriate research ethics approval.
 
 ## Canonical principle
 
